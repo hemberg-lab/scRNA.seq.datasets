@@ -1,9 +1,11 @@
 FROM ubuntu:latest
 
-RUN  apt-get update \
+ENV R_BASE_VERSION 3.3.2
+
+RUN  apt-get update && apt-get -y upgrade \
   && apt-get install -y \
     wget \
-    r-base \
+    r-base=${R_BASE_VERSION}* \
   && Rscript -e "if (!require('BiocInstaller')) {source('https://bioconductor.org/biocLite.R');biocLite('BiocInstaller')}" \
   && Rscript -e "if (!require('scater')) {source('https://bioconductor.org/biocLite.R');biocLite('scater')}"
 
