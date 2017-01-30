@@ -1,12 +1,14 @@
-FROM ubuntu:latest
+FROM rocker/r-base
 
-RUN  apt-get update && apt-get -y upgrade \
-  && apt-get install -y \
-    wget \
-    r-base \
-  && Rscript -e "if (!require('BiocInstaller')) {source('https://bioconductor.org/biocLite.R');biocLite('BiocInstaller')}" \
-  && Rscript -e "if (!require('devtools')) install.packages('devtools')" \
-  && Rscript -e "if (!require('scater')) devtools::install_github("davismcc/scater", build_vignettes = TRUE)"
+# this tools are required for biomaRt package, which is required by scater
+RUN apt-get update \ 
+	&& apt-get install -y --no-install-recommends \
+        aptitude \
+        libcurl4-openssl-dev \
+        libxml2-dev
+
+RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
+RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 
 ADD get_data.sh /
 ADD R-scripts /R-scripts
