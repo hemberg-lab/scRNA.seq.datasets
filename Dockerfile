@@ -7,4 +7,5 @@ RUN  apt-get update \
   && Rscript -e "if (!require('scater')) {source('https://bioconductor.org/biocLite.R');biocLite('scater')}"
 
 ADD get_data.sh /
+ADD R-scripts /R-scripts
 CMD sh get_data.sh $name
