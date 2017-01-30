@@ -2,7 +2,7 @@ FROM ubuntu:latest
 
 RUN  apt-get update \
   && apt-get install -y \
-    wget
+    wget \
     r-base \
   && Rscript -e "if (!require('scater')) {source('https://bioconductor.org/biocLite.R');biocLite('scater')}"
 
