@@ -1,4 +1,4 @@
-This docker can be used for downloading and creation of the scater objects of the publicly available datasets used by our lab.
+This docker is used for creation of the scater objects from the public datasets used by our lab.
 
 To run:
 
