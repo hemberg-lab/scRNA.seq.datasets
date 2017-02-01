@@ -6,7 +6,8 @@ RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
         aptitude \
         libcurl4-openssl-dev \
-        libxml2-dev
+        libxml2-dev \
+        gawk
 
 # install scater: http://bioconductor.org/packages/scater/
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
