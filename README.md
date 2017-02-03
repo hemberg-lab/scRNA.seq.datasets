@@ -4,14 +4,12 @@ Jenkins commands:
 
 ```
 # run the pipeline
+docker pull hemberglab/public-scrnaseq-datasets:latest
 docker run hemberglab/public-scrnaseq-datasets:latest
 
-# copy files from docker container to local disk
-assign() {
-  eval "$1=\$(cat; echo .); $1=\${$1%.}"
-}
-assign container_id < <(docker ps -a | grep hemberglab/public-scrnaseq-datasets:latest | awk '{print $1;}')
-docker cp `echo $container_id`:scater-objects $WORKSPACE/
+# copy files from the last run docker container to local disk
+alias dl='docker ps -l -q'
+docker cp `dl`:scater-objects $WORKSPACE/
 
 s3cmd put scater-objects s3://scater-objects
 

@@ -21,4 +21,4 @@ ADD create-scater /create-scater
 ADD build.sh /
 
 # run scripts
-CMD sh build.sh
+CMD bash build.sh
