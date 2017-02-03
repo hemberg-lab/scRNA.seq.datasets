@@ -1,6 +1,8 @@
 #!/bin/bash
 
-for f in `ls process`; do
+mkdir scater-objects
+
+for f in `ls process-data`; do
     name=(${f//./ })
     mkdir $name
     cd $name
