@@ -11,7 +11,7 @@ docker run hemberglab/public-scrnaseq-datasets:latest
 alias dl='docker ps -l -q'
 docker cp `dl`:scater-objects $WORKSPACE/
 
-s3cmd put scater-objects s3://scater-objects
+s3cmd put -r scater-objects s3://hemberg-lab/public-scrnaseq-datasets/
 
 # Delete all containers
 # docker rm $(docker ps -a -q)
