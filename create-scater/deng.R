@@ -46,5 +46,3 @@ deng_reads@featureData@data$feature_symbol <- featureNames(deng_reads)
 # save files
 saveRDS(deng_rpkms, "deng-rpkms.rds")
 saveRDS(deng_reads, "deng-reads.rds")
-
-print(deng_rpkms)

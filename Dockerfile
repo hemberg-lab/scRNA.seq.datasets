@@ -16,8 +16,9 @@ RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocIns
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 
 # add our scripts
-ADD get_data.sh /
-ADD R-scripts /R-scripts
+ADD process-data /process-data
+ADD create-scater /create-scater
+ADD scater-objects /scater-objects
 
 # run scripts
-CMD sh get_data.sh $name
+CMD sh build.sh

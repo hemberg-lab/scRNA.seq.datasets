@@ -3,6 +3,58 @@ This docker is used for creation of the scater objects from the public datasets 
 To run:
 
 ```
-# to create a scater object for e.g. `patel` dataset
-docker run -e name="patel" hemberglab/public-scrnaseq-datasets:latest
+docker run hemberglab/public-scrnaseq-datasets:latest
+assign() {
+  eval "$1=\$(cat; echo .); $1=\${$1%.}"
+}
+assign container_id < <(docker ps -a | grep hemberglab/public-scrnaseq-datasets:latest | awk '{print $1;}')
+docker cp $container_id:scater-objects .
 ```
+
+To create an instance on a Sanger Cloud to be able to automatically run this docker, please follow these instructions:
+
+1. Launch Ubuntu Trusty instance (`m1.medium` flavour)
+
+2. Add the instance to the `default`, `cloudforms_icmp_in`, `cloudforms_ssh_in` `cloudforms_web_in` security groups.
+
+3. Create additional security group: `TCP` with port 8080 (this is needed for Jenkins) and add your instance to this group
+
+4. Associate a floating IP (FLOATING_IP) number with your instance.
+
+5. In the instance install openjdk-7-jdk:
+```
+sudo apt-get update
+sudo apt-get install openjdk-7-jdk
+```
+
+6. In the instance install Jenkins: https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu
+
+To setup Jenkins after installation go to http://FLOATING_IP:8080 (this is only accessible in the Sanger network, or from outside using VPN)
+
+7. In the instance install docker: https://docs.docker.com/engine/installation/linux/ubuntu/
+
+8. Add permission for Jenkins to run Docker:
+```
+sudo usermod -aG docker jenkins
+```
+
+Hard reboot your instance after that. Now Jenkins can run docker images.
+
+9. Install `s3cmd` utility to be able to upload scater object to the S3 storage:
+```
+sudo apt-get install s3cmd
+```
+
+10. Add `.sc3cfg` configuration file to your instance with the access and secret keys.
+
+Now you can upload files to the S3 storage using, e.g.:
+```
+s3cmd put textfile.txt s3://MYBUCKET
+```
+
+To make access to the S3 objects public use this command:
+```
+s3cmd setacl --acl-public s3://MYBUCKET/textfile.txt
+```
+
+Now the textfile.txt should be accessible at https://MYBUCKET.cog.sanger.ac.uk/textfile.txt

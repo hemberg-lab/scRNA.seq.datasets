@@ -25,5 +25,3 @@ sceset <- newSCESet(exprsData = d, phenoData = pd)
 
 # save the data
 saveRDS(sceset, file = "patel.rds")
-
-print(sceset)
