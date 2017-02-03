@@ -1,14 +1,24 @@
 This docker is used for creation of the scater objects from the public datasets used by our lab.
 
-To run:
+Jenkins commands:
 
 ```
+# run the pipeline
 docker run hemberglab/public-scrnaseq-datasets:latest
+
+# copy files from docker container to local disk
 assign() {
   eval "$1=\$(cat; echo .); $1=\${$1%.}"
 }
 assign container_id < <(docker ps -a | grep hemberglab/public-scrnaseq-datasets:latest | awk '{print $1;}')
-docker cp $container_id:scater-objects .
+docker cp `echo $container_id`:scater-objects $WORKSPACE/
+
+s3cmd put scater-objects s3://scater-objects
+
+# Delete all containers
+# docker rm $(docker ps -a -q)
+# Delete all images
+# docker rmi $(docker images -q)
 ```
 
 To create an instance on a Sanger Cloud to be able to automatically run this docker, please follow these instructions:

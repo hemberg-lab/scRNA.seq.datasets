@@ -18,6 +18,7 @@ RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater'
 # add our scripts
 ADD process-data /process-data
 ADD create-scater /create-scater
+ADD build.sh
 
 # run scripts
 CMD sh build.sh
