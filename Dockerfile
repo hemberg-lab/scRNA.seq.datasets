@@ -1,19 +1,11 @@
-FROM rocker/r-base
+FROM hemberglab/scater-docker
 
-# this tools are required for biomaRt package, which is required by scater
-# see this issue: https://github.com/sagemath/cloud/issues/114
+# these tools are required for processing the data files
 RUN apt-get update \ 
-	&& apt-get install -y --no-install-recommends \
-        aptitude \
-        libcurl4-openssl-dev \
-        libxml2-dev \
+	&& apt-get install \
         gawk \
         tar \
         sed
-
-# install scater: http://bioconductor.org/packages/scater/
-RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
-RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 
 # add our scripts
 ADD process-data /process-data

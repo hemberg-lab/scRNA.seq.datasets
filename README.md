@@ -11,12 +11,13 @@ docker run hemberglab/public-scrnaseq-datasets:latest
 alias dl='docker ps -l -q'
 docker cp `dl`:scater-objects $WORKSPACE/
 
+# copy files to S3
 s3cmd put -r scater-objects s3://hemberg-lab/public-scrnaseq-datasets/
 
 # Delete all containers
-# docker rm $(docker ps -a -q)
+docker rm $(docker ps -a -q)
 # Delete all images
-# docker rmi $(docker images -q)
+docker rmi $(docker images -q)
 ```
 
 To create an instance on a Sanger Cloud to be able to automatically run this docker, please follow these instructions:
