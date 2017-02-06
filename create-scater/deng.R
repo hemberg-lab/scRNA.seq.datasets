@@ -18,11 +18,11 @@ cell_ids <- colnames(deng_rpkms)
 
 # create cell annotations
 labs <- unlist(lapply(strsplit(cell_ids, "\\."), "[[", 1))
-ann <- data.frame(stage1 = labs)
+ann <- data.frame(cell_type1 = labs)
 labs[labs == "zy" | labs == "early2cell"] = "zygote"
 labs[labs == "mid2cell" | labs == "late2cell"] = "2cell"
 labs[labs == "earlyblast" | labs == "midblast" | labs == "lateblast"] = "blast"
-ann$stage2 <- labs
+ann$cell_type2 <- labs
 rownames(ann) <- cell_ids
 pd <- new("AnnotatedDataFrame", data = ann)
 

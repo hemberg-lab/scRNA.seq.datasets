@@ -14,7 +14,7 @@ d <- d[,grepl("MGH26_", colnames(d)) |
 # create phenodata
 patients <- unlist(lapply(strsplit(colnames(d), "_"), "[[", 1))
 patients[patients == "MGH264"] <- "MGH26"
-ann <- data.frame(patients = patients)
+ann <- data.frame(cell_type1 = patients)
 rownames(ann) <- colnames(d)
 pd <- new("AnnotatedDataFrame", data = ann)
 

@@ -1,0 +1,50 @@
+---
+title: "Scater report"
+author: "Hemberg Lab"
+date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
+output: html_document
+params:
+    file:
+        value: x
+---
+
+## Dataset
+```{r, echo=FALSE}
+cat(strsplit(params$file, "\\.")[[1]][1])
+```
+
+```{r, include=FALSE}
+library(scater)
+d <- readRDS(paste0("scater-objects/", params$file))
+```
+
+## Library size
+
+```{r, echo=FALSE}
+if(!is.null(d$total_counts)) {
+    hist(d$total_counts, breaks = 100, xlab = "Total counts", main = "")
+}
+```
+
+## Detected genes
+
+```{r, echo = FALSE}
+if(!is.null(d$total_features)) {
+    hist(d$total_features, breaks = 100, xlab = "Detected genes", main = "")
+}
+```
+
+## Gene expression
+
+```{r, echo=FALSE}
+if(!is.null(d$total_features)) {
+    plotQC(d, type = "highest-expression")
+    plotQC(d, type = "exprs-freq-vs-mean")
+}
+```
+
+## PCA plot
+```{r, echo=FALSE}
+plotPCA(d, colour_by = "cell_type1")
+```
+
