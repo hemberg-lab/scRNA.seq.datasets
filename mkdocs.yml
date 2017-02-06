@@ -2,6 +2,7 @@ site_name: scRNA-Seq Public Data
 pages:
     - Home: index.md
     - Mouse Development: mouse-dev.md
+    - Mouse Tissues: mouse-tissues.md
     - Human Tissues: human-tissues.md
 theme: readthedocs
 docs_dir: 'website'

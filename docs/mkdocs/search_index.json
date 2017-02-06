@@ -31,6 +31,16 @@
             "title": "Deng"
         },
         {
+            "location": "/mouse-tissues/",
+            "text": "Treutlein\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\nscater object\n\n\nReport",
+            "title": "Mouse Tissues"
+        },
+        {
+            "location": "/mouse-tissues/#treutlein",
+            "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)  scater object  Report",
+            "title": "Treutlein"
+        },
+        {
             "location": "/human-tissues/",
             "text": "Patel\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\nscater object\n\n\nReport",
             "title": "Human Tissues"
