@@ -1,0 +1,44 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use scater toolkit for analysis of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash file with downloading and processing instructions.\n\n\nR script file with the instruction on how to create a scater object.\n\n\nAnnotation information about the dataset",
+            "title": "Home"
+        },
+        {
+            "location": "/#introduction",
+            "text": "This website contains a collection of publicly available datasets used by the  Hemberg Group  at the  Sanger Institute .",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#scater",
+            "text": "We use scater toolkit for analysis of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.",
+            "title": "scater"
+        },
+        {
+            "location": "/#contributions",
+            "text": "We welcome contributions to our collection. Please create a pull request to our  GitHub repository  providing the following information:   bash file with downloading and processing instructions.  R script file with the instruction on how to create a scater object.  Annotation information about the dataset",
+            "title": "Contributions"
+        },
+        {
+            "location": "/mouse-dev/",
+            "text": "Deng\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\nscater object - reads\n\n\nscater object - rpkms\n\n\nReport - reads\n\n\nReport - rpkms",
+            "title": "Mouse Development"
+        },
+        {
+            "location": "/mouse-dev/#deng",
+            "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)  scater object - reads  scater object - rpkms  Report - reads  Report - rpkms",
+            "title": "Deng"
+        },
+        {
+            "location": "/human-tissues/",
+            "text": "Patel\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\nscater object\n\n\nReport",
+            "title": "Human Tissues"
+        },
+        {
+            "location": "/human-tissues/#patel",
+            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)  scater object  Report",
+            "title": "Patel"
+        }
+    ]
+}
