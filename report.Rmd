@@ -3,14 +3,14 @@ output: html_document
 params:
     file:
         value: x
-    set_title: "My Title!"
-title: `r params$set_title`
+    set_title:
+        value: x
+title: '`r params$set_title`'
 author: "Hemberg Lab"
 date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 ---
 
 ```{r, include=FALSE}
-# test
 opts_chunk$set(fig.height = 6, fig.width = 6, fig.align = 'center', echo = FALSE)
 library(scater)
 d <- readRDS(paste0("scater-objects/", params$file))
