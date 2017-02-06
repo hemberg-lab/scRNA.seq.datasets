@@ -1,50 +1,47 @@
 ---
-title: "Scater report"
-author: "Hemberg Lab"
-date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 output: html_document
 params:
     file:
         value: x
+    set_title: "My Title!"
+title: `r params$set_title`
+author: "Hemberg Lab"
+date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 ---
 
-## Dataset
-```{r, echo=FALSE}
-cat(strsplit(params$file, "\\.")[[1]][1])
-```
-
 ```{r, include=FALSE}
+opts_chunk$set(fig.height = 6, fig.width = 6, fig.align = 'center', echo = FALSE)
 library(scater)
 d <- readRDS(paste0("scater-objects/", params$file))
 ```
 
-## Library size
+## QC of library size and detected genes
 
-```{r, echo=FALSE}
-if(!is.null(d$total_counts)) {
-    hist(d$total_counts, breaks = 100, xlab = "Total counts", main = "")
+```{r}
+if(!is.null(d$total_counts) & !is.null(d$total_features)) {
+    plotPhenoData(d, aes(x = total_counts, y = total_features,
+                                  colour = cell_type1))
+    plotPhenoData(d, aes(x = cell_type1, y = total_features,
+                                  colour = log10_total_counts))
 }
 ```
 
-## Detected genes
+## QC of expression
 
-```{r, echo = FALSE}
-if(!is.null(d$total_features)) {
-    hist(d$total_features, breaks = 100, xlab = "Detected genes", main = "")
-}
-```
-
-## Gene expression
-
-```{r, echo=FALSE}
-if(!is.null(d$total_features)) {
+```{r, message=FALSE, warning=FALSE}
+if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     plotQC(d, type = "highest-expression")
     plotQC(d, type = "exprs-freq-vs-mean")
 }
 ```
 
-## PCA plot
-```{r, echo=FALSE}
-plotPCA(d, colour_by = "cell_type1")
+## QC of experimental variables
+```{r, message=FALSE, warning=FALSE}
+plotQC(d, type = "expl",
+       variables = c("total_features", "total_counts", "cell_type1"))
 ```
 
+## PCA plot
+```{r}
+plotPCA(d, colour_by = "cell_type1")
+```
