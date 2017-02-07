@@ -1,6 +1,6 @@
 library(scater)
 
-d <- read.csv("Usoskin+et+al.+External+resources+Table+1.csv")
+d <- read.csv("Usoskin+et+al.+External+resources+Table+1.csv", stringsAsFactors = F)
 
 exprs_data <- data.matrix(d[11:nrow(d), 10:ncol(d)])
 ann <- t(d[c(1:3, 5:8), 10:ncol(d)])
