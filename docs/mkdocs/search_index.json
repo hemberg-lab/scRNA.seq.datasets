@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use scater toolkit for analysis of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash file with downloading and processing instructions.\n\n\nR script file with the instruction on how to create a scater object.\n\n\nAnnotation information about the dataset",
+            "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use \nscater toolkit\n for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash\n script with downloading and processing instructions (should be put to \nprocess-data\n folder) with a corresponding name (we use the first author surname by default).\n\n\nR\n script file with the instruction on how to create a scater object (should be put to \ncreate-scater\n folder) with a corresponding name (we use the first author surname by default).\n\n\nImportant!\n For the cell type information please use a column in the annotation table with the name \ncell_type1\n. If there are more than one cell type hierarchy please use \ncell_type2\n, \ncell_type3\n etc.\n\n\nAnnotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to \nmarkdown\n files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.",
             "title": "Home"
         },
         {
@@ -12,42 +12,52 @@
         },
         {
             "location": "/#scater",
-            "text": "We use scater toolkit for analysis of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.",
+            "text": "We use  scater toolkit  for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.",
             "title": "scater"
         },
         {
             "location": "/#contributions",
-            "text": "We welcome contributions to our collection. Please create a pull request to our  GitHub repository  providing the following information:   bash file with downloading and processing instructions.  R script file with the instruction on how to create a scater object.  Annotation information about the dataset",
+            "text": "We welcome contributions to our collection. Please create a pull request to our  GitHub repository  providing the following information:   bash  script with downloading and processing instructions (should be put to  process-data  folder) with a corresponding name (we use the first author surname by default).  R  script file with the instruction on how to create a scater object (should be put to  create-scater  folder) with a corresponding name (we use the first author surname by default).  Important!  For the cell type information please use a column in the annotation table with the name  cell_type1 . If there are more than one cell type hierarchy please use  cell_type2 ,  cell_type3  etc.  Annotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to  markdown  files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.",
             "title": "Contributions"
         },
         {
+            "location": "/mouse-brain/",
+            "text": "Zeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015).\n\n\n\n\n\n\nSupporting data and visualisations\n\n\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nUMI\n\n\n19972 features\n3005 samples\n\n\nSCESet\n\n\nhtml",
+            "title": "Mouse Brain"
+        },
+        {
+            "location": "/mouse-brain/#zeisel",
+            "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015).    Supporting data and visualisations       Units  Size  scater  Report      UMI  19972 features 3005 samples  SCESet  html",
+            "title": "Zeisel"
+        },
+        {
             "location": "/mouse-dev/",
-            "text": "Deng\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\nscater object - reads\n\n\nscater object - rpkms\n\n\nReport - reads\n\n\nReport - rpkms",
+            "text": "Deng\n\n\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nreads\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\nRPKMs\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Development"
         },
         {
             "location": "/mouse-dev/#deng",
-            "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)  scater object - reads  scater object - rpkms  Report - reads  Report - rpkms",
+            "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)      Units  Size  scater  Report      reads  22431 features 268 samples  SCESet  html    RPKMs  22431 features 268 samples  SCESet  html",
             "title": "Deng"
         },
         {
             "location": "/mouse-tissues/",
-            "text": "Treutlein\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\nscater object\n\n\nReport",
+            "text": "Treutlein\n\n\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nFPKMs\n\n\n23271 features\n80 samples\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Tissues"
         },
         {
             "location": "/mouse-tissues/#treutlein",
-            "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)  scater object  Report",
+            "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)      Units  Size  scater  Report      FPKMs  23271 features 80 samples  SCESet  html",
             "title": "Treutlein"
         },
         {
             "location": "/human-tissues/",
-            "text": "Patel\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\nscater object\n\n\nReport",
+            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nSCESet\n\n\nhtml",
             "title": "Human Tissues"
         },
         {
             "location": "/human-tissues/#patel",
-            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)  scater object  Report",
+            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Units  Size  scater  Report      TPMs  5948 features 430 samples  SCESet  html",
             "title": "Patel"
         }
     ]

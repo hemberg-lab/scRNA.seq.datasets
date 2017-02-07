@@ -68,6 +68,13 @@
           
             <li>
     <li class="toctree-l1 ">
+        <a class="" href="mouse-brain/">Mouse Brain</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
         <a class="" href="mouse-dev/">Mouse Development</a>
         
     </li>
@@ -122,13 +129,14 @@
                 <h2 id="introduction">Introduction</h2>
 <p>This website contains a collection of publicly available datasets used by the <a href="http://www.sanger.ac.uk/science/groups/hemberg-group">Hemberg Group</a> at the <a href="http://www.sanger.ac.uk/">Sanger Institute</a>.</p>
 <h2 id="scater">scater</h2>
-<p>We use scater toolkit for analysis of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.</p>
+<p>We use <a href="http://bioconductor.org/packages/scater/">scater toolkit</a> for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.</p>
 <h2 id="contributions">Contributions</h2>
 <p>We welcome contributions to our collection. Please create a pull request to our <a href="https://github.com/hemberg-lab/public-scrnaseq-datasets">GitHub repository</a> providing the following information:</p>
 <ol>
-<li>bash file with downloading and processing instructions.</li>
-<li>R script file with the instruction on how to create a scater object.</li>
-<li>Annotation information about the dataset</li>
+<li><code>bash</code> script with downloading and processing instructions (should be put to <code>process-data</code> folder) with a corresponding name (we use the first author surname by default).</li>
+<li><code>R</code> script file with the instruction on how to create a scater object (should be put to <code>create-scater</code> folder) with a corresponding name (we use the first author surname by default).<br />
+<b>Important!</b> For the cell type information please use a column in the annotation table with the name <code>cell_type1</code>. If there are more than one cell type hierarchy please use <code>cell_type2</code>, <code>cell_type3</code> etc.</li>
+<li>Annotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to <code>markdown</code> files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.</li>
 </ol>
               
             </div>
@@ -137,7 +145,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="mouse-dev/" class="btn btn-neutral float-right" title="Mouse Development">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="mouse-brain/" class="btn btn-neutral float-right" title="Mouse Brain">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
     </div>
@@ -165,7 +173,7 @@
       
       
       
-        <span style="margin-left: 15px"><a href="mouse-dev/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="mouse-brain/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -176,5 +184,5 @@
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-02-06 19:50:41
+Build Date UTC : 2017-02-07 11:05:08
 -->
