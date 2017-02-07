@@ -22,16 +22,16 @@ cell_types <- colnames(pData(d))[grepl("cell_type", colnames(pData(d)))]
 ```{r}
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     for(ct in cell_types) {
-        plotPhenoData(d, aes(x = total_counts, y = total_features,
-                                  colour = ct))
+        print(plotPhenoData(d, aes_string(x = "total_counts", y = "total_features", colour = ct)))
     }
 }
 ```
 
 ```{r}
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
-    plotPhenoData(d, aes(x = cell_type1, y = total_features,
-                                  colour = log10_total_counts))
+    for(ct in cell_types) {
+        print(plotPhenoData(d, aes_string(x = ct, y = "total_features", colour = "log10_total_counts")))
+    }
 }
 ```
 
@@ -51,5 +51,7 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 
 ## PCA plot
 ```{r}
-plotPCA(d, colour_by = "cell_type1")
+for(ct in cell_types) {
+    print(plotPCA(d, colour_by = ct))
+}
 ```
