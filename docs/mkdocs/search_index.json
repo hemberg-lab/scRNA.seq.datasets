@@ -3,7 +3,7 @@
         {
             "location": "/",
             "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use \nscater toolkit\n for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash\n script with downloading and processing instructions (should be put to \nprocess-data\n folder) with a corresponding name (we use the first author surname by default).\n\n\nR\n script file with the instruction on how to create a scater object (should be put to \ncreate-scater\n folder) with a corresponding name (we use the first author surname by default).\n\n\n\n\n\n\nNote\n\n\nFor the cell type information please use a column in the annotation table with the name \ncell_type1\n. If there are more than one cell type hierarchy please use \ncell_type2\n, \ncell_type3\n etc.\n\n\n\n\n\n\nAnnotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to \nmarkdown\n files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.",
-            "title": "Home"
+            "title": "About"
         },
         {
             "location": "/#introduction",
@@ -22,13 +22,18 @@
         },
         {
             "location": "/mouse-brain/",
-            "text": "Zeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015).\n\n\n\n\n\n\nSupporting data and visualisations\n\n\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nUMI\n\n\n19972 features\n3005 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Zeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nUMIs\n\n\n19972 features\n3005 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nUsoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nRPMs\n\n\n25334 features\n622 samples\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Brain"
         },
         {
             "location": "/mouse-brain/#zeisel",
-            "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015).    Supporting data and visualisations       Units  Size  scater  Report      UMI  19972 features 3005 samples  SCESet  html",
+            "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)    Supporting data       Units  Size  scater  Report      UMIs  19972 features 3005 samples  SCESet  html",
             "title": "Zeisel"
+        },
+        {
+            "location": "/mouse-brain/#usoskin",
+            "text": "Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)    Supporting data     Note  Excel file  was downloaded from the  Supporting data  and converted to  csv  format on 07/02/2017. The resulting  csv  file is stored  here  and is used to generate the  scater  object and the report.      Units  Size  scater  Report      RPMs  25334 features 622 samples  SCESet  html",
+            "title": "Usoskin"
         },
         {
             "location": "/mouse-dev/",

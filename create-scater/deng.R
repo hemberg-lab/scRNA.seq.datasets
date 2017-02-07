@@ -30,13 +30,12 @@ pd <- new("AnnotatedDataFrame", data = ann)
 deng_rpkms <- deng_rpkms[!duplicated(rownames(deng_rpkms)), ]
 deng_reads <- deng_reads[!duplicated(rownames(deng_reads)), ]
 deng_rpkms <- newSCESet(fpkmData = deng_rpkms, phenoData = pd)
-deng_reads <- newSCESet(fpkmData = deng_reads, phenoData = pd)
+deng_reads <- newSCESet(countData = deng_reads, phenoData = pd)
 
 # run quality controls
 is_exprs(deng_rpkms) <- exprs(deng_rpkms) > 0
 deng_rpkms <- calculateQCMetrics(deng_rpkms)
 
-is_exprs(deng_reads) <- exprs(deng_reads) > 0
 deng_reads <- calculateQCMetrics(deng_reads)
 
 # use gene names as feature symbols

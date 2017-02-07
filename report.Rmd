@@ -14,14 +14,17 @@ library(knitr)
 opts_chunk$set(fig.height = 6, fig.width = 8, fig.align = 'center', echo = FALSE)
 library(scater)
 d <- readRDS(paste0("scater-objects/", params$file))
+cell_types <- colnames(pData(d))[grepl("cell_type", colnames(pData(d)))]
 ```
 
 ## QC of library size and detected genes
 
 ```{r}
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
-    plotPhenoData(d, aes(x = total_counts, y = total_features,
-                                  colour = cell_type1))
+    for(ct in cell_types) {
+        plotPhenoData(d, aes(x = total_counts, y = total_features,
+                                  colour = ct))
+    }
 }
 ```
 

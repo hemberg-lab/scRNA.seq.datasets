@@ -1,6 +1,6 @@
 site_name: scRNA-Seq Public Data
 pages:
-    - Home: index.md
+    - About: index.md
     - Mouse Brain: mouse-brain.md
     - Mouse Development: mouse-dev.md
     - Mouse Tissues: mouse-tissues.md
