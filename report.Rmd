@@ -14,7 +14,7 @@ library(knitr)
 opts_chunk$set(fig.height = 6, fig.width = 8, fig.align = 'center', echo = FALSE)
 library(scater)
 d <- readRDS(paste0("scater-objects/", params$file))
-cell_types <- colnames(pData(d))[grepl("cell_type", colnames(pData(d)))]
+cell_types <- sort(colnames(pData(d))[grepl("cell_type", colnames(pData(d)))])
 ```
 
 ## QC of library size and detected genes
