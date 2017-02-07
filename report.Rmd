@@ -37,12 +37,6 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 }
 ```
 
-## QC of experimental variables
-```{r, message=FALSE, warning=FALSE}
-plotQC(d, type = "expl",
-       variables = c("total_features", "total_counts", "cell_type1"))
-```
-
 ## PCA plot
 ```{r}
 plotPCA(d, colour_by = "cell_type1")
