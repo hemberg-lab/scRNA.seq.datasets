@@ -6,13 +6,12 @@ params:
     set_title:
         value: x
 title: '`r params$set_title`'
-author: "Hemberg Lab"
 date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 ---
 
 ```{r, include=FALSE}
 library(knitr)
-opts_chunk$set(fig.height = 6, fig.width = 6, fig.align = 'center', echo = FALSE)
+opts_chunk$set(fig.height = 6, fig.width = 8, fig.align = 'center', echo = FALSE)
 library(scater)
 d <- readRDS(paste0("scater-objects/", params$file))
 ```
@@ -23,6 +22,11 @@ d <- readRDS(paste0("scater-objects/", params$file))
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     plotPhenoData(d, aes(x = total_counts, y = total_features,
                                   colour = cell_type1))
+}
+```
+
+```{r}
+if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     plotPhenoData(d, aes(x = cell_type1, y = total_features,
                                   colour = log10_total_counts))
 }
@@ -33,6 +37,11 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 ```{r, message=FALSE, warning=FALSE}
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     plotQC(d, type = "highest-expression")
+}
+```
+
+```{r}
+if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     plotQC(d, type = "exprs-freq-vs-mean")
 }
 ```
