@@ -5,6 +5,22 @@ pages:
     - Mouse Development: mouse-dev.md
     - Mouse Tissues: mouse-tissues.md
     - Human Tissues: human-tissues.md
-theme: readthedocs
+theme: 'material'
 docs_dir: 'website'
 site_dir: 'docs'
+google_analytics:
+  - 'UA-91539252-1'
+  - 'auto'
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/hemberg-lab/public-scrnaseq-datasets'
+extra:
+  palette:
+    primary: 'indigo'
+    accent: 'light blue'
+markdown_extensions:
+  - admonition
+
+repo_name: hemberg-lab/public-scrnaseq-datasets
+repo_url: https://github.com/hemberg-lab/public-scrnaseq-datasets/
