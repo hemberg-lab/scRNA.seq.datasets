@@ -1,4 +1,4 @@
-FROM hemberglab/scRNA.seq.datasets-docker
+FROM hemberglab/scrna.seq.datasets-docker
 
 # add our scripts
 ADD process-data /process-data
