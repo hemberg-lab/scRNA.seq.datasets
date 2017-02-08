@@ -2,7 +2,7 @@ site_name: scRNA-Seq Public Data
 pages:
     - About: index.md
     - Mouse Brain: mouse-brain.md
-    - Mouse Development: mouse-dev.md
+    - Mouse Embryo: mouse-embryo.md
     - Mouse Tissues: mouse-tissues.md
     - Human Tissues: human-tissues.md
 theme: 'material'

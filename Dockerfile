@@ -5,7 +5,8 @@ RUN apt-get update \
 	&& apt-get install \
         gawk \
         tar \
-        sed
+        sed \
+        unzip
 
 # add our scripts
 ADD process-data /process-data

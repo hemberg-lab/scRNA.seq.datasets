@@ -15,7 +15,7 @@
     
     
       
-        <title>Mouse Development - scRNA-Seq Public Data</title>
+        <title>Mouse Embryo - scRNA-Seq Public Data</title>
       
     
     
@@ -75,7 +75,7 @@
             
               
             
-            Mouse Development
+            Mouse Embryo
           
         </span>
       </div>
@@ -198,11 +198,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Mouse Development
+        Mouse Embryo
       </label>
     
-    <a href="./" title="Mouse Development" class="md-nav__link md-nav__link--active">
-      Mouse Development
+    <a href="./" title="Mouse Embryo" class="md-nav__link md-nav__link--active">
+      Mouse Embryo
     </a>
     
       
@@ -214,8 +214,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#biase" title="Biase" class="md-nav__link">
+    Biase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deng" title="Deng" class="md-nav__link">
     Deng
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goolam" title="Goolam" class="md-nav__link">
+    Goolam
   </a>
   
 </li>
@@ -268,8 +282,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#biase" title="Biase" class="md-nav__link">
+    Biase
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#deng" title="Deng" class="md-nav__link">
     Deng
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#goolam" title="Goolam" class="md-nav__link">
+    Goolam
   </a>
   
 </li>
@@ -287,15 +315,20 @@
                
               
                 
-                  <h1>Mouse Development</h1>
+                  <h1>Mouse Embryo</h1>
                 
-                <h2 id="deng">Deng</h2>
+                <h2 id="biase">Biase</h2>
 <ul>
-<li><a href="http://dx.doi.org/10.1126/science.1245316">Deng, Q., Ramsköld, D., Reinius, B. &amp; Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193–196 (2014)</a></li>
+<li><a href="http://dx.doi.org/10.1101/gr.177725.114">Biase, F. H., Cao, X. &amp; Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787–1796 (2014)</a></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Cell annotations were manually copied from <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249">GEO</a> and converted to <code>txt</code> format on 08/02/2017. The resulting <code>txt</code> file is stored <a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase_cell_types.txt">here</a> and is used to generate the <code>scater</code> object and the report.</p>
+</div>
 <table>
 <thead>
 <tr>
+<th align="center">Accession</th>
 <th align="center">Units</th>
 <th align="center">Size</th>
 <th align="center">scater</th>
@@ -304,16 +337,70 @@
 </thead>
 <tbody>
 <tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249">GSE57249</a></td>
+<td align="center">FPKMs</td>
+<td align="center">25737 features<br>56 samples</td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/biase.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/biase.html">html</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<h2 id="deng">Deng</h2>
+<ul>
+<li><a href="http://dx.doi.org/10.1126/science.1245316">Deng, Q., Ramsköld, D., Reinius, B. &amp; Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193–196 (2014)</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Units</th>
+<th align="center">Size</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
 <td align="center">reads</td>
 <td align="center">22431 features<br>268 samples</td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-reads.rds">SCESet</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-reads.html">html</a></td>
 </tr>
 <tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
 <td align="center">RPKMs</td>
 <td align="center">22431 features<br>268 samples</td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds">SCESet</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-rpkms.html">html</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<h2 id="goolam">Goolam</h2>
+<ul>
+<li><a href="http://dx.doi.org/10.1016/j.cell.2016.01.047">Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61–74 (2016)</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Units</th>
+<th align="center">Size</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3321/">E-MTAB-3321</a></td>
+<td align="center">reads</td>
+<td align="center">41480 features<br>124 samples</td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/goolam.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/goolam.html">html</a></td>
 </tr>
 </tbody>
 </table>
