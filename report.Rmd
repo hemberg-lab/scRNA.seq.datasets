@@ -10,6 +10,7 @@ date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 ---
 
 ```{r, include=FALSE}
+#test
 library(knitr)
 opts_chunk$set(fig.height = 6, fig.width = 8, fig.align = 'center', echo = FALSE)
 library(scater)
