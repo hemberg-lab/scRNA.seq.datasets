@@ -1,4 +1,4 @@
-site_name: scRNA-Seq Public Data
+site_name: scRNA-Seq Datasets
 pages:
     - About: index.md
     - Mouse Brain: mouse-brain.md

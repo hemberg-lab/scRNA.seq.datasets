@@ -1,12 +1,4 @@
-FROM hemberglab/scater-docker
-
-# these tools are required for processing the data files
-RUN apt-get update \ 
-	&& apt-get install \
-        gawk \
-        tar \
-        sed \
-        unzip
+FROM hemberglab/scRNA.seq.datasets-docker
 
 # add our scripts
 ADD process-data /process-data
