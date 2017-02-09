@@ -1,6 +1,6 @@
 # Public scRNA-Seq Datasets
 
-This repository is used to build [scater] objects and reports (in continuous integration manner) for various publicly available scRNA-Seq datasets used by our group. This pipeline is implemented using docker containers and cloud computing. The resulting website is available [here](https://hemberg-lab.github.io/public-scrnaseq-datasets/). Below are some notes on the pipeline setup.
+This repository is used to build [scater](http://bioconductor.org/packages/scater/) objects and reports (in continuous integration manner) for various publicly available scRNA-Seq datasets used by our group. This pipeline is implemented using docker containers and cloud computing. The resulting website is available [here](https://hemberg-lab.github.io/scRNA.seq.datasets/). Below are some notes on the pipeline setup.
 
 ## Website
 
@@ -67,8 +67,8 @@ sudo apt-get install s3cmd
 
 ```
 # run the pipeline
-docker pull hemberglab/public-scrnaseq-datasets:latest
-docker run hemberglab/public-scrnaseq-datasets:latest
+docker pull hemberglab/scrna.seq.datasets:latest
+docker run hemberglab/scrna.seq.datasets:latest
 
 # copy files from the last run docker container to local disk
 alias dl='docker ps -l -q'
@@ -82,8 +82,9 @@ aws s3 cp scater-reports s3://scrnaseq-public-datasets/scater-reports/ --recursi
 # clean up
 rm -r scater-objects
 rm -r scater-reports
-# delete all containers
+# cleanup after docker usage
 docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
 ```
 
 ### OpenStack Cloud (Sanger)
