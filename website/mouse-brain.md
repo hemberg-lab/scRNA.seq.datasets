@@ -8,7 +8,7 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE59739](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59739)|RPMs|25334 features<br>622 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/usoskin.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/usoskin.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/usoskin.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/usoskin.html)|
+|[GSE59739](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59739)|RPMs|25334 features<br>622 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/usoskin.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/usoskin.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/usoskin.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/usoskin.html)|
 
 <hr>
 ## Zeisel
@@ -18,4 +18,4 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE60361](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361)|UMIs|19972 features<br>3005 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/zeisel.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/zeisel.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/zeisel.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/zeisel.html)|
+|[GSE60361](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361)|UMIs|19972 features<br>3005 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/zeisel.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/zeisel.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/zeisel.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/zeisel.html)|

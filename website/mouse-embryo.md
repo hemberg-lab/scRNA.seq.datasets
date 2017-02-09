@@ -6,7 +6,7 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE57249](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249)|FPKMs|25737 features<br>56 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/biase.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/biase.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/biase.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/biase.html)|
+|[GSE57249](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249)|FPKMs|25737 features<br>56 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/biase.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/biase.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/biase.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/biase.html)|
 
 <hr>
 ## Deng
@@ -14,8 +14,8 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE45719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)|reads|22431 features<br>268 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/deng.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/deng.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-reads.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-reads.html)|
-|[GSE45719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)|RPKMs|22431 features<br>268 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/deng.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/deng.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-rpkms.html)|
+|[GSE45719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)|reads|22431 features<br>268 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-reads.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-reads.html)|
+|[GSE45719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)|RPKMs|22431 features<br>268 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-rpkms.html)|
 
 <hr>
 ## Goolam
@@ -23,4 +23,4 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[E-MTAB-3321](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3321/)|reads|41480 features<br>124 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/goolam.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/goolam.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/goolam.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/goolam.html)|
+|[E-MTAB-3321](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3321/)|reads|41480 features<br>124 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/goolam.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/goolam.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/goolam.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/goolam.html)|

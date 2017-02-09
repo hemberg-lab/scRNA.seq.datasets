@@ -5,7 +5,7 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE63473](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63473)|UMIs|16930 features<br>44808 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/macosko.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/macosko.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/macosko.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/macosko.html)|
+|[GSE63473](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63473)|UMIs|16930 features<br>44808 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/macosko.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/macosko.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/macosko.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/macosko.html)|
 
 <hr>
 ## Shekhar
@@ -18,4 +18,4 @@
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE81904](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81904)|UMIs|13166 features<br>27499 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/shekhar.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/shekhar.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/shekhar.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/shekhar.html)|
+|[GSE81904](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81904)|UMIs|13166 features<br>27499 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/shekhar.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/shekhar.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/shekhar.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/shekhar.html)|
