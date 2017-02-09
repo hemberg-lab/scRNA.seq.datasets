@@ -9,7 +9,7 @@ labs <- read.table("zeisel.txt", nrows = 1, stringsAsFactors = F)
 labs <- as.character(labs[2:length(labs)])
 
 # create cell annotations
-ann <- data.frame(cell_type2 = labs)
+ann <- data.frame(clust_id = labs)
 labs[labs == "1"] = "interneurons"
 labs[labs == "2"] = "s1pyramidal"
 labs[labs == "3"] = "ca1pyramidal"
