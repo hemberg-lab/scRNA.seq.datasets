@@ -36,6 +36,16 @@
             "title": "Zeisel"
         },
         {
+            "location": "/mouse-retina/",
+            "text": "Macosko\n\n\n\n\n\n\nMacosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE63473\n\n\nUMIs\n\n\n16930 features\n44808 samples\n\n\nSCESet\n\n\nhtml",
+            "title": "Mouse Retina"
+        },
+        {
+            "location": "/mouse-retina/#macosko",
+            "text": "Macosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)    Supporting data       Accession  Units  Size  scater  Report      GSE63473  UMIs  16930 features 44808 samples  SCESet  html",
+            "title": "Macosko"
+        },
+        {
             "location": "/mouse-embryo/",
             "text": "Biase\n\n\n\n\nBiase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)\n\n\n\n\n\n\nNote\n\n\nCell annotations were manually copied from \nGEO\n and converted to \ntxt\n format on 08/02/2017. The resulting \ntxt\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57249\n\n\nFPKMs\n\n\n25737 features\n56 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nDeng\n\n\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE45719\n\n\nreads\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\nGSE45719\n\n\nRPKMs\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nGoolam\n\n\n\n\nGoolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-3321\n\n\nreads\n\n\n41480 features\n124 samples\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Embryo"
