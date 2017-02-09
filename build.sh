@@ -3,13 +3,13 @@
 mkdir scater-objects
 
 # process files and create scater objects
-for f in `ls process-data`; do
+for f in `ls bash`; do
     name=(${f//./ })
     mkdir $name
     cd $name
     # download and process a dataset; create scater object
-    sh ../process-data/$name.sh
-    Rscript ../create-scater/$name.R
+    sh ../bash/$name.sh
+    Rscript ../R/$name.R
     cp *.rds ../scater-objects
     cd ..
     rm -rf $name

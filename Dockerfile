@@ -1,8 +1,8 @@
 FROM hemberglab/scrna.seq.datasets-docker
 
 # add our scripts
-ADD process-data /process-data
-ADD create-scater /create-scater
+ADD bash /bash
+ADD R /R
 ADD report.Rmd /
 ADD build.sh /
 
