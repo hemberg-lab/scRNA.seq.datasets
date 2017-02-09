@@ -126,14 +126,14 @@ colnames(d6) <- cols6
 colnames(d7) <- cols7
 
 # merge data files
-tmp <- cbind(d1, d2)
-tmp <- cbind(tmp, d3)
-tmp <- cbind(tmp, d4)
-tmp <- cbind(tmp, d5)
-tmp <- cbind(tmp, d6)
-tmp <- cbind(tmp, d7)
+macosko <- cbind(d1, d2)
+macosko <- cbind(macosko, d3)
+macosko <- cbind(macosko, d4)
+macosko <- cbind(macosko, d5)
+macosko <- cbind(macosko, d6)
+macosko <- cbind(macosko, d7)
 
-macosko <- tmp
+gc()
 
 # cell labels data file is downloaded from:
 # http://mccarrolllab.com/dropseq/
@@ -147,7 +147,6 @@ macosko <- macosko[ , colnames(macosko) %in% cols]
 cells <- cells[order(cells[,1]),]
 cols <- colnames(macosko)
 macosko <- macosko[ , order(cols)]
-colnames(macosko) <- cells[ , 2]
 
 # create scater object
 
