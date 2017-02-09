@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 d <- read.csv("Usoskin+et+al.+External+resources+Table+1.csv", stringsAsFactors = F)
 
 exprs_data <- data.matrix(d[11:nrow(d), 10:ncol(d)])

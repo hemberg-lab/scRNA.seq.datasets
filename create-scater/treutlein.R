@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 d <- read.table("nature13173-s4.txt")
 d <- t(d)
 

@@ -220,6 +220,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#shekhar" title="Shekhar" class="md-nav__link">
+    Shekhar
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -285,6 +292,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#shekhar" title="Shekhar" class="md-nav__link">
+    Shekhar
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -315,6 +329,7 @@
 <th align="center">Accession</th>
 <th align="center">Units</th>
 <th align="center">Size</th>
+<th align="center">Scripts</th>
 <th align="center">scater</th>
 <th align="center">Report</th>
 </tr>
@@ -324,8 +339,46 @@
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63473">GSE63473</a></td>
 <td align="center">UMIs</td>
 <td align="center">16930 features<br>44808 samples</td>
+<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/macosko.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/macosko.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/macosko.rds">SCESet</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/macosko.html">html</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<h2 id="shekhar">Shekhar</h2>
+<ul>
+<li>
+<p><a href="http://dx.doi.org/10.1016/j.cell.2016.07.054">Shekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308–1323.e30 (2016)</a></p>
+</li>
+<li>
+<p><a href="https://portals.broadinstitute.org/single_cell/study/retinal-bipolar-neuron-drop-seq">Supporting data</a></p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To create a scater object we followed instructions from <a href="https://github.com/broadinstitute/BipolarCell2016">BCanalysis.pdf</a> file. We did <b>NOT</b> perform the batch correction.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Units</th>
+<th align="center">Size</th>
+<th align="center">Scripts</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81904">GSE81904</a></td>
+<td align="center">UMIs</td>
+<td align="center">13166 features<br>27499 samples</td>
+<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/process-data/shekhar.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/create-scater/shekhar.R">R</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/shekhar.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/shekhar.html">html</a></td>
 </tr>
 </tbody>
 </table>

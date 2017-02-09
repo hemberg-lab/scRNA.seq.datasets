@@ -1,10 +1,6 @@
-# Deng, Q., Ramsköld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals
-# dynamic, random monoallelic gene expression in mammalian cells. Science 343,
-# 193–196 (2014).
-# http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719
-
 library(scater)
 
+# load data
 deng_rpkms <- read.table("deng-rpkms.txt", check.names = F, header = T)
 deng_reads <- read.table("deng-reads.txt", check.names = F, header = T)
 

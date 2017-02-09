@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 d <- read.table("data.txt", header = T)
 d <- d[!duplicated(d$ID),]
 rownames(d) <- d$ID

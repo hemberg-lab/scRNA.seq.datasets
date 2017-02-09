@@ -22,67 +22,72 @@
         },
         {
             "location": "/mouse-brain/",
-            "text": "Usoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nRPMs\n\n\n25334 features\n622 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nUMIs\n\n\n19972 features\n3005 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Usoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nRPMs\n\n\n25334 features\n622 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nUMIs\n\n\n19972 features\n3005 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Brain"
         },
         {
             "location": "/mouse-brain/#usoskin",
-            "text": "Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)    Supporting data     Note  Excel file  was downloaded from the  Supporting data  and converted to  csv  format on 07/02/2017. The resulting  csv  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Units  Size  scater  Report      GSE59739  RPMs  25334 features 622 samples  SCESet  html",
+            "text": "Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)    Supporting data     Note  Excel file  was downloaded from the  Supporting data  and converted to  csv  format on 07/02/2017. The resulting  csv  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Units  Size  Scripts  scater  Report      GSE59739  RPMs  25334 features 622 samples  bash R  SCESet  html",
             "title": "Usoskin"
         },
         {
             "location": "/mouse-brain/#zeisel",
-            "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)    Supporting data       Accession  Units  Size  scater  Report      GSE60361  UMIs  19972 features 3005 samples  SCESet  html",
+            "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)    Supporting data       Accession  Units  Size  Scripts  scater  Report      GSE60361  UMIs  19972 features 3005 samples  bash R  SCESet  html",
             "title": "Zeisel"
         },
         {
             "location": "/mouse-retina/",
-            "text": "Macosko\n\n\n\n\n\n\nMacosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE63473\n\n\nUMIs\n\n\n16930 features\n44808 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Macosko\n\n\n\n\n\n\nMacosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE63473\n\n\nUMIs\n\n\n16930 features\n44808 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nShekhar\n\n\n\n\n\n\nShekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308\u20131323.e30 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\nNote\n\n\nTo create a scater object we followed instructions from \nBCanalysis.pdf\n file. We did \nNOT\n perform the batch correction.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81904\n\n\nUMIs\n\n\n13166 features\n27499 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Retina"
         },
         {
             "location": "/mouse-retina/#macosko",
-            "text": "Macosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)    Supporting data       Accession  Units  Size  scater  Report      GSE63473  UMIs  16930 features 44808 samples  SCESet  html",
+            "text": "Macosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)    Supporting data       Accession  Units  Size  Scripts  scater  Report      GSE63473  UMIs  16930 features 44808 samples  bash R  SCESet  html",
             "title": "Macosko"
         },
         {
+            "location": "/mouse-retina/#shekhar",
+            "text": "Shekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308\u20131323.e30 (2016)    Supporting data     Note  To create a scater object we followed instructions from  BCanalysis.pdf  file. We did  NOT  perform the batch correction.      Accession  Units  Size  Scripts  scater  Report      GSE81904  UMIs  13166 features 27499 samples  bash R  SCESet  html",
+            "title": "Shekhar"
+        },
+        {
             "location": "/mouse-embryo/",
-            "text": "Biase\n\n\n\n\nBiase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)\n\n\n\n\n\n\nNote\n\n\nCell annotations were manually copied from \nGEO\n and converted to \ntxt\n format on 08/02/2017. The resulting \ntxt\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57249\n\n\nFPKMs\n\n\n25737 features\n56 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nDeng\n\n\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE45719\n\n\nreads\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\nGSE45719\n\n\nRPKMs\n\n\n22431 features\n268 samples\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nGoolam\n\n\n\n\nGoolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-3321\n\n\nreads\n\n\n41480 features\n124 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Biase\n\n\n\n\nBiase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)\n\n\n\n\n\n\nNote\n\n\nCell annotations were manually copied from \nGEO\n and converted to \ntxt\n format on 08/02/2017. The resulting \ntxt\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57249\n\n\nFPKMs\n\n\n25737 features\n56 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nDeng\n\n\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE45719\n\n\nreads\n\n\n22431 features\n268 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\nGSE45719\n\n\nRPKMs\n\n\n22431 features\n268 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nGoolam\n\n\n\n\nGoolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-3321\n\n\nreads\n\n\n41480 features\n124 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Embryo"
         },
         {
             "location": "/mouse-embryo/#biase",
-            "text": "Biase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)    Note  Cell annotations were manually copied from  GEO  and converted to  txt  format on 08/02/2017. The resulting  txt  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Units  Size  scater  Report      GSE57249  FPKMs  25737 features 56 samples  SCESet  html",
+            "text": "Biase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)    Note  Cell annotations were manually copied from  GEO  and converted to  txt  format on 08/02/2017. The resulting  txt  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Units  Size  Scripts  scater  Report      GSE57249  FPKMs  25737 features 56 samples  bash R  SCESet  html",
             "title": "Biase"
         },
         {
             "location": "/mouse-embryo/#deng",
-            "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)      Accession  Units  Size  scater  Report      GSE45719  reads  22431 features 268 samples  SCESet  html    GSE45719  RPKMs  22431 features 268 samples  SCESet  html",
+            "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE45719  reads  22431 features 268 samples  bash R  SCESet  html    GSE45719  RPKMs  22431 features 268 samples  bash R  SCESet  html",
             "title": "Deng"
         },
         {
             "location": "/mouse-embryo/#goolam",
-            "text": "Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)      Accession  Units  Size  scater  Report      E-MTAB-3321  reads  41480 features 124 samples  SCESet  html",
+            "text": "Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)      Accession  Units  Size  Scripts  scater  Report      E-MTAB-3321  reads  41480 features 124 samples  bash R  SCESet  html",
             "title": "Goolam"
         },
         {
             "location": "/mouse-tissues/",
-            "text": "Treutlein\n\n\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE52583\n\n\nFPKMs\n\n\n23271 features\n80 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Treutlein\n\n\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE52583\n\n\nFPKMs\n\n\n23271 features\n80 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Tissues"
         },
         {
             "location": "/mouse-tissues/#treutlein",
-            "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)      Accession  Units  Size  scater  Report      GSE52583  FPKMs  23271 features 80 samples  SCESet  html",
+            "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE52583  FPKMs  23271 features 80 samples  bash R  SCESet  html",
             "title": "Treutlein"
         },
         {
             "location": "/human-tissues/",
-            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nSCESet\n\n\nhtml",
+            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Human Tissues"
         },
         {
             "location": "/human-tissues/#patel",
-            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Units  Size  scater  Report      GSE57872  TPMs  5948 features 430 samples  SCESet  html",
+            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE57872  TPMs  5948 features 430 samples  bash R  SCESet  html",
             "title": "Patel"
         }
     ]

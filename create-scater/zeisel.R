@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 zeisel <- read.table("zeisel.txt", sep = "\t", header = T)
 rownames(zeisel) <- zeisel[ , 1]
 zeisel <- zeisel[ , 3:dim(zeisel)[2]]

@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 tab5rows <-
     read.table("data1.txt",
                header = TRUE, nrows = 5)
@@ -173,8 +174,11 @@ cells <- cells[,2:3]
 colnames(cells)[1] <- "clust_id"
 
 pd <- new("AnnotatedDataFrame", data = cells)
+
+# create scater object
 sceset <- newSCESet(countData = macosko, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
 sceset@featureData@data$feature_symbol <- featureNames(sceset)
-saveRDS(sceset, file = "macosko.rds")
 
+# save data
+saveRDS(sceset, file = "macosko.rds")

@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 load("bipolar_data_Cell2016.Rdata")
 
 # Remove libraries that contain more than 10% mitochondrially derived transcripts
@@ -56,9 +57,6 @@ pd <- new("AnnotatedDataFrame", data = d)
 sceset <- newSCESet(countData = bipolar_dge, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
 sceset@featureData@data$feature_symbol <- featureNames(sceset)
+
+# save data
 saveRDS(sceset, file = "shekhar.rds")
-
-
-
-
-

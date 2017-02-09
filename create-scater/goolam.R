@@ -1,5 +1,6 @@
 library(scater)
 
+# load data
 d <- read.table("Goolam_et_al_2015_count_table.tsv", header = T)
 
 # cell annotations

@@ -1,3 +1,6 @@
+#!/bin/bash
+
+# download data
 wget -O data.tar \
 'http://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE45719&format=file'
 mkdir data
