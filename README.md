@@ -6,6 +6,10 @@ This repository is used to build [scater](http://bioconductor.org/packages/scate
 
 The website is generated using [MkDocs](http://www.mkdocs.org/) generator. Links to S3 storage and data annotations are added manually. If you are creating a pull request and adding new data please add its annotations to one of the files in the `website` folder.
 
+## S3 storage
+
+To list files on the S3 storage please use this [link](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html).
+
 ## Instance setup
 
 ### AWS

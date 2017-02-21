@@ -18,6 +18,14 @@
 |[GSE45719](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719)|RPKMs|22431 features<br>268 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-rpkms.html)|
 
 <hr>
+## Fan
+* [Fan, X. et al. Single-cell RNA-seq transcriptome analysis of linear and circular RNAs in mouse preimplantation embryos. Genome Biol. 16, 148 (2015)](http://dx.doi.org/10.1186/s13059-015-0706-1)
+
+|Accession|Units|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE53386](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53386)|FPKMs|26357 features<br>69 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/fan.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/fan.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/fan.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/fan.html)|
+
+<hr>
 ## Goolam
 * [Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61–74 (2016)](http://dx.doi.org/10.1016/j.cell.2016.01.047)
 
