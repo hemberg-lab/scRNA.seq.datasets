@@ -9,7 +9,7 @@ for f in `ls bash`; do
     mkdir $name
     cd $name
     # download and process a dataset; create scater object
-    sh ../bash/$name.sh
+    bash ../bash/$name.sh
     Rscript ../R/$name.R
     cp *.rds ../scater-objects
     cd ..
