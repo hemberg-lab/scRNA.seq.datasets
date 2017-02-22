@@ -10,7 +10,12 @@ gunzip data/*
 cd data
 touch small.txt
 touch large.txt
-for f in `ls *{oocyte,zygote,2-cell,4-cell,8-cell,blastocyst,morula,TE,ICM}*`
+
+# turn on globbing extension to be able to `ls` with multiple patterns
+# see more details here:
+# http://unix.stackexchange.com/questions/50220/using-or-patterns-in-shell-wildcards
+shopt -s extglob
+for f in `ls *@(oocyte|zygote|2-cell|4-cell|8-cell|blastocyst|morula|TE|ICM})*`
 do
     # number of columns in the file
     cols=$(awk '{print NF}' $f | sort -nu | tail -n 1)

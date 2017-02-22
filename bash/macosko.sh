@@ -25,4 +25,6 @@ gunzip data6.txt.gz
 gunzip data7.txt.gz
 
 # download cluster labels
-wget http://mccarrolllab.com/wp-content/uploads/2015/05/retina_clusteridentities.txt
+# downloaded from mccarroll lab website on 21-2-17:
+# http://mccarrolllab.com/wp-content/uploads/2015/05/retina_clusteridentities.txt
+wget https://scrnaseq-public-datasets.s3.amazonaws.com/manual-data/retina_clusteridentities.txt

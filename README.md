@@ -40,30 +40,38 @@ sudo apt-get install s3cmd
 2. Add the instance to the `default`, `cloudforms_icmp_in`, `cloudforms_ssh_in` `cloudforms_web_in` security groups.
 3. Create additional security group: `TCP` with port 8080 (this is needed for Jenkins) and add your instance to this group.
 4. Associate a floating IP (FLOATING_IP) number with your instance.
-5. In the instance install openjdk-7-jdk:
+5. Login to instance:
+```
+ssh -i ~/.ssh/your_key.pem ubuntu@FLOATING_IP
+```
+Then become root using this command:
+```
+sudo su -
+```
+6. In the instance install openjdk-7-jdk:
 ```
 sudo apt-get update
 sudo apt-get install openjdk-7-jdk
 ```
-6. In the instance [install Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu).
+7. In the instance [install Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu).
 
 To setup Jenkins after installation go to http://FLOATING_IP:8080 (this is only accessible via Sanger wired network).
 
-7. In the instance [install docker](https://docs.docker.com/engine/installation/linux/ubuntu/). 
+8. In the instance [install docker](https://docs.docker.com/engine/installation/linux/ubuntu/). 
 
-8. Add permission for Jenkins to run Docker:
+9. Add permission for Jenkins to run Docker:
 ```
 sudo usermod -aG docker jenkins
 ```
 
 Hard reboot your instance after that. Now Jenkins can run docker images.
 
-9. Install `s3cmd` utility to be able to upload data to the S3 storage:
+10. Install `s3cmd` utility to be able to upload data to the S3 storage:
 ```
 sudo apt-get install s3cmd
 ```
 
-10. In Jenkins Export S3 key ID, secret key and region as environmental variables. Use secret text option provided by Jenkins. Some details available [here](http://serverfault.com/questions/724730/unable-to-use-aws-cli-in-jenkins-due-to-unable-to-locate-credentials-error).
+11. In Jenkins Export S3 key ID, secret key and region as environmental variables. Use secret text option provided by Jenkins. Some details available [here](http://serverfault.com/questions/724730/unable-to-use-aws-cli-in-jenkins-due-to-unable-to-locate-credentials-error).
 
 ## Jenkins build
 
