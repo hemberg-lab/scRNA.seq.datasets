@@ -1,8 +1,10 @@
 ## Biase
 * [Biase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787–1796 (2014)](http://dx.doi.org/10.1101/gr.177725.114)
 
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/biase/)
+
 !!! note
-    Cell annotations were manually copied from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249) and converted to `txt` format on 08/02/2017. The resulting `txt` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase_cell_types.txt) and is used to generate the `scater` object and the report.
+    Cell annotations were manually copied from [GEO](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249) and converted to `txt` format on 08/02/2017. The resulting `txt` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase/biase_cell_types.txt) and is used to generate the `scater` object and the report.
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|

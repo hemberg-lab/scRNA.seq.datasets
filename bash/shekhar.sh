@@ -6,6 +6,6 @@ wget -O bipolar_data_Cell2016.Rdata.gz \
 # unzip data
 gunzip bipolar_data_Cell2016.Rdata.gz
 # download additional data
-# downloaded from single cell portal on 2-2-17:
+# downloaded from single cell portal on 02-02-17:
 # https://portals.broadinstitute.org/single_cell/data/retinal-bipolar-neuron-drop-seq/clust_retinal_bipolar.txt
-wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/clust_retinal_bipolar.txt
+wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/shekhar/clust_retinal_bipolar.txt

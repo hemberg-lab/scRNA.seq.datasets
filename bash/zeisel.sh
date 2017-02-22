@@ -2,7 +2,7 @@
 
 # download data
 wget -O zeisel.txt \
-'https://storage.googleapis.com/linnarsson-lab-www-blobs/blobs/cortex/expression_mRNA_17-Aug-2014.txt'
+'https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/zeisel/expression_mRNA_17-Aug-2014.txt'
 
 # remove some headers
 sed -i '1d' zeisel.txt

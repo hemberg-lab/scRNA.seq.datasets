@@ -1,10 +1,26 @@
+## Tasic
+* [Tasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335–346 (2016)](http://dx.doi.org/10.1038/nn.4216)
+
+* [Supporting data](http://casestudies.brain-map.org/celltax)
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/tasic/)
+
+!!! note
+    All processed files were downloaded from [brain map website](http://casestudies.brain-map.org/celltax) on 22/02/2017. These files are stored [here](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/tasic/) and are used to generate the `scater` object and the report.
+
+|Accession|Units|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE71585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585)|reads|24150 features<br>1679 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-reads.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-reads.html)|
+|[GSE71585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585)|RPKMs|24150 features<br>1679 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-rpkms.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-rpkms.html)|
+
+<hr>
 ## Usoskin
 * [Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145–153 (2015)](http://dx.doi.org/10.1038/nn.3881)
 
 * [Supporting data](http://linnarssonlab.org/drg/)
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/usoskin/)
 
 !!! note
-    [Excel file](https://storage.googleapis.com/linnarsson-lab-www-blobs/blobs/drg/Usoskin%20et%20al.%20External%20resources%20Table%201.xlsx) was downloaded from the [Supporting data](http://linnarssonlab.org/drg/) and converted to `csv` format on 07/02/2017. The resulting `csv` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/Usoskin+et+al.+External+resources+Table+1.csv) and is used to generate the `scater` object and the report.
+    [Excel file](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.xlsx) was downloaded from the [Supporting data](http://linnarssonlab.org/drg/) and converted to `csv` format on 07/02/2017. The resulting `csv` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.csv) and is used to generate the `scater` object and the report.
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -15,6 +31,10 @@
 * [Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138–1142 (2015)](http://dx.doi.org/10.1126/science.aaa1934)
 
 * [Supporting data](http://linnarssonlab.org/cortex/)
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/zeisel/)
+
+!!! note
+    [Txt file](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/zeisel/expression_mRNA_17-Aug-2014.txt) was downloaded from the [Supporting data](http://linnarssonlab.org/cortex/) and on 22/02/2017. This file is used to generate the `scater` object and the report.
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|

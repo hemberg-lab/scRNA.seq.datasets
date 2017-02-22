@@ -6,4 +6,4 @@ wget -O data.txt.gz \
 gunzip data.txt.gz
 
 # download extra data
-wget 'https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase_cell_types.txt'
+wget 'https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase/biase_cell_types.txt'

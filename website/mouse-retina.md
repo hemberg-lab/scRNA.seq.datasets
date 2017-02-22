@@ -2,6 +2,10 @@
 * [Macosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202–1214 (2015)](http://dx.doi.org/10.1016/j.cell.2015.05.002)
 
 * [Supporting data](http://mccarrolllab.com/dropseq/)
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/macosko/)
+
+!!! note
+    To create a scater object we followed instructions from [BCanalysis.pdf](https://github.com/broadinstitute/BipolarCell2016) file. We did <b>NOT</b> perform the batch correction. Cell labels were downloaded from [here](http://mccarrolllab.com/dropseq/) on 22/02/2017 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/macosko/retina_clusteridentities.txt).
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -12,9 +16,10 @@
 * [Shekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308–1323.e30 (2016)](http://dx.doi.org/10.1016/j.cell.2016.07.054)
 
 * [Supporting data](https://portals.broadinstitute.org/single_cell/study/retinal-bipolar-neuron-drop-seq)
+* [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/shekhar/)
 
 !!! note
-    To create a scater object we followed instructions from [BCanalysis.pdf](https://github.com/broadinstitute/BipolarCell2016) file. We did <b>NOT</b> perform the batch correction.
+    To create a scater object we followed instructions from [BCanalysis.pdf](https://github.com/broadinstitute/BipolarCell2016) file. We did <b>NOT</b> perform the batch correction. Cell labels were downloaded from [here](https://portals.broadinstitute.org/single_cell/study/retinal-bipolar-neuron-drop-seq) on 22/02/2017 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/shekhar/clust_retinal_bipolar.txt).
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|

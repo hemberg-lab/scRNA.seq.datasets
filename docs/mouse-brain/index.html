@@ -203,6 +203,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tasic" title="Tasic" class="md-nav__link">
+    Tasic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usoskin" title="Usoskin" class="md-nav__link">
     Usoskin
   </a>
@@ -286,6 +293,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tasic" title="Tasic" class="md-nav__link">
+    Tasic
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#usoskin" title="Usoskin" class="md-nav__link">
     Usoskin
   </a>
@@ -314,7 +328,53 @@
                 
                   <h1>Mouse Brain</h1>
                 
-                <h2 id="usoskin">Usoskin</h2>
+                <h2 id="tasic">Tasic</h2>
+<ul>
+<li>
+<p><a href="http://dx.doi.org/10.1038/nn.4216">Tasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335–346 (2016)</a></p>
+</li>
+<li>
+<p><a href="http://casestudies.brain-map.org/celltax">Supporting data</a></p>
+</li>
+<li><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/tasic/">Manual data</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All processed files were downloaded from <a href="http://casestudies.brain-map.org/celltax">brain map website</a> on 22/02/2017. These files are stored <a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/tasic/">here</a> and are used to generate the <code>scater</code> object and the report.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Units</th>
+<th align="center">Size</th>
+<th align="center">Scripts</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585">GSE71585</a></td>
+<td align="center">reads</td>
+<td align="center">24150 features<br>1679 samples</td>
+<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R">R</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-reads.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-reads.html">html</a></td>
+</tr>
+<tr>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585">GSE71585</a></td>
+<td align="center">RPKMs</td>
+<td align="center">24150 features<br>1679 samples</td>
+<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R">R</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-rpkms.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-rpkms.html">html</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+<h2 id="usoskin">Usoskin</h2>
 <ul>
 <li>
 <p><a href="http://dx.doi.org/10.1038/nn.3881">Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145–153 (2015)</a></p>
@@ -322,10 +382,11 @@
 <li>
 <p><a href="http://linnarssonlab.org/drg/">Supporting data</a></p>
 </li>
+<li><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/usoskin/">Manual data</a></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><a href="https://storage.googleapis.com/linnarsson-lab-www-blobs/blobs/drg/Usoskin%20et%20al.%20External%20resources%20Table%201.xlsx">Excel file</a> was downloaded from the <a href="http://linnarssonlab.org/drg/">Supporting data</a> and converted to <code>csv</code> format on 07/02/2017. The resulting <code>csv</code> file is stored <a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/Usoskin+et+al.+External+resources+Table+1.csv">here</a> and is used to generate the <code>scater</code> object and the report.</p>
+<p><a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.xlsx">Excel file</a> was downloaded from the <a href="http://linnarssonlab.org/drg/">Supporting data</a> and converted to <code>csv</code> format on 07/02/2017. The resulting <code>csv</code> file is stored <a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.csv">here</a> and is used to generate the <code>scater</code> object and the report.</p>
 </div>
 <table>
 <thead>
@@ -359,7 +420,12 @@
 <li>
 <p><a href="http://linnarssonlab.org/cortex/">Supporting data</a></p>
 </li>
+<li><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/zeisel/">Manual data</a></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/zeisel/expression_mRNA_17-Aug-2014.txt">Txt file</a> was downloaded from the <a href="http://linnarssonlab.org/cortex/">Supporting data</a> and on 22/02/2017. This file is used to generate the <code>scater</code> object and the report.</p>
+</div>
 <table>
 <thead>
 <tr>
