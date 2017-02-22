@@ -13,7 +13,6 @@ erccs <- read.csv("ercc_counts.csv")
 rownames(erccs) <- erccs[,1]
 erccs <- erccs[,2:ncol(erccs)]
 
-rpkms <- rbind(rpkms, erccs)
 reads <- rbind(reads, erccs)
 
 # load metadata
@@ -40,9 +39,8 @@ pd <- new("AnnotatedDataFrame", data = ann_col)
 
 # rpkms
 sceset_rpkms <- newSCESet(fpkmData = as.matrix(rpkms), phenoData = pd)
-ercc <- featureNames(sceset_rpkms)[grepl("ERCC-", featureNames(sceset_rpkms))]
 is_exprs(sceset_rpkms) <- exprs(sceset_rpkms) > 0
-sceset_rpkms <- calculateQCMetrics(sceset_rpkms, feature_controls = list(ERCC = ercc))
+sceset_rpkms <- calculateQCMetrics(sceset_rpkms)
 # use gene names as feature symbols
 sceset_rpkms@featureData@data$feature_symbol <- featureNames(sceset_rpkms)
 saveRDS(sceset_rpkms, "tasic-rpkms.rds")
