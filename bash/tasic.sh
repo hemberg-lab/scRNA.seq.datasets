@@ -2,6 +2,8 @@
 
 # data dowloaded from http://casestudies.brain-map.org/celltax on 22-02-17
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/genes_rpkm.csv
+wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/genes_counts.csv
+wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/ercc_counts.csv
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cell_metadata.csv
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cell_classification.csv
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cluster_metadata.csv
