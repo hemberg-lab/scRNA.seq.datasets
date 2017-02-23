@@ -46,7 +46,7 @@ sceset_rpkms@featureData@data$feature_symbol <- featureNames(sceset_rpkms)
 saveRDS(sceset_rpkms, "tasic-rpkms.rds")
 
 # reads
-sceset_reads <- newSCESet(fpkmData = as.matrix(reads), phenoData = pd)
+sceset_reads <- newSCESet(countData = as.matrix(reads), phenoData = pd)
 ercc <- featureNames(sceset_reads)[grepl("ERCC-", featureNames(sceset_reads))]
 sceset_reads <- calculateQCMetrics(sceset_reads, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
