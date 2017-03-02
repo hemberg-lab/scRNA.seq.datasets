@@ -5,11 +5,11 @@
 * [Manual data](https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/macosko/)
 
 !!! note
-    To create a scater object we followed instructions from [BCanalysis.pdf](https://github.com/broadinstitute/BipolarCell2016) file. We did <b>NOT</b> perform the batch correction. Cell labels were downloaded from [here](http://mccarrolllab.com/dropseq/) on 22/02/2017 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/macosko/retina_clusteridentities.txt).
+    Proper gene names were downloaded from Ensembl Biomart on 01/03/2017 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/macosko/mart_export.txt). Cell labels were downloaded from [here](http://mccarrolllab.com/dropseq/) on 22/02/2017 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/macosko/retina_clusteridentities.txt).
 
 |Accession|Units|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE63473](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63473)|UMIs|16930 features<br>44808 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/macosko.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/macosko.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/macosko.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/macosko.html)|
+|[GSE63473](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63473)|UMIs|23288 features<br>44808 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/macosko.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/macosko.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/macosko.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/macosko.html)|
 
 <hr>
 ## Shekhar

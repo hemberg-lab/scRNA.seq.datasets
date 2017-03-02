@@ -8,7 +8,7 @@ wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cell_me
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cell_classification.csv
 wget https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/tasic/cluster_metadata.csv
 
-## this looks like raw data containing more cells (probably outliers)
+## looks like raw data containing more cells (probably outliers)
 # wget -O clusts.csv.gz 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE71585&format=file&file=GSE71585%5FClustering%5FResults%2Ecsv%2Egz'
 # wget -O ercc_rpkm.csv.gz 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE71585&format=file&file=GSE71585%5FERCC%5Fand%5FtdTomato%5FRPKM%2Ecsv%2Egz'
 # wget -O ercc_counts.csv.gz 'https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE71585&format=file&file=GSE71585%5FERCC%5Fand%5FtdTomato%5Fcounts%2Ecsv%2Egz'
