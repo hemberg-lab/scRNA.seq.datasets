@@ -51,7 +51,7 @@ colnames(cells)[1] <- "clust_id"
 pd <- new("AnnotatedDataFrame", data = cells)
 
 # create scater object
-sceset <- newSCESet(countData = macosko, phenoData = pd)
+sceset <- newSCESet(countData = d, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
 sceset@featureData@data$feature_symbol <- featureNames(sceset)
 
