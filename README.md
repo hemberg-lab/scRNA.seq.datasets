@@ -75,50 +75,9 @@ sudo apt-get install s3cmd
 
 ## Jenkins build
 
-### AWS
-
 ```
-# run the pipeline
-docker pull hemberglab/scrna.seq.datasets:latest
-docker run hemberglab/scrna.seq.datasets:latest
-
-# copy files from the last run docker container to local disk
-alias dl='docker ps -l -q'
-docker cp `dl`:scater-objects $WORKSPACE/
-docker cp `dl`:scater-reports $WORKSPACE/
-
-# copy files to S3
-aws s3 cp scater-objects s3://scrnaseq-public-datasets/scater-objects/ --recursive
-aws s3 cp scater-reports s3://scrnaseq-public-datasets/scater-reports/ --recursive
-
-# clean up
-rm -r scater-objects
-rm -r scater-reports
-# cleanup after docker usage
-docker rm $(docker ps -a -q)
-docker rmi $(docker images -q)
-```
-
-### OpenStack Cloud (Sanger)
-
-```
-# run the pipeline
-docker pull hemberglab/public-scrnaseq-datasets:latest
-docker run hemberglab/public-scrnaseq-datasets:latest
-
-# copy files from the last run docker container to local disk
-alias dl='docker ps -l -q'
-docker cp `dl`:scater-objects $WORKSPACE/
-docker cp `dl`:scater-reports $WORKSPACE/
-
-# copy files to S3
-
-
-# clean up
-rm -r scater-objects
-rm -r scater-reports
-# delete all containers
-docker rm $(docker ps -a -q)
+# build and deploy
+sh deploy.sh $WORKSPACE
 ```
 
 ## AWS Calculator
