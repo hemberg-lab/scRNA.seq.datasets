@@ -92,13 +92,18 @@
         },
         {
             "location": "/human-tissues/",
-            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nTPMs\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Human Tissues"
         },
         {
             "location": "/human-tissues/#patel",
             "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE57872  TPMs  5948 features 430 samples  bash R  SCESet  html",
             "title": "Patel"
+        },
+        {
+            "location": "/human-tissues/#pollen",
+            "text": "Pollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).    Note  TPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored  here .      Accession  Units  Size  Scripts  scater  Report      SRP041736  TPMs  23730 features 301 samples  bash R  SCESet  html",
+            "title": "Pollen"
         }
     ]
 }
