@@ -15,7 +15,7 @@ google_analytics:
 extra:
   social:
     - type: 'github'
-      link: 'https://github.com/hemberg-lab/public-scrnaseq-datasets'
+      link: 'https://github.com/hemberg-lab/scRNA.seq.datasets'
 extra:
   palette:
     primary: 'indigo'
@@ -23,5 +23,5 @@ extra:
 markdown_extensions:
   - admonition
 
-repo_name: hemberg-lab/public-scrnaseq-datasets
-repo_url: https://github.com/hemberg-lab/public-scrnaseq-datasets/
+repo_name: hemberg-lab/scRNA.seq.datasets
+repo_url: https://github.com/hemberg-lab/scRNA.seq.datasets
