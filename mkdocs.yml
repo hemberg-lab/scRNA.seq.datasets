@@ -2,9 +2,10 @@ site_name: scRNA-Seq Datasets
 pages:
     - About: index.md
     - Mouse Brain: mouse-brain.md
-    - Mouse Retina: mouse-retina.md
     - Mouse Embryo: mouse-embryo.md
+    - Mouse Retina: mouse-retina.md
     - Mouse Tissues: mouse-tissues.md
+    - Human Pancreas: human-pancreas.md
     - Human Tissues: human-tissues.md
 theme: 'material'
 docs_dir: 'website'

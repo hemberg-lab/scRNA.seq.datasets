@@ -1,0 +1,9 @@
+## Muraro
+* [Muraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385–394.e3 (2016)](http://dx.doi.org/10.1016/j.cels.2016.09.002)
+
+!!! note
+    Cell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/muraro/cell_type_annotation_Cels2016.csv).
+
+|Accession|Units|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE85241](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE85241)|Normalised Reads|19140 features<br>2126 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/muraro.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/muraro.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/muraro.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/muraro.html)|
