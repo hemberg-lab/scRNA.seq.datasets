@@ -21,6 +21,36 @@
             "title": "Contributions"
         },
         {
+            "location": "/human-pancreas/",
+            "text": "Muraro\n\n\n\n\nMuraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE85241\n\n\nNormalised Reads\n\n\n19140 features\n2126 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nSegerstolpe\n\n\n\n\nSegerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-5061\n\n\nReads\n\n\n25525 features\n3514 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Human Pancreas"
+        },
+        {
+            "location": "/human-pancreas/#muraro",
+            "text": "Muraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)    Note  Cell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored  here .      Accession  Units  Size  Scripts  scater  Report      GSE85241  Normalised Reads  19140 features 2126 samples  bash R  SCESet  html",
+            "title": "Muraro"
+        },
+        {
+            "location": "/human-pancreas/#segerstolpe",
+            "text": "Segerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)      Accession  Units  Size  Scripts  scater  Report      E-MTAB-5061  Reads  25525 features 3514 samples  bash R  SCESet  html",
+            "title": "Segerstolpe"
+        },
+        {
+            "location": "/human-tissues/",
+            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nTPMs\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Human Tissues"
+        },
+        {
+            "location": "/human-tissues/#patel",
+            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE57872  TPMs  5948 features 430 samples  bash R  SCESet  html",
+            "title": "Patel"
+        },
+        {
+            "location": "/human-tissues/#pollen",
+            "text": "Pollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).    Note  TPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored  here .      Accession  Units  Size  Scripts  scater  Report      SRP041736  TPMs  23730 features 301 samples  bash R  SCESet  html",
+            "title": "Pollen"
+        },
+        {
             "location": "/mouse-brain/",
             "text": "Tasic\n\n\n\n\n\n\nTasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335\u2013346 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nAll processed files were downloaded from \nbrain map website\n on 22/02/2017. These files are stored \nhere\n and are used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nreads\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\nGSE71585\n\n\nRPKMs\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nUsoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nRPMs\n\n\n25334 features\n622 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nTxt file\n was downloaded from the \nSupporting data\n and on 22/02/2017. This file is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nUMIs\n\n\n19972 features\n3005 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Mouse Brain"
@@ -89,31 +119,6 @@
             "location": "/mouse-tissues/#treutlein",
             "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE52583  FPKMs  23271 features 80 samples  bash R  SCESet  html",
             "title": "Treutlein"
-        },
-        {
-            "location": "/human-pancreas/",
-            "text": "Muraro\n\n\n\n\nMuraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE85241\n\n\nNormalised Reads\n\n\n19140 features\n2126 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Human Pancreas"
-        },
-        {
-            "location": "/human-pancreas/#muraro",
-            "text": "Muraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)    Note  Cell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored  here .      Accession  Units  Size  Scripts  scater  Report      GSE85241  Normalised Reads  19140 features 2126 samples  bash R  SCESet  html",
-            "title": "Muraro"
-        },
-        {
-            "location": "/human-tissues/",
-            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nTPMs\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nTPMs\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Human Tissues"
-        },
-        {
-            "location": "/human-tissues/#patel",
-            "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Units  Size  Scripts  scater  Report      GSE57872  TPMs  5948 features 430 samples  bash R  SCESet  html",
-            "title": "Patel"
-        },
-        {
-            "location": "/human-tissues/#pollen",
-            "text": "Pollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).    Note  TPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored  here .      Accession  Units  Size  Scripts  scater  Report      SRP041736  TPMs  23730 features 301 samples  bash R  SCESet  html",
-            "title": "Pollen"
         }
     ]
 }

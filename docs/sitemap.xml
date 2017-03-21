@@ -11,6 +11,22 @@
 
     
     <url>
+     <loc>/human-pancreas/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/human-tissues/</loc>
+     <lastmod>2017-03-21</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
      <loc>/mouse-brain/</loc>
      <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
@@ -36,22 +52,6 @@
     
     <url>
      <loc>/mouse-tissues/</loc>
-     <lastmod>2017-03-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/human-pancreas/</loc>
-     <lastmod>2017-03-21</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>/human-tissues/</loc>
      <lastmod>2017-03-21</lastmod>
      <changefreq>daily</changefreq>
     </url>
