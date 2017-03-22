@@ -5,6 +5,7 @@ pages:
     - Human Tissues: human-tissues.md
     - Mouse Brain: mouse-brain.md
     - Mouse Embryo: mouse-embryo.md
+    - Mouse Pancreas: mouse-pancreas.md
     - Mouse Retina: mouse-retina.md
     - Mouse Tissues: mouse-tissues.md
 theme: 'material'

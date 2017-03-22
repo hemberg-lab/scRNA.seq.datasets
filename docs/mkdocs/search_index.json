@@ -22,8 +22,13 @@
         },
         {
             "location": "/human-pancreas/",
-            "text": "Muraro\n\n\n\n\nMuraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE85241\n\n\nNormalised Reads\n\n\n19140 features\n2126 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nSegerstolpe\n\n\n\n\nSegerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-5061\n\n\nReads\n\n\n25525 features\n3514 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n20125 features\n8569 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nMuraro\n\n\n\n\nMuraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE85241\n\n\nNormalised Reads\n\n\n19140 features\n2126 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nSegerstolpe\n\n\n\n\nSegerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nUnits\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-5061\n\n\nReads\n\n\n25525 features\n3514 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Human Pancreas"
+        },
+        {
+            "location": "/human-pancreas/#baron",
+            "text": "Baron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE84133  inDrop  20125 features 8569 samples  bash R  SCESet  html",
+            "title": "Baron"
         },
         {
             "location": "/human-pancreas/#muraro",
@@ -94,6 +99,16 @@
             "location": "/mouse-embryo/#goolam",
             "text": "Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)      Accession  Units  Size  Scripts  scater  Report      E-MTAB-3321  reads  41480 features 124 samples  bash R  SCESet  html",
             "title": "Goolam"
+        },
+        {
+            "location": "/mouse-pancreas/",
+            "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n14878 features\n1886 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Mouse Pancreas"
+        },
+        {
+            "location": "/mouse-pancreas/#baron",
+            "text": "Baron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE84133  inDrop  14878 features 1886 samples  bash R  SCESet  html",
+            "title": "Baron"
         },
         {
             "location": "/mouse-retina/",

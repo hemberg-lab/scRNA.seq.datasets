@@ -15,7 +15,7 @@
     
     
       
-        <title>Mouse Embryo - scRNA-Seq Datasets</title>
+        <title>Mouse Pancreas - scRNA-Seq Datasets</title>
       
     
     
@@ -75,7 +75,7 @@
             
               
             
-            Mouse Embryo
+            Mouse Pancreas
           
         </span>
       </div>
@@ -216,15 +216,26 @@
       
   <li class="md-nav__item">
     
+      <a href="../mouse-embryo/" title="Mouse Embryo" class="md-nav__link">
+        Mouse Embryo
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Mouse Embryo
+        Mouse Pancreas
       </label>
     
-    <a href="./" title="Mouse Embryo" class="md-nav__link md-nav__link--active">
-      Mouse Embryo
+    <a href="./" title="Mouse Pancreas" class="md-nav__link md-nav__link--active">
+      Mouse Pancreas
     </a>
     
       
@@ -236,29 +247,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#biase" title="Biase" class="md-nav__link">
-    Biase
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deng" title="Deng" class="md-nav__link">
-    Deng
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fan" title="Fan" class="md-nav__link">
-    Fan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goolam" title="Goolam" class="md-nav__link">
-    Goolam
+  <a href="#baron" title="Baron" class="md-nav__link">
+    Baron
   </a>
   
 </li>
@@ -266,17 +256,6 @@
     </ul>
   
 </nav>
-    
-  </li>
-
-    
-      
-      
-  <li class="md-nav__item">
-    
-      <a href="../mouse-pancreas/" title="Mouse Pancreas" class="md-nav__link">
-        Mouse Pancreas
-      </a>
     
   </li>
 
@@ -322,29 +301,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#biase" title="Biase" class="md-nav__link">
-    Biase
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#deng" title="Deng" class="md-nav__link">
-    Deng
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#fan" title="Fan" class="md-nav__link">
-    Fan
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#goolam" title="Goolam" class="md-nav__link">
-    Goolam
+  <a href="#baron" title="Baron" class="md-nav__link">
+    Baron
   </a>
   
 </li>
@@ -362,26 +320,17 @@
                
               
                 
-                  <h1>Mouse Embryo</h1>
+                  <h1>Mouse Pancreas</h1>
                 
-                <h2 id="biase">Biase</h2>
+                <h2 id="baron">Baron</h2>
 <ul>
-<li>
-<p><a href="http://dx.doi.org/10.1101/gr.177725.114">Biase, F. H., Cao, X. &amp; Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787–1796 (2014)</a></p>
-</li>
-<li>
-<p><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/biase/">Manual data</a></p>
-</li>
+<li><a href="http://dx.doi.org/10.1016/j.cels.2016.08.011">Baron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346–360.e4 (2016)</a></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Cell annotations were manually copied from <a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249">GEO</a> and converted to <code>txt</code> format on 08/02/2017. The resulting <code>txt</code> file is stored <a href="https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/biase/biase_cell_types.txt">here</a> and is used to generate the <code>scater</code> object and the report.</p>
-</div>
 <table>
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -390,104 +339,12 @@
 </thead>
 <tbody>
 <tr>
-<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249">GSE57249</a></td>
-<td align="center">FPKMs</td>
-<td align="center">25737 features<br>56 samples</td>
-<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/biase.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/biase.R">R</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/biase.rds">SCESet</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/biase.html">html</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-
-<h2 id="deng">Deng</h2>
-<ul>
-<li><a href="http://dx.doi.org/10.1126/science.1245316">Deng, Q., Ramsköld, D., Reinius, B. &amp; Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193–196 (2014)</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Accession</th>
-<th align="center">Units</th>
-<th align="center">Size</th>
-<th align="center">Scripts</th>
-<th align="center">scater</th>
-<th align="center">Report</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
-<td align="center">reads</td>
-<td align="center">22431 features<br>268 samples</td>
-<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R">R</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-reads.rds">SCESet</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-reads.html">html</a></td>
-</tr>
-<tr>
-<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
-<td align="center">RPKMs</td>
-<td align="center">22431 features<br>268 samples</td>
-<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R">R</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds">SCESet</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-rpkms.html">html</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-
-<h2 id="fan">Fan</h2>
-<ul>
-<li><a href="http://dx.doi.org/10.1186/s13059-015-0706-1">Fan, X. et al. Single-cell RNA-seq transcriptome analysis of linear and circular RNAs in mouse preimplantation embryos. Genome Biol. 16, 148 (2015)</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Accession</th>
-<th align="center">Units</th>
-<th align="center">Size</th>
-<th align="center">Scripts</th>
-<th align="center">scater</th>
-<th align="center">Report</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53386">GSE53386</a></td>
-<td align="center">FPKMs</td>
-<td align="center">26357 features<br>69 samples</td>
-<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/fan.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/fan.R">R</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/fan.rds">SCESet</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/fan.html">html</a></td>
-</tr>
-</tbody>
-</table>
-<hr>
-
-<h2 id="goolam">Goolam</h2>
-<ul>
-<li><a href="http://dx.doi.org/10.1016/j.cell.2016.01.047">Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61–74 (2016)</a></li>
-</ul>
-<table>
-<thead>
-<tr>
-<th align="center">Accession</th>
-<th align="center">Units</th>
-<th align="center">Size</th>
-<th align="center">Scripts</th>
-<th align="center">scater</th>
-<th align="center">Report</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3321/">E-MTAB-3321</a></td>
-<td align="center">reads</td>
-<td align="center">41480 features<br>124 samples</td>
-<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/goolam.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/goolam.R">R</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/goolam.rds">SCESet</a></td>
-<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/goolam.html">html</a></td>
+<td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133">GSE84133</a></td>
+<td align="center">inDrop</td>
+<td align="center">14878 features<br>1886 samples</td>
+<td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/baron.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/baron.R">R</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/baron-mouse.rds">SCESet</a></td>
+<td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/baron-mouse.html">html</a></td>
 </tr>
 </tbody>
 </table>
@@ -503,7 +360,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../mouse-brain/" title="Mouse Brain" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../mouse-embryo/" title="Mouse Embryo" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -512,19 +369,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mouse Brain
+                Mouse Embryo
               </span>
             </div>
           </a>
         
         
-          <a href="../mouse-pancreas/" title="Mouse Pancreas" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../mouse-retina/" title="Mouse Retina" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Mouse Pancreas
+                Mouse Retina
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
