@@ -3,4 +3,4 @@
 
 |Accession|Protocol|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE84133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133)|inDrop|14878 features<br>1886 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/baron.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/baron.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/baron-mouse.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/baron-mouse.html)|
+|[GSE84133](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133)|[inDrop](http://dx.doi.org/10.1016/j.cell.2015.04.044)|14878 features<br>1886 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/baron.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/baron.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/baron-mouse.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/baron-mouse.html)|

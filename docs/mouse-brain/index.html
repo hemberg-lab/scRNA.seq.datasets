@@ -229,6 +229,26 @@
     Tasic
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-counts" title="Read counts" class="md-nav__link">
+    Read counts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpkms" title="RPKMs" class="md-nav__link">
+    RPKMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -319,6 +339,26 @@
     Tasic
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#read-counts" title="Read counts" class="md-nav__link">
+    Read counts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpkms" title="RPKMs" class="md-nav__link">
+    RPKMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -364,11 +404,12 @@
 <p class="admonition-title">Note</p>
 <p>All processed files were downloaded from <a href="http://casestudies.brain-map.org/celltax">brain map website</a> on 22/02/2017. These files are stored <a href="https://scrnaseq-public-datasets.s3.amazonaws.com/index.html?prefix=manual-data/tasic/">here</a> and are used to generate the <code>scater</code> object and the report.</p>
 </div>
+<h3 id="read-counts">Read counts</h3>
 <table>
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -378,15 +419,30 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585">GSE71585</a></td>
-<td align="center">reads</td>
+<td align="center"><a href="http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed">SMARTer</a></td>
 <td align="center">24150 features<br>1679 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-reads.rds">SCESet</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-reads.html">html</a></td>
 </tr>
+</tbody>
+</table>
+<h3 id="rpkms">RPKMs</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Protocol</th>
+<th align="center">Size</th>
+<th align="center">Scripts</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585">GSE71585</a></td>
-<td align="center">RPKMs</td>
+<td align="center"><a href="http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed">SMARTer</a></td>
 <td align="center">24150 features<br>1679 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-rpkms.rds">SCESet</a></td>
@@ -414,7 +470,7 @@
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -424,7 +480,7 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59739">GSE59739</a></td>
-<td align="center">RPMs</td>
+<td align="center"><a href="http://dx.doi.org/10.1038/nprot.2012.022">STRT-Seq</a></td>
 <td align="center">25334 features<br>622 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/usoskin.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/usoskin.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/usoskin.rds">SCESet</a></td>
@@ -452,7 +508,7 @@
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocl</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -462,7 +518,7 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361">GSE60361</a></td>
-<td align="center">UMIs</td>
+<td align="center"><a href="http://dx.doi.org/10.1038/nmeth.2772">STRT-Seq UMI</a></td>
 <td align="center">19972 features<br>3005 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/zeisel.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/zeisel.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/zeisel.rds">SCESet</a></td>

@@ -247,6 +247,26 @@
     Deng
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reads" title="Reads" class="md-nav__link">
+    Reads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpkms" title="RPKMs" class="md-nav__link">
+    RPKMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -333,6 +353,26 @@
     Deng
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reads" title="Reads" class="md-nav__link">
+    Reads
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpkms" title="RPKMs" class="md-nav__link">
+    RPKMs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -381,7 +421,7 @@
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -391,7 +431,7 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE57249">GSE57249</a></td>
-<td align="center">FPKMs</td>
+<td align="center"><a href="http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed">SMARTer</a></td>
 <td align="center">25737 features<br>56 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/biase.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/biase.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/biase.rds">SCESet</a></td>
@@ -405,11 +445,12 @@
 <ul>
 <li><a href="http://dx.doi.org/10.1126/science.1245316">Deng, Q., Ramsköld, D., Reinius, B. &amp; Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193–196 (2014)</a></li>
 </ul>
+<h3 id="reads">Reads</h3>
 <table>
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -419,15 +460,30 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
-<td align="center">reads</td>
+<td align="center"><a href="http://dx.doi.org/10.1038/nbt.2282">Smart-Seq</a><br><a href="http://dx.doi.org/10.1038/nprot.2014.006">Smart-Seq2</a></td>
 <td align="center">22431 features<br>268 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-reads.rds">SCESet</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/deng-reads.html">html</a></td>
 </tr>
+</tbody>
+</table>
+<h3 id="rpkms">RPKMs</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Accession</th>
+<th align="center">Protocol</th>
+<th align="center">Size</th>
+<th align="center">Scripts</th>
+<th align="center">scater</th>
+<th align="center">Report</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE45719">GSE45719</a></td>
-<td align="center">RPKMs</td>
+<td align="center"><a href="http://dx.doi.org/10.1038/nbt.2282">Smart-Seq</a><br><a href="http://dx.doi.org/10.1038/nprot.2014.006">Smart-Seq2</a></td>
 <td align="center">22431 features<br>268 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/deng.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/deng.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/deng-rpkms.rds">SCESet</a></td>
@@ -445,7 +501,7 @@
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -455,7 +511,7 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE53386">GSE53386</a></td>
-<td align="center">FPKMs</td>
+<td align="center"><a href="http://dx.doi.org/10.1186/s13059-015-0706-1">SUPeR-seq</a></td>
 <td align="center">26357 features<br>69 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/fan.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/fan.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/fan.rds">SCESet</a></td>
@@ -473,7 +529,7 @@
 <thead>
 <tr>
 <th align="center">Accession</th>
-<th align="center">Units</th>
+<th align="center">Protocol</th>
 <th align="center">Size</th>
 <th align="center">Scripts</th>
 <th align="center">scater</th>
@@ -483,7 +539,7 @@
 <tbody>
 <tr>
 <td align="center"><a href="https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-3321/">E-MTAB-3321</a></td>
-<td align="center">reads</td>
+<td align="center"><a href="http://dx.doi.org/10.1038/nprot.2014.006">Smart-Seq2</a></td>
 <td align="center">41480 features<br>124 samples</td>
 <td align="center"><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/goolam.sh">bash</a><br><a href="https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/goolam.R">R</a></td>
 <td align="center"><a href="https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/goolam.rds">SCESet</a></td>
