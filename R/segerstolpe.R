@@ -27,4 +27,7 @@ ercc <- featureNames(sceset)[grepl("ERCC_", featureNames(sceset))]
 sceset <- calculateQCMetrics(sceset, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
 sceset@featureData@data$feature_symbol <- featureNames(sceset)
+# format cell type names
+sceset@phenoData@data$cell_type1 <- 
+    unlist(lapply(strsplit(pData(sceset)$cell_type1, " cell"), "[[", 1))
 saveRDS(sceset, "segerstolpe.rds")

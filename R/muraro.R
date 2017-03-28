@@ -19,4 +19,6 @@ muraro <- calculateQCMetrics(muraro)
 # use gene names as feature symbols
 gene_names <- unlist(lapply(strsplit(featureNames(muraro), "__"), "[[", 1))
 muraro@featureData@data$feature_symbol <- gene_names
+# format cell type names
+muraro@phenoData@data$cell_type1[muraro@phenoData@data$cell_type1 == "duct"] <- "ductal"
 saveRDS(muraro, "muraro.rds")
