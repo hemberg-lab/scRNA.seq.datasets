@@ -3,9 +3,9 @@
 WORKSPACE=$1
 
 # get the docker
-docker pull hemberglab/scrna.seq.datasets:latest
+docker pull quay.io/hemberg-group/scrna-seq-datasets:latest
 # run the docker
-docker run hemberglab/scrna.seq.datasets:latest
+docker run quay.io/hemberg-group/scrna-seq-datasets
 
 # copy files from the last run docker container to local disk
 alias dl='docker ps -l -q'
@@ -18,4 +18,4 @@ aws s3 cp scater-reports s3://scrnaseq-public-datasets/scater-reports/ --recursi
 
 # cleanup after docker usage
 docker rm `dl`
-docker rmi hemberglab/scrna.seq.datasets:latest
+docker rmi quay.io/hemberg-group/scrna-seq-datasets
