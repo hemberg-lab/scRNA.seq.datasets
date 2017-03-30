@@ -31,6 +31,9 @@ usoskin <- newSCESet(fpkmData = exprs_data, phenoData = pd)
 is_exprs(usoskin) <- exprs(usoskin) > 0
 usoskin <- calculateQCMetrics(usoskin)
 
+# use gene names as feature symbols
+usoskin@featureData@data$feature_symbol <- featureNames(usoskin)
+
 # save data
 saveRDS(usoskin, file = "usoskin.rds")
 
