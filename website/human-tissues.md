@@ -1,5 +1,5 @@
 ## Li
-* [Li, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)](http://dx.doi.org/10.1038/ng.3818)
+* [Li, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)](http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.3818.html)
 
 |Accession|Protocol|Size|Scripts|scater|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
