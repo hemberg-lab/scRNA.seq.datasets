@@ -1,3 +1,11 @@
+## Li
+* [Li, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)](http://dx.doi.org/10.1038/ng.3818)
+
+|Accession|Protocol|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE81861](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE81861)|[SMARTer](http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed)|55186 features<br>561 samples  |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/li.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/li.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/li.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/li.html)|
+
+<hr>
 ## Patel
 * [Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396–1401 (2014)](http://dx.doi.org/10.1126/science.1254257)
 

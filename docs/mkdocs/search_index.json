@@ -47,8 +47,13 @@
         },
         {
             "location": "/human-tissues/",
-            "text": "Patel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nSmart-Seq\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nSMARTer\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Li\n\n\n\n\nLi, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81861\n\n\nSMARTer\n\n\n55186 features\n561 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPatel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nSmart-Seq\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nSMARTer\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Human Tissues"
+        },
+        {
+            "location": "/human-tissues/#li",
+            "text": "Li, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)      Accession  Protocol  Size  Scripts  scater  Report      GSE81861  SMARTer  55186 features 561 samples  bash R  SCESet  html",
+            "title": "Li"
         },
         {
             "location": "/human-tissues/#patel",
