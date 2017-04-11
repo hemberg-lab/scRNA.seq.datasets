@@ -15,6 +15,11 @@ biase <- newSCESet(fpkmData = as.matrix(d), phenoData = pd)
 is_exprs(biase) <- exprs(biase) > 0
 biase <- calculateQCMetrics(biase)
 
-# use gene names as feature symbols
-biase@featureData@data$feature_symbol <- featureNames(biase)
+# convert ensembl ids into gene names
+# gene symbols will be stored in the feature_symbol column of fData
+biase <- getBMFeatureAnnos(
+    biase, filters="ensembl_gene_id",
+    biomart="ensembl", dataset="mmusculus_gene_ensembl")
+
+# save data
 saveRDS(biase, "biase.rds")
