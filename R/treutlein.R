@@ -16,10 +16,9 @@ ann <- data.frame(cell_type1 = d[4,])
 rownames(ann) <- d[1,]
 pd <- new("AnnotatedDataFrame", data = ann)
 
-treutlein <- newSCESet(fpkmData = exprs_data, phenoData = pd)
+treutlein <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
 
 # run quality controls
-is_exprs(treutlein) <- exprs(treutlein) > 0
 treutlein <- calculateQCMetrics(treutlein)
 
 # use gene names as feature symbols

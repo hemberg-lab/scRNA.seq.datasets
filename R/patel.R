@@ -19,7 +19,7 @@ rownames(ann) <- colnames(d)
 pd <- new("AnnotatedDataFrame", data = ann)
 
 # create scater object
-sceset <- newSCESet(exprsData = d, phenoData = pd)
+sceset <- newSCESet(exprsData = d, phenoData = pd, logExprsOffset = 1)
 
 # QC was not calculated since the data is heavily normalised
 

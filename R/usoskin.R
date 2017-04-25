@@ -27,8 +27,7 @@ exprs_data <- exprs_data[,filt]
 pd <- new("AnnotatedDataFrame", data = as.data.frame(ann))
 
 # create scater object
-usoskin <- newSCESet(fpkmData = exprs_data, phenoData = pd)
-is_exprs(usoskin) <- exprs(usoskin) > 0
+usoskin <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
 usoskin <- calculateQCMetrics(usoskin)
 
 # use gene names as feature symbols

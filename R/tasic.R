@@ -38,8 +38,7 @@ colnames(ann_col)[grep("Tasic_et_al_2016_label", colnames(ann_col))] <- "cell_ty
 pd <- new("AnnotatedDataFrame", data = ann_col)
 
 # rpkms
-sceset_rpkms <- newSCESet(fpkmData = as.matrix(rpkms), phenoData = pd)
-is_exprs(sceset_rpkms) <- exprs(sceset_rpkms) > 0
+sceset_rpkms <- newSCESet(fpkmData = as.matrix(rpkms), phenoData = pd, logExprsOffset = 1)
 sceset_rpkms <- calculateQCMetrics(sceset_rpkms)
 # use gene names as feature symbols
 sceset_rpkms@featureData@data$feature_symbol <- featureNames(sceset_rpkms)

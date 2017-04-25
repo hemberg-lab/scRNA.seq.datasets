@@ -13,9 +13,8 @@ rownames(ann) <- gsub(" ", "_", rownames(ann))
 ann <- ann[,9:ncol(ann)]
 colnames(ann)[length(colnames(ann))] <- "cell_type1"
 pd <- new("AnnotatedDataFrame", data = ann)
-sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd)
+sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 # run quality controls
-is_exprs(sceset) <- exprs(sceset) > 0
 sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols

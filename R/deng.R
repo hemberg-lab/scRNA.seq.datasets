@@ -14,24 +14,22 @@ cell_ids <- colnames(deng_rpkms)
 
 # create cell annotations
 labs <- unlist(lapply(strsplit(cell_ids, "\\."), "[[", 1))
-ann <- data.frame(cell_type1 = labs)
+ann <- data.frame(cell_type2 = labs)
 labs[labs == "zy" | labs == "early2cell"] = "zygote"
 labs[labs == "mid2cell" | labs == "late2cell"] = "2cell"
 labs[labs == "earlyblast" | labs == "midblast" | labs == "lateblast"] = "blast"
-ann$cell_type2 <- labs
+ann$cell_type1 <- labs
 rownames(ann) <- cell_ids
 pd <- new("AnnotatedDataFrame", data = ann)
 
 # create scater object
 deng_rpkms <- deng_rpkms[!duplicated(rownames(deng_rpkms)), ]
 deng_reads <- deng_reads[!duplicated(rownames(deng_reads)), ]
-deng_rpkms <- newSCESet(fpkmData = deng_rpkms, phenoData = pd)
+deng_rpkms <- newSCESet(fpkmData = deng_rpkms, phenoData = pd, logExprsOffset = 1)
 deng_reads <- newSCESet(countData = deng_reads, phenoData = pd)
 
 # run quality controls
-is_exprs(deng_rpkms) <- exprs(deng_rpkms) > 0
 deng_rpkms <- calculateQCMetrics(deng_rpkms)
-
 deng_reads <- calculateQCMetrics(deng_reads)
 
 # use gene names as feature symbols

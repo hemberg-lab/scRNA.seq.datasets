@@ -35,8 +35,7 @@ ann <- data.frame(cell_type1 = labs)
 rownames(ann) <- colnames(d)
 
 pd <- new("AnnotatedDataFrame", data = ann)
-fan <- newSCESet(fpkmData = as.matrix(d), phenoData = pd)
-is_exprs(fan) <- exprs(fan) > 0
+fan <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 fan <- calculateQCMetrics(fan)
 # use gene names as feature symbols
 fan@featureData@data$feature_symbol <- featureNames(fan)

@@ -13,8 +13,7 @@ colnames(ann) <- "cell_type1"
 
 # create a scater object
 pd <- new("AnnotatedDataFrame", data = ann)
-muraro <- newSCESet(fpkmData = as.matrix(d), phenoData = pd)
-is_exprs(muraro) <- exprs(muraro) > 0
+muraro <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 muraro <- calculateQCMetrics(muraro)
 # use gene names as feature symbols
 gene_names <- unlist(lapply(strsplit(featureNames(muraro), "__"), "[[", 1))
