@@ -12,7 +12,7 @@ RUN apt-get -y install \
     unzip
 
 # install scater: http://bioconductor.org/packages/scater/
-# RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
+RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
 # RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 RUN Rscript -e "install.packages('devtools')"
 RUN Rscript -e "devtools::install_github('davismcc/scater', build_vignettes = TRUE)"
