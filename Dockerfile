@@ -1,9 +1,10 @@
 FROM rocker/r-base
 
-# openssl and libxml2 are required for biomaRt package, which is required by scater
-# see this issue: https://github.com/sagemath/cloud/issues/114
-# pandoc is required for generation of html scater reports
-# gawk, tar, sed and unzip tools are required for processing the data files
+RUN apt-get clean
+RUN apt-get -f install
+RUN dpkg --configure -a
+RUN apt-get -f install
+
 RUN apt-get update -y --no-install-recommends \ 
 	&& apt-get -y -f install \
 	    libcurl4-openssl-dev \
