@@ -1,8 +1,7 @@
 FROM rocker/r-base
 
 RUN apt-get update
-RUN apt-get -y install aptitude
-RUN aptitude -y install \
+RUN apt-get -y install \
     libcurl4-gnutls-dev \
     libssl-dev \
     libxml2-dev \
@@ -16,7 +15,7 @@ RUN aptitude -y install \
 # RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
 # RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')"
 RUN Rscript -e "install.packages('devtools')"
-RUN Rscript -e "devtools::install_github("davismcc/scater", build_vignettes = TRUE)"
+RUN Rscript -e "devtools::install_github('davismcc/scater', build_vignettes = TRUE)"
 
 # install packages to generate Rmd reports
 RUN Rscript -e "install.packages('rmarkdown')"
