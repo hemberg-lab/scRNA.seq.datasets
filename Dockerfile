@@ -1,10 +1,6 @@
 FROM rocker/r-base
 
-RUN apt-get clean
-RUN apt-get update -y --no-install-recommends
-RUN apt-get -f install
-RUN dpkg --configure -a
-RUN apt-get -f install
+RUN apt-get update
 
 RUN apt-get -y -f install \
     libcurl4-openssl-dev \
