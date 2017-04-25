@@ -4,8 +4,8 @@ FROM rocker/r-base
 # see this issue: https://github.com/sagemath/cloud/issues/114
 # pandoc is required for generation of html scater reports
 # gawk, tar, sed and unzip tools are required for processing the data files
-RUN apt-get update \ 
-	&& apt-get install -y --no-install-recommends \
+RUN apt-get update -y --no-install-recommends \ 
+	&& apt-get -y install -f \
         aptitude \
         libssl-dev \
         libcurl4-openssl-dev \
