@@ -3,7 +3,7 @@ FROM rocker/r-base
 RUN apt-get update
 RUN apt-get -y install aptitude
 RUN aptitude -y install \
-    libcurl4-openssl-dev \
+    libcurl4-gnutls-dev \
     libssl-dev \
     libxml2-dev \
     pandoc \
