@@ -1,8 +1,8 @@
 FROM rocker/r-base
 
 RUN apt-get update
-
-RUN apt-get -y -f install \
+RUN apt-get install aptitude
+RUN aptitude -y install \
     libcurl4-openssl-dev \
     libssl-dev \
     libxml2-dev \
