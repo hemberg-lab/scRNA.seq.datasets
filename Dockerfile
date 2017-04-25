@@ -6,7 +6,7 @@ FROM rocker/r-base
 # gawk, tar, sed and unzip tools are required for processing the data files
 RUN apt-get update -y --no-install-recommends \ 
 	&& apt-get -f install \
-        libcurl4-openssl-dev \
+        libssl-dev \
         libxml2-dev \
 	    pandoc \
         gawk \
