@@ -20,37 +20,37 @@ bipolar_dge <- bipolar_dge[rowSums(bipolar_dge > 0) > 30 & rowSums(bipolar_dge) 
 # use cluster file from https://portals.broadinstitute.org/single_cell/study/retinal-bipolar-neuron-drop-seq
 d <- read.table("clust_retinal_bipolar.txt", sep = "\t", header = T)
 cell_ids <- d[,1]
-d <- data.frame(cell_type1 = d[,2])
+d <- data.frame(cell_type2 = d[,2])
 rownames(d) <- cell_ids
 
 # annotation louvain clusters (using Fig.1,F from the paper)
 d$clust_id <- NA
-d$clust_id[d$cell_type1 == "BC1A"] <- 7
-d$clust_id[d$cell_type1 == "BC1B"] <- 9
-d$clust_id[d$cell_type1 == "BC2"] <- 10
-d$clust_id[d$cell_type1 == "BC3A"] <- 12
-d$clust_id[d$cell_type1 == "BC3B"] <- 8
-d$clust_id[d$cell_type1 == "BC4"] <- 14
-d$clust_id[d$cell_type1 == "BC5A (Cone Bipolar cell 5A)"] <- 3
-d$clust_id[d$cell_type1 == "BC5B"] <- 13
-d$clust_id[d$cell_type1 == "BC5C"] <- 6
-d$clust_id[d$cell_type1 == "BC5D"] <- 11
-d$clust_id[d$cell_type1 == "BC6"] <- 5
-d$clust_id[d$cell_type1 == "BC7 (Cone Bipolar cell 7)"] <- 4
-d$clust_id[d$cell_type1 == "BC8/9 (mixture of BC8 and BC9)"] <- 15
-d$clust_id[d$cell_type1 == "RBC (Rod Bipolar cell)"] <- 1
-d$clust_id[d$cell_type1 == "MG (Mueller Glia)"] <- 2
-d$clust_id[d$cell_type1 == "AC (Amacrine cell)"] <- 16
-d$clust_id[d$cell_type1 == "Rod Photoreceptors"] <- 20
-d$clust_id[d$cell_type1 == "Cone Photoreceptors"] <- 22
+d$clust_id[d$cell_type2 == "BC1A"] <- 7
+d$clust_id[d$cell_type2 == "BC1B"] <- 9
+d$clust_id[d$cell_type2 == "BC2"] <- 10
+d$clust_id[d$cell_type2 == "BC3A"] <- 12
+d$clust_id[d$cell_type2 == "BC3B"] <- 8
+d$clust_id[d$cell_type2 == "BC4"] <- 14
+d$clust_id[d$cell_type2 == "BC5A (Cone Bipolar cell 5A)"] <- 3
+d$clust_id[d$cell_type2 == "BC5B"] <- 13
+d$clust_id[d$cell_type2 == "BC5C"] <- 6
+d$clust_id[d$cell_type2 == "BC5D"] <- 11
+d$clust_id[d$cell_type2 == "BC6"] <- 5
+d$clust_id[d$cell_type2 == "BC7 (Cone Bipolar cell 7)"] <- 4
+d$clust_id[d$cell_type2 == "BC8/9 (mixture of BC8 and BC9)"] <- 15
+d$clust_id[d$cell_type2 == "RBC (Rod Bipolar cell)"] <- 1
+d$clust_id[d$cell_type2 == "MG (Mueller Glia)"] <- 2
+d$clust_id[d$cell_type2 == "AC (Amacrine cell)"] <- 16
+d$clust_id[d$cell_type2 == "Rod Photoreceptors"] <- 20
+d$clust_id[d$cell_type2 == "Cone Photoreceptors"] <- 22
 
 # our manual annotation
-d$cell_type2 <- "unknown"
-d$cell_type2[grepl("BC", d$cell_type1)] <- "bipolar"
-d$cell_type2[grepl("MG", d$cell_type1)] <- "muller"
-d$cell_type2[grepl("AC", d$cell_type1)] <- "amacrine"
-d$cell_type2[grepl("Rod Photoreceptors", d$cell_type1)] <- "rods"
-d$cell_type2[grepl("Cone Photoreceptors", d$cell_type1)] <- "cones"
+d$cell_type1 <- "unknown"
+d$cell_type1[grepl("BC", d$cell_type2)] <- "bipolar"
+d$cell_type1[grepl("MG", d$cell_type2)] <- "muller"
+d$cell_type1[grepl("AC", d$cell_type2)] <- "amacrine"
+d$cell_type1[grepl("Rod Photoreceptors", d$cell_type2)] <- "rods"
+d$cell_type1[grepl("Cone Photoreceptors", d$cell_type2)] <- "cones"
 pd <- new("AnnotatedDataFrame", data = d)
 
 # create scater object
