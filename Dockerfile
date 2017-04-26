@@ -1,15 +1,15 @@
 FROM rocker/r-base
 
-RUN apt-get update
-RUN apt-get -y install \
-    libcurl4-gnutls-dev \
-    libssl-dev \
-    libxml2-dev \
-    pandoc \
-    gawk \
-    tar \
-    sed \
-    unzip
+RUN apt-get update \
+        && apt-get install -y --no-install-recommends \
+            libcurl4-gnutls-dev \
+            libssl-dev \
+            libxml2-dev \
+            pandoc \
+            gawk \
+            tar \
+            sed \
+            unzip
 
 # install scater: http://bioconductor.org/packages/scater/
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
