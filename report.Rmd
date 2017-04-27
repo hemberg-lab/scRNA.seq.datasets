@@ -30,7 +30,7 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 ```{r}
 if(!is.null(d$total_counts) & !is.null(d$total_features)) {
     for(ct in cell_types) {
-        print(plotPhenoData(d, aes_string(x = ct, y = "total_features", colour = "log10_total_counts")))
+        print(plotPhenoData(d, aes_string(x = ct, y = "total_features", colour = "log10_total_counts")) + theme(axis.text.x = element_text(angle = 90, hjust = 1)))
     }
 }
 ```
@@ -38,15 +38,11 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 ## QC of expression
 
 ```{r, message=FALSE, warning=FALSE}
-if(!is.null(d$total_counts) & !is.null(d$total_features)) {
-    plotQC(d, type = "highest-expression")
-}
+plotQC(d, type = "highest-expression")
 ```
 
 ```{r}
-if(!is.null(d$total_counts) & !is.null(d$total_features)) {
-    plotQC(d, type = "exprs-freq-vs-mean")
-}
+plotQC(d, type = "exprs-freq-vs-mean")
 ```
 
 ## PCA plot
