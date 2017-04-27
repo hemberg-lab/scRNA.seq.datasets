@@ -9,7 +9,8 @@ RUN apt-get update \
             gawk \
             tar \
             sed \
-            unzip
+            unzip \
+            bzip2
 
 # install scater: http://bioconductor.org/packages/scater/
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')"
