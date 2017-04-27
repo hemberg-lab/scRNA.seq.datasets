@@ -1,13 +1,16 @@
 site_name: scRNA-Seq Datasets
 pages:
     - About: index.md
-    - Human Pancreas: human-pancreas.md
-    - Human Tissues: human-tissues.md
-    - Mouse Brain: mouse-brain.md
-    - Mouse Embryo: mouse-embryo.md
-    - Mouse Pancreas: mouse-pancreas.md
-    - Mouse Retina: mouse-retina.md
-    - Mouse Tissues: mouse-tissues.md
+    - Human:
+      - Pancreas: human/pancreas.md
+      - Tissues: human/tissues.md
+    - Mouse:
+      - Brain: mouse/brain.md
+      - Embryo Devel: mouse/edev.md
+      - Embryo Stem Cells: mouse/esc.md
+      - Pancreas: mouse/pancreas.md
+      - Retina: mouse/retina.md
+      - Tissues: mouse/tissues.md
 theme: 'material'
 docs_dir: 'website'
 site_dir: 'docs'

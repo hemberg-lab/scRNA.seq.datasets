@@ -4,65 +4,65 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
+        
     <url>
-     <loc>/human-pancreas/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/human/pancreas/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>/human/tissues/</loc>
+     <lastmod>2017-04-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     
+        
     <url>
-     <loc>/human-tissues/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/brain/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/mouse-brain/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/edev/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/mouse-embryo/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/esc/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/mouse-pancreas/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/pancreas/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/mouse-retina/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/retina/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
+        
     <url>
-     <loc>/mouse-tissues/</loc>
-     <lastmod>2017-04-04</lastmod>
+     <loc>/mouse/tissues/</loc>
+     <lastmod>2017-04-27</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
     
 
 </urlset>

@@ -21,147 +21,157 @@
             "title": "Contributions"
         },
         {
-            "location": "/human-pancreas/",
+            "location": "/human/pancreas/",
             "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n20125 features\n8569 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nMuraro\n\n\n\n\nMuraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE85241\n\n\nCEL-Seq2\n\n\n19140 features\n2126 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nSegerstolpe\n\n\n\n\nSegerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-5061\n\n\nSmart-Seq2\n\n\n25525 features\n3514 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nXin\n\n\n\n\nXin, Y. et al. RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes. Cell Metab. 24, 608\u2013615 (2016)\n\n\n\n\n\n\nNote\n\n\nCell type and genes annotations were obtained from Yurong Xin on 28/03/17 and are stored \nhere\n and \nhere\n .\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81608\n\n\nSMARTer\n\n\n39851 features\n1600 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Human Pancreas"
+            "title": "Pancreas"
         },
         {
-            "location": "/human-pancreas/#baron",
+            "location": "/human/pancreas/#baron",
             "text": "Baron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE84133  inDrop  20125 features 8569 samples  bash R  SCESet  html",
             "title": "Baron"
         },
         {
-            "location": "/human-pancreas/#muraro",
+            "location": "/human/pancreas/#muraro",
             "text": "Muraro, M. J. et al. A Single-Cell Transcriptome Atlas of the Human Pancreas. Cell Syst 3, 385\u2013394.e3 (2016)    Note  Cell type annotations were obtained from Mauro Muraro on 02/03/17 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE85241  CEL-Seq2  19140 features 2126 samples  bash R  SCESet  html",
             "title": "Muraro"
         },
         {
-            "location": "/human-pancreas/#segerstolpe",
+            "location": "/human/pancreas/#segerstolpe",
             "text": "Segerstolpe, \u00c5. et al. Single-Cell Transcriptome Profiling of Human Pancreatic Islets in Health and Type 2 Diabetes. Cell Metab. 24, 593\u2013607 (2016)      Accession  Protocol  Size  Scripts  scater  Report      E-MTAB-5061  Smart-Seq2  25525 features 3514 samples  bash R  SCESet  html",
             "title": "Segerstolpe"
         },
         {
-            "location": "/human-pancreas/#xin",
+            "location": "/human/pancreas/#xin",
             "text": "Xin, Y. et al. RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes. Cell Metab. 24, 608\u2013615 (2016)    Note  Cell type and genes annotations were obtained from Yurong Xin on 28/03/17 and are stored  here  and  here  .      Accession  Protocol  Size  Scripts  scater  Report      GSE81608  SMARTer  39851 features 1600 samples  bash R  SCESet  html",
             "title": "Xin"
         },
         {
-            "location": "/human-tissues/",
+            "location": "/human/tissues/",
             "text": "Li\n\n\n\n\nLi, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81861\n\n\nSMARTer\n\n\n55186 features\n561 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPatel\n\n\n\n\nPatel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57872\n\n\nSmart-Seq\n\n\n5948 features\n430 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nPollen\n\n\n\n\nPollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).\n\n\n\n\n\n\nNote\n\n\nTPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nSRP041736\n\n\nSMARTer\n\n\n23730 features\n301 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Human Tissues"
+            "title": "Tissues"
         },
         {
-            "location": "/human-tissues/#li",
+            "location": "/human/tissues/#li",
             "text": "Li, H. et al. Reference component analysis of single-cell transcriptomes elucidates cellular heterogeneity in human colorectal tumors. Nat. Genet. (2017)      Accession  Protocol  Size  Scripts  scater  Report      GSE81861  SMARTer  55186 features 561 samples  bash R  SCESet  html",
             "title": "Li"
         },
         {
-            "location": "/human-tissues/#patel",
+            "location": "/human/tissues/#patel",
             "text": "Patel, A. P. et al. Single-cell RNA-seq highlights intratumoral heterogeneity in primary glioblastoma. Science 344, 1396\u20131401 (2014)      Accession  Protocol  Size  Scripts  scater  Report      GSE57872  Smart-Seq  5948 features 430 samples  bash R  SCESet  html",
             "title": "Patel"
         },
         {
-            "location": "/human-tissues/#pollen",
+            "location": "/human/tissues/#pollen",
             "text": "Pollen, A. A. et al. Low-coverage single-cell mRNA sequencing reveals cellular heterogeneity and activated signaling pathways in developing cerebral cortex. Nat. Biotechnol. 32, 1053\u20131058 (2014).    Note  TPM values together with cell type annotations were obtained from Alex Pollen on 15/10/15 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      SRP041736  SMARTer  23730 features 301 samples  bash R  SCESet  html",
             "title": "Pollen"
         },
         {
-            "location": "/mouse-brain/",
+            "location": "/mouse/brain/",
             "text": "Tasic\n\n\n\n\n\n\nTasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335\u2013346 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nAll processed files were downloaded from \nbrain map website\n on 22/02/2017. These files are stored \nhere\n and are used to generate the \nscater\n object and the report.\n\n\n\n\nRead counts\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nRPKMs\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nUsoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nSTRT-Seq\n\n\n25334 features\n622 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nTxt file\n was downloaded from the \nSupporting data\n and on 22/02/2017. This file is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocl\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nSTRT-Seq UMI\n\n\n19972 features\n3005 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Mouse Brain"
+            "title": "Brain"
         },
         {
-            "location": "/mouse-brain/#tasic",
+            "location": "/mouse/brain/#tasic",
             "text": "Tasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335\u2013346 (2016)    Supporting data   Manual data    Note  All processed files were downloaded from  brain map website  on 22/02/2017. These files are stored  here  and are used to generate the  scater  object and the report.",
             "title": "Tasic"
         },
         {
-            "location": "/mouse-brain/#read-counts",
+            "location": "/mouse/brain/#read-counts",
             "text": "Accession  Protocol  Size  Scripts  scater  Report      GSE71585  SMARTer  24150 features 1679 samples  bash R  SCESet  html",
             "title": "Read counts"
         },
         {
-            "location": "/mouse-brain/#rpkms",
+            "location": "/mouse/brain/#rpkms",
             "text": "Accession  Protocol  Size  Scripts  scater  Report      GSE71585  SMARTer  24150 features 1679 samples  bash R  SCESet  html",
             "title": "RPKMs"
         },
         {
-            "location": "/mouse-brain/#usoskin",
+            "location": "/mouse/brain/#usoskin",
             "text": "Usoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)    Supporting data   Manual data    Note  Excel file  was downloaded from the  Supporting data  and converted to  csv  format on 07/02/2017. The resulting  csv  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Protocol  Size  Scripts  scater  Report      GSE59739  STRT-Seq  25334 features 622 samples  bash R  SCESet  html",
             "title": "Usoskin"
         },
         {
-            "location": "/mouse-brain/#zeisel",
+            "location": "/mouse/brain/#zeisel",
             "text": "Zeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)    Supporting data   Manual data    Note  Txt file  was downloaded from the  Supporting data  and on 22/02/2017. This file is used to generate the  scater  object and the report.      Accession  Protocl  Size  Scripts  scater  Report      GSE60361  STRT-Seq UMI  19972 features 3005 samples  bash R  SCESet  html",
             "title": "Zeisel"
         },
         {
-            "location": "/mouse-embryo/",
+            "location": "/mouse/edev/",
             "text": "Biase\n\n\n\n\n\n\nBiase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)\n\n\n\n\n\n\nManual data\n\n\n\n\n\n\n\n\nNote\n\n\nCell annotations were manually copied from \nGEO\n and converted to \ntxt\n format on 08/02/2017. The resulting \ntxt\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE57249\n\n\nSMARTer\n\n\n25737 features\n56 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nDeng\n\n\n\n\nDeng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)\n\n\n\n\nReads\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE45719\n\n\nSmart-Seq\nSmart-Seq2\n\n\n22431 features\n268 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nRPKMs\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE45719\n\n\nSmart-Seq\nSmart-Seq2\n\n\n22431 features\n268 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nFan\n\n\n\n\nFan, X. et al. Single-cell RNA-seq transcriptome analysis of linear and circular RNAs in mouse preimplantation embryos. Genome Biol. 16, 148 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE53386\n\n\nSUPeR-seq\n\n\n26357 features\n69 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nGoolam\n\n\n\n\nGoolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-3321\n\n\nSmart-Seq2\n\n\n41480 features\n124 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Mouse Embryo"
+            "title": "Embryo Devel"
         },
         {
-            "location": "/mouse-embryo/#biase",
+            "location": "/mouse/edev/#biase",
             "text": "Biase, F. H., Cao, X. & Zhong, S. Cell fate inclination within 2-cell and 4-cell mouse embryos revealed by single-cell RNA sequencing. Genome Res. 24, 1787\u20131796 (2014)    Manual data     Note  Cell annotations were manually copied from  GEO  and converted to  txt  format on 08/02/2017. The resulting  txt  file is stored  here  and is used to generate the  scater  object and the report.      Accession  Protocol  Size  Scripts  scater  Report      GSE57249  SMARTer  25737 features 56 samples  bash R  SCESet  html",
             "title": "Biase"
         },
         {
-            "location": "/mouse-embryo/#deng",
+            "location": "/mouse/edev/#deng",
             "text": "Deng, Q., Ramsk\u00f6ld, D., Reinius, B. & Sandberg, R. Single-cell RNA-seq reveals dynamic, random monoallelic gene expression in mammalian cells. Science 343, 193\u2013196 (2014)",
             "title": "Deng"
         },
         {
-            "location": "/mouse-embryo/#reads",
+            "location": "/mouse/edev/#reads",
             "text": "Accession  Protocol  Size  Scripts  scater  Report      GSE45719  Smart-Seq Smart-Seq2  22431 features 268 samples  bash R  SCESet  html",
             "title": "Reads"
         },
         {
-            "location": "/mouse-embryo/#rpkms",
+            "location": "/mouse/edev/#rpkms",
             "text": "Accession  Protocol  Size  Scripts  scater  Report      GSE45719  Smart-Seq Smart-Seq2  22431 features 268 samples  bash R  SCESet  html",
             "title": "RPKMs"
         },
         {
-            "location": "/mouse-embryo/#fan",
+            "location": "/mouse/edev/#fan",
             "text": "Fan, X. et al. Single-cell RNA-seq transcriptome analysis of linear and circular RNAs in mouse preimplantation embryos. Genome Biol. 16, 148 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE53386  SUPeR-seq  26357 features 69 samples  bash R  SCESet  html",
             "title": "Fan"
         },
         {
-            "location": "/mouse-embryo/#goolam",
+            "location": "/mouse/edev/#goolam",
             "text": "Goolam, M. et al. Heterogeneity in Oct4 and Sox2 Targets Biases Cell Fate in 4-Cell Mouse Embryos. Cell 165, 61\u201374 (2016)      Accession  Protocol  Size  Scripts  scater  Report      E-MTAB-3321  Smart-Seq2  41480 features 124 samples  bash R  SCESet  html",
             "title": "Goolam"
         },
         {
-            "location": "/mouse-pancreas/",
-            "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n14878 features\n1886 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Mouse Pancreas"
+            "location": "/mouse/esc/",
+            "text": "Klein\n\n\n\n\nKlein, A. M. et al. Droplet Barcoding for Single-Cell Transcriptomics Applied to Embryonic Stem Cells. Cell 161, 1187\u20131201 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE65525\n\n\ninDrop\n\n\n24175 features\n2717 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Embryo Stem Cells"
         },
         {
-            "location": "/mouse-pancreas/#baron",
+            "location": "/mouse/esc/#klein",
+            "text": "Klein, A. M. et al. Droplet Barcoding for Single-Cell Transcriptomics Applied to Embryonic Stem Cells. Cell 161, 1187\u20131201 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE65525  inDrop  24175 features 2717 samples  bash R  SCESet  html",
+            "title": "Klein"
+        },
+        {
+            "location": "/mouse/pancreas/",
+            "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n14878 features\n1886 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Pancreas"
+        },
+        {
+            "location": "/mouse/pancreas/#baron",
             "text": "Baron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE84133  inDrop  14878 features 1886 samples  bash R  SCESet  html",
             "title": "Baron"
         },
         {
-            "location": "/mouse-retina/",
+            "location": "/mouse/retina/",
             "text": "Macosko\n\n\n\n\n\n\nMacosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nProper gene names were downloaded from Ensembl Biomart on 01/03/2017 and are stored \nhere\n. Cell labels were downloaded from \nhere\n on 22/02/2017 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE63473\n\n\nDrop-seq\n\n\n23288 features\n44808 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nShekhar\n\n\n\n\n\n\nShekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308\u20131323.e30 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nTo create a scater object we followed instructions from \nBCanalysis.pdf\n file. We did \nNOT\n perform the batch correction. Cell labels were downloaded from \nhere\n on 22/02/2017 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81904\n\n\nDrop-seq\n\n\n13166 features\n27499 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Mouse Retina"
+            "title": "Retina"
         },
         {
-            "location": "/mouse-retina/#macosko",
+            "location": "/mouse/retina/#macosko",
             "text": "Macosko, E. Z. et al. Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell 161, 1202\u20131214 (2015)    Supporting data   Manual data    Note  Proper gene names were downloaded from Ensembl Biomart on 01/03/2017 and are stored  here . Cell labels were downloaded from  here  on 22/02/2017 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE63473  Drop-seq  23288 features 44808 samples  bash R  SCESet  html",
             "title": "Macosko"
         },
         {
-            "location": "/mouse-retina/#shekhar",
+            "location": "/mouse/retina/#shekhar",
             "text": "Shekhar, K. et al. Comprehensive Classification of Retinal Bipolar Neurons by Single-Cell Transcriptomics. Cell 166, 1308\u20131323.e30 (2016)    Supporting data   Manual data    Note  To create a scater object we followed instructions from  BCanalysis.pdf  file. We did  NOT  perform the batch correction. Cell labels were downloaded from  here  on 22/02/2017 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE81904  Drop-seq  13166 features 27499 samples  bash R  SCESet  html",
             "title": "Shekhar"
         },
         {
-            "location": "/mouse-tissues/",
+            "location": "/mouse/tissues/",
             "text": "Treutlein\n\n\n\n\nTreutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE52583\n\n\nSMARTer\n\n\n23271 features\n80 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
-            "title": "Mouse Tissues"
+            "title": "Tissues"
         },
         {
-            "location": "/mouse-tissues/#treutlein",
+            "location": "/mouse/tissues/#treutlein",
             "text": "Treutlein, B. et al. Reconstructing lineage hierarchies of the distal lung epithelium using single-cell RNA-seq. Nature 509, 371\u2013375 (2014)      Accession  Protocol  Size  Scripts  scater  Report      GSE52583  SMARTer  23271 features 80 samples  bash R  SCESet  html",
             "title": "Treutlein"
         }
