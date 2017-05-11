@@ -38,11 +38,15 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 ## QC of expression
 
 ```{r, message=FALSE, warning=FALSE}
-plotQC(d, type = "highest-expression")
+if(!is.null(d$col_by_variable)) {
+    plotQC(d, type = "highest-expression")
+}
 ```
 
 ```{r}
-plotQC(d, type = "exprs-freq-vs-mean")
+if(!is.null(fData(d)$mean_exprs) & !is.null(fData(d)$n_cells_exprs)) {
+    plotQC(d, type = "exprs-freq-vs-mean")
+}
 ```
 
 ## PCA plot
