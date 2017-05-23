@@ -132,13 +132,18 @@
         },
         {
             "location": "/mouse/esc/",
-            "text": "Klein\n\n\n\n\nKlein, A. M. et al. Droplet Barcoding for Single-Cell Transcriptomics Applied to Embryonic Stem Cells. Cell 161, 1187\u20131201 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE65525\n\n\ninDrop\n\n\n24175 features\n2717 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Klein\n\n\n\n\nKlein, A. M. et al. Droplet Barcoding for Single-Cell Transcriptomics Applied to Embryonic Stem Cells. Cell 161, 1187\u20131201 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE65525\n\n\ninDrop\n\n\n24175 features\n2717 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nKolodziejczyk\n\n\n\n\n\n\nKolodziejczyk, A. A. et al. Single Cell RNA-Sequencing of Pluripotent States Unlocks Modular Transcriptional Variation. Cell Stem Cell 17, 471\u2013485 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\n\n\n\n\nNote\n\n\nRaw reads expression was downloaded from \nhere\n on 23/05/2017 and is stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nE-MTAB-2600\n\n\nSMARTer\n\n\n38653 features\n704 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Embryo Stem Cells"
         },
         {
             "location": "/mouse/esc/#klein",
             "text": "Klein, A. M. et al. Droplet Barcoding for Single-Cell Transcriptomics Applied to Embryonic Stem Cells. Cell 161, 1187\u20131201 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE65525  inDrop  24175 features 2717 samples  bash R  SCESet  html",
             "title": "Klein"
+        },
+        {
+            "location": "/mouse/esc/#kolodziejczyk",
+            "text": "Kolodziejczyk, A. A. et al. Single Cell RNA-Sequencing of Pluripotent States Unlocks Modular Transcriptional Variation. Cell Stem Cell 17, 471\u2013485 (2015)    Supporting data     Note  Raw reads expression was downloaded from  here  on 23/05/2017 and is stored  here .      Accession  Protocol  Size  Scripts  scater  Report      E-MTAB-2600  SMARTer  38653 features 704 samples  bash R  SCESet  html",
+            "title": "Kolodziejczyk"
         },
         {
             "location": "/mouse/pancreas/",
