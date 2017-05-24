@@ -19,19 +19,31 @@ d1 <- d1[order(rownames(d1)), ]
 d2 <- d2[order(rownames(d2)), ]
 d <- cbind(d1, d2)
 
-labs <- colnames(d)
-labs[grep("ocyte",labs)] = "zygote"
-labs[grep("zygote",labs)] = "zygote"
-labs[grep("a.AM",labs)] = "zygote"
-labs[grep("2.cell",labs)] = "2cell"
-labs[grep("4.cell",labs)] = "4cell"
-labs[grep("8.cell",labs)] = "8cell"
-labs[grep("morula",labs)] = "16cell"
-labs[grep("ICM",labs)] = "blast"
-labs[grep("TE",labs)] = "blast"
-labs[grep("blast",labs)] = "blast"
+ct1 <- colnames(d)
+ct1[grep("ocyte",ct1)] = "zygote"
+ct1[grep("zygote",ct1)] = "zygote"
+ct1[grep("a.AM",ct1)] = "zygote"
+ct1[grep("2.cell",ct1)] = "2cell"
+ct1[grep("4.cell",ct1)] = "4cell"
+ct1[grep("8.cell",ct1)] = "8cell"
+ct1[grep("morula",ct1)] = "16cell"
+ct1[grep("ICM",ct1)] = "blast"
+ct1[grep("TE",ct1)] = "blast"
+ct1[grep("blast",ct1)] = "blast"
 
-ann <- data.frame(cell_type1 = labs)
+ct2 <- colnames(d)
+ct2[grep("ocyte",ct2)] = "oocyte"
+ct2[grep("zygote",ct2)] = "zygote"
+ct2[grep("a.AM",ct2)] = "zygote"
+ct2[grep("2.cell",ct2)] = "2cell"
+ct2[grep("4.cell",ct2)] = "4cell"
+ct2[grep("8.cell",ct2)] = "8cell"
+ct2[grep("morula",ct2)] = "morula"
+ct2[grep("ICM",ct2)] = "ICM"
+ct2[grep("TE",ct2)] = "TE"
+ct2[grep("blast",ct2)] = "blast"
+
+ann <- data.frame(cell_type1 = ct1, cell_type2 = ct2)
 rownames(ann) <- colnames(d)
 
 pd <- new("AnnotatedDataFrame", data = ann)

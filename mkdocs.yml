@@ -2,6 +2,7 @@ site_name: scRNA-Seq Datasets
 pages:
     - About: index.md
     - Human:
+      - Embryo Devel: human/edev.md
       - Pancreas: human/pancreas.md
       - Tissues: human/tissues.md
     - Mouse:

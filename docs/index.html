@@ -212,6 +212,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#scmap" title="scmap" class="md-nav__link">
+    scmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacts" title="Contacts" class="md-nav__link">
+    Contacts
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -234,6 +248,17 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="human/edev/" title="Embryo Devel" class="md-nav__link">
+        Embryo Devel
+      </a>
+    
+  </li>
+
         
           
           
@@ -388,6 +413,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#scmap" title="scmap" class="md-nav__link">
+    scmap
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contacts" title="Contacts" class="md-nav__link">
+    Contacts
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -410,16 +449,20 @@
 <h2 id="contributions">Contributions</h2>
 <p>We welcome contributions to our collection. Please create a pull request to our <a href="https://github.com/hemberg-lab/public-scrnaseq-datasets">GitHub repository</a> providing the following information:</p>
 <ul>
-<li><code>bash</code> script with downloading and processing instructions (should be put to <code>process-data</code> folder) with a corresponding name (we use the first author surname by default).</li>
-<li><code>R</code> script file with the instruction on how to create a scater object (should be put to <code>create-scater</code> folder) with a corresponding name (we use the first author surname by default).</li>
+<li><code>bash</code> script with downloading and processing instructions named as the first author's surname.</li>
+<li><code>R</code> script file with the instruction on how to create a scater object named as the first author's surname.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For the cell type information please use a column in the annotation table with the name <code>cell_type1</code>. If there are more than one cell type hierarchy please use <code>cell_type2</code>, <code>cell_type3</code> etc.</p>
+<p>The cell type information must be located in the <code>cell_type1</code> column of the <code>phenoData</code> slot of the <code>scater</code> object. If there are more than one cell type hierarchies please use <code>cell_type2</code>, <code>cell_type3</code> etc.</p>
 </div>
 <ul>
-<li>Annotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to <code>markdown</code> files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.</li>
+<li>Metadata information about the dataset: publication reference, accession, protocol and size of the dataset. These should be added in <code>markdown</code> format to the existing files in the <code>website</code> folder or by creating a new <code>markdown</code> file.</li>
 </ul>
+<h2 id="scmap">scmap</h2>
+<p>Some of the dataset hosted here are used as references for <a href="http://www.hemberg-lab.cloud/scmap/">scmap</a>, our web-based application for fast unsupervised projection of single cell RNA-seq data.</p>
+<h2 id="contacts">Contacts</h2>
+<p>Please send you feedback/comments/suggestions to <a href="mailto:vladimir.yu.kiselev@gmail.com">Vladimir Kiselev</a>.</p>
               
             </article>
           </div>
@@ -433,13 +476,13 @@
       <nav class="md-footer-nav__inner md-grid">
         
         
-          <a href="human/pancreas/" title="Pancreas" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="human/edev/" title="Embryo Devel" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pancreas
+                Embryo Devel
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

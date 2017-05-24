@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use \nscater toolkit\n for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash\n script with downloading and processing instructions (should be put to \nprocess-data\n folder) with a corresponding name (we use the first author surname by default).\n\n\nR\n script file with the instruction on how to create a scater object (should be put to \ncreate-scater\n folder) with a corresponding name (we use the first author surname by default).\n\n\n\n\n\n\nNote\n\n\nFor the cell type information please use a column in the annotation table with the name \ncell_type1\n. If there are more than one cell type hierarchy please use \ncell_type2\n, \ncell_type3\n etc.\n\n\n\n\n\n\nAnnotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to \nmarkdown\n files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.",
+            "text": "Introduction\n\n\nThis website contains a collection of publicly available datasets used by the \nHemberg Group\n at the \nSanger Institute\n.\n\n\nscater\n\n\nWe use \nscater toolkit\n for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.\n\n\nContributions\n\n\nWe welcome contributions to our collection. Please create a pull request to our \nGitHub repository\n providing the following information:\n\n\n\n\nbash\n script with downloading and processing instructions named as the first author's surname.\n\n\nR\n script file with the instruction on how to create a scater object named as the first author's surname.\n\n\n\n\n\n\nNote\n\n\nThe cell type information must be located in the \ncell_type1\n column of the \nphenoData\n slot of the \nscater\n object. If there are more than one cell type hierarchies please use \ncell_type2\n, \ncell_type3\n etc.\n\n\n\n\n\n\nMetadata information about the dataset: publication reference, accession, protocol and size of the dataset. These should be added in \nmarkdown\n format to the existing files in the \nwebsite\n folder or by creating a new \nmarkdown\n file.\n\n\n\n\nscmap\n\n\nSome of the dataset hosted here are used as references for \nscmap\n, our web-based application for fast unsupervised projection of single cell RNA-seq data.\n\n\nContacts\n\n\nPlease send you feedback/comments/suggestions to \nVladimir Kiselev\n.",
             "title": "About"
         },
         {
@@ -17,8 +17,28 @@
         },
         {
             "location": "/#contributions",
-            "text": "We welcome contributions to our collection. Please create a pull request to our  GitHub repository  providing the following information:   bash  script with downloading and processing instructions (should be put to  process-data  folder) with a corresponding name (we use the first author surname by default).  R  script file with the instruction on how to create a scater object (should be put to  create-scater  folder) with a corresponding name (we use the first author surname by default).    Note  For the cell type information please use a column in the annotation table with the name  cell_type1 . If there are more than one cell type hierarchy please use  cell_type2 ,  cell_type3  etc.    Annotation information about the dataset, i.e. publication reference, units and size of the dataset. These should be added to  markdown  files in the website folder. As an example, please use existing entries. The annotation information will appear on this website.",
+            "text": "We welcome contributions to our collection. Please create a pull request to our  GitHub repository  providing the following information:   bash  script with downloading and processing instructions named as the first author's surname.  R  script file with the instruction on how to create a scater object named as the first author's surname.    Note  The cell type information must be located in the  cell_type1  column of the  phenoData  slot of the  scater  object. If there are more than one cell type hierarchies please use  cell_type2 ,  cell_type3  etc.    Metadata information about the dataset: publication reference, accession, protocol and size of the dataset. These should be added in  markdown  format to the existing files in the  website  folder or by creating a new  markdown  file.",
             "title": "Contributions"
+        },
+        {
+            "location": "/#scmap",
+            "text": "Some of the dataset hosted here are used as references for  scmap , our web-based application for fast unsupervised projection of single cell RNA-seq data.",
+            "title": "scmap"
+        },
+        {
+            "location": "/#contacts",
+            "text": "Please send you feedback/comments/suggestions to  Vladimir Kiselev .",
+            "title": "Contacts"
+        },
+        {
+            "location": "/human/edev/",
+            "text": "Yan\n\n\n\n\nYan, L. et al. Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells. Nat. Struct. Mol. Biol. 20, 1131\u20131139 (2013)\n\n\n\n\n\n\nNote\n\n\nRPKMs values were downloaded from \nSupplementary Table S2\n and exported to the \ncsv\n format on 24/05/2017 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE36552\n\n\nTang\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Embryo Devel"
+        },
+        {
+            "location": "/human/edev/#yan",
+            "text": "Yan, L. et al. Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells. Nat. Struct. Mol. Biol. 20, 1131\u20131139 (2013)    Note  RPKMs values were downloaded from  Supplementary Table S2  and exported to the  csv  format on 24/05/2017 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE36552  Tang  20214 features 90 samples  bash R  SCESet  html",
+            "title": "Yan"
         },
         {
             "location": "/human/pancreas/",
