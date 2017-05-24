@@ -10,6 +10,9 @@ ann <- ann[rownames(ann) %in% colnames(d),,drop = FALSE]
 d <- d[,order(colnames(d))]
 ann <- ann[order(rownames(ann)),,drop = FALSE]
 colnames(ann) <- "cell_type1"
+tmp <- matrix(unlist(strsplit(rownames(ann),"[._]")), ncol=3, byrow=T)
+ann$donor <- tmp[,1]
+ann$batch <- tmp[,2]
 
 # create a scater object
 pd <- new("AnnotatedDataFrame", data = ann)
