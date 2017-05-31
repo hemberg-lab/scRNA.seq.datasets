@@ -25,6 +25,17 @@
 |[E-MTAB-5061](https://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-5061/)|[Smart-Seq2](http://dx.doi.org/10.1038/nprot.2014.006)|25525 features<br>3514 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/segerstolpe.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/segerstolpe.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/segerstolpe.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/segerstolpe.html)|
 
 <hr>
+## Wang
+* [Wang, Y. J. et al. Single-Cell Transcriptomics of the Human Endocrine Pancreas. Diabetes 65, 3028–3038 (2016)](http://dx.doi.org/10.2337/db16-0405)
+
+!!! warning
+    Read alignment and gene expression quantification in this data were performed using [RNA-seq unified mapper (RUM)](https://doi.org/10.1093/bioinformatics/btr427). There are no zeros in the expression matrix (`fpkm` values) and the expression values are really large. Please take extra care when working with this dataset.
+
+|Accession|Protocol|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE83139](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83139)|[SMARTer](http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed)|19950 features<br>635 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/wang.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/wang.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/wang.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/wang.html)|
+
+<hr>
 ## Xin
 * [Xin, Y. et al. RNA Sequencing of Single Human Islet Cells Reveals Type 2 Diabetes Genes. Cell Metab. 24, 608–615 (2016)](http://dx.doi.org/10.1016/j.cmet.2016.08.018)
 

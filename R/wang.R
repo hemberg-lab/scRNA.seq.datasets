@@ -1,5 +1,7 @@
+library(scater)
+
 # Load data
- x <- read.table("GSE83139_tbx-v-f-norm-ntv-cpms.csv", header=T, stringsAsFactor=FALSE)
+x <- read.table("GSE83139_tbx-v-f-norm-ntv-cpms.csv", header=T, stringsAsFactor=FALSE)
 fDat <- x[,1:7]
 x<-x[,-1*c(1:7)]
 rownames(x) <- fDat$transcript
@@ -34,13 +36,13 @@ pDat<-pDat[order(rownames(pDat)),]
 if (sum(rownames(pDat)==colnames(x)) < length(colnames(x))) {stop("Cell Ordering Doesn't Match")}
 
 # Create scater obj
-require("scater")
 pDat$cell_type1 <- as.character(pDat$cell_type1)
 pDat$cell_type1[pDat$cell_type1 == "pp"] <- "gamma"
 pDat$cell_type1[pDat$cell_type1 == "duct"] <- "ductal"
 fd <- new("AnnotatedDataFrame", data=fDat)
 pd <- new("AnnotatedDataFrame", data=pDat)
 sceset <- newSCESet(fpkmData=as.matrix(x), phenoData=pd, featureData=fd, logExprsOffset=1)
+sceset <- calculateQCMetrics(sceset)
 
 sceset@featureData@data$feature_symbol <- featureNames(sceset)
 
