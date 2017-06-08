@@ -1,3 +1,5 @@
+library("scater")
+
 #Nestorowa
 #Publication: Nestorowa et al. (2016) A single-cell resolution map of mouse hematopoeitic stem and progenitor cell differentiation. Blood. 128:e20-e31. doi:10.1182/blood-2016-05-716480
 #http://www.bloodjournal.org/content/128/8/e20
@@ -47,15 +49,17 @@ ncells <- length(Types)
 Annotation = data.frame(batch=batch[expr_order],plate=plate[expr_order], WellID=well[expr_order], Source = rep("MmusBoneMarrow", times=ncells), cell_type1 = Types, type_confidence=Confidences, sorting=Sortings, genotype=rep("WildType", times=ncells));
 rownames(Annotation) = rownames(Anno)
 
-require("scater")
 pd <- new("AnnotatedDataFrame", data=Annotation)
 sceset <- newSCESet(exprsData=expr_mat[,expr_order], phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0)
+
+sceset <- calculateQCMetrics(sceset)
+
 # convert ensembl ids into gene names
 # gene symbols will be stored in the feature_symbol column of fData
 sceset <- getBMFeatureAnnos(
     sceset, filters="ensembl_gene_id",
     biomart="ensembl", dataset="mmusculus_gene_ensembl")
 
-saveRDS(sceset, file="Nestorowa.rds")
+saveRDS(sceset, file="nestorowa.rds")
 
 
