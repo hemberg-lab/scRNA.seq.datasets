@@ -16,6 +16,15 @@ for f in `ls bash`; do
     rm -rf $name
 done
 
+# general action that should be applied to all datasets
+for f in `ls scater-objects`; do
+    name=(${f//./ })
+    echo "general work on $name..."
+    Rscript general.R $f
+    mv report.html $name.html
+    mv $name.html scater-reports/
+done
+
 # generate a report for each scater object
 mkdir scater-reports
 for f in `ls scater-objects`; do
