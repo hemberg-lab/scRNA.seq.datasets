@@ -171,6 +171,16 @@
             "title": "Kolodziejczyk"
         },
         {
+            "location": "/mouse/hsc/",
+            "text": "Nestorowa\n\n\n\n\nNestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)\n\n\n\n\n\n\nNote\n\n\nGene counts and cell type annotations were obtained from the \nsupporting website\n on 08/06/17 and are stored \nhere\n and \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81682\n\n\nSmart-Seq2\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Hematopoietic Stem Cells"
+        },
+        {
+            "location": "/mouse/hsc/#nestorowa",
+            "text": "Nestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)    Note  Gene counts and cell type annotations were obtained from the  supporting website  on 08/06/17 and are stored  here  and  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE81682  Smart-Seq2  4773 features 1656 samples  bash R  SCESet  html",
+            "title": "Nestorowa"
+        },
+        {
             "location": "/mouse/pancreas/",
             "text": "Baron\n\n\n\n\nBaron, M. et al. A Single-Cell Transcriptomic Map of the Human and Mouse Pancreas Reveals Inter- and Intra-cell Population Structure. Cell Syst 3, 346\u2013360.e4 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE84133\n\n\ninDrop\n\n\n14878 features\n1886 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Pancreas"

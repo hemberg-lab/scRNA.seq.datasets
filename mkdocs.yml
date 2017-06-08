@@ -9,6 +9,7 @@ pages:
       - Brain: mouse/brain.md
       - Embryo Devel: mouse/edev.md
       - Embryo Stem Cells: mouse/esc.md
+      - Hematopoietic Stem Cells: mouse/hsc.md
       - Pancreas: mouse/pancreas.md
       - Retina: mouse/retina.md
       - Tissues: mouse/tissues.md
