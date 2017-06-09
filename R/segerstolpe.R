@@ -19,6 +19,8 @@ rownames(ann) <- ann$Extract.Name
 ann <- ann[order(rownames(ann)), ]
 ann <- ann[,7:11]
 colnames(ann) <- c("cell_quality", "cell_type1", "disease", "sex", "age")
+# format cell type names
+ann$cell_type1 <- unlist(lapply(strsplit(ann$cell_type1, " cell"), "[[", 1))
 
 # create a scater object
 pd <- new("AnnotatedDataFrame", data = ann)
@@ -26,8 +28,5 @@ sceset <- newSCESet(countData = as.matrix(d), phenoData = pd)
 ercc <- featureNames(sceset)[grepl("ERCC_", featureNames(sceset))]
 sceset <- calculateQCMetrics(sceset, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
-# format cell type names
-sceset@phenoData@data$cell_type1 <- 
-    unlist(lapply(strsplit(pData(sceset)$cell_type1, " cell"), "[[", 1))
+fData(sceset)$feature_symbol <- featureNames(sceset)
 saveRDS(sceset, "segerstolpe.rds")

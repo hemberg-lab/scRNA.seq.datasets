@@ -29,7 +29,7 @@ zeisel <- newSCESet(countData = zeisel, phenoData = pd)
 zeisel <- calculateQCMetrics(zeisel)
 
 # use gene names as feature symbols
-zeisel@featureData@data$feature_symbol <- featureNames(zeisel)
+fData(zeisel)$feature_symbol <- featureNames(zeisel)
 
 # save data
 saveRDS(zeisel, file = "zeisel.rds")

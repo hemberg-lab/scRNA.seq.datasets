@@ -55,7 +55,7 @@ gc()
 # create scater object
 sceset <- newSCESet(countData = d, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # save data
 saveRDS(sceset, file = "macosko.rds")

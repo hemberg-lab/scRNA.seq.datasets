@@ -50,5 +50,5 @@ pd <- new("AnnotatedDataFrame", data = ann)
 fan <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 fan <- calculateQCMetrics(fan)
 # use gene names as feature symbols
-fan@featureData@data$feature_symbol <- featureNames(fan)
+fData(fan)$feature_symbol <- featureNames(fan)
 saveRDS(fan, "fan.rds")

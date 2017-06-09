@@ -12,17 +12,17 @@ rownames(ann) <- ann[,1]
 rownames(ann) <- gsub(" ", "_", rownames(ann))
 ann <- ann[,9:ncol(ann)]
 colnames(ann)[length(colnames(ann))] <- "cell_type1"
+# format cell type names
+ann$cell_type1[ann$cell_type1 == "PP"] <- "gamma"
+ann$cell_type1[ann$cell_type1 == "PP.contaminated"] <- "gamma.contaminated"
+
 pd <- new("AnnotatedDataFrame", data = ann)
 sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 # run quality controls
 sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
-
-# format cell type names
-sceset@phenoData@data$cell_type1[sceset@phenoData@data$cell_type1 == "PP"] <- "gamma"
-sceset@phenoData@data$cell_type1[sceset@phenoData@data$cell_type1 == "PP.contaminated"] <- "gamma.contaminated"
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # save files
 saveRDS(sceset, "xin.rds")

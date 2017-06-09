@@ -44,6 +44,6 @@ pd <- new("AnnotatedDataFrame", data=pDat)
 sceset <- newSCESet(fpkmData=as.matrix(x), phenoData=pd, featureData=fd, logExprsOffset=1)
 sceset <- calculateQCMetrics(sceset)
 
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 saveRDS(sceset, "wang.rds")

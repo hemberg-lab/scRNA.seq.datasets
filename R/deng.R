@@ -33,8 +33,8 @@ deng_rpkms <- calculateQCMetrics(deng_rpkms)
 deng_reads <- calculateQCMetrics(deng_reads)
 
 # use gene names as feature symbols
-deng_rpkms@featureData@data$feature_symbol <- featureNames(deng_rpkms)
-deng_reads@featureData@data$feature_symbol <- featureNames(deng_reads)
+fData(deng_rpkms)$feature_symbol <- featureNames(deng_rpkms)
+fData(deng_reads)$feature_symbol <- featureNames(deng_reads)
 
 # save files
 saveRDS(deng_rpkms, "deng-rpkms.rds")

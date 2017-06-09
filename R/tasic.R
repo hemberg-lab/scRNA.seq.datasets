@@ -41,7 +41,7 @@ pd <- new("AnnotatedDataFrame", data = ann_col)
 sceset_rpkms <- newSCESet(fpkmData = as.matrix(rpkms), phenoData = pd, logExprsOffset = 1)
 sceset_rpkms <- calculateQCMetrics(sceset_rpkms)
 # use gene names as feature symbols
-sceset_rpkms@featureData@data$feature_symbol <- featureNames(sceset_rpkms)
+fData(sceset_rpkms)$feature_symbol <- featureNames(sceset_rpkms)
 saveRDS(sceset_rpkms, "tasic-rpkms.rds")
 
 # reads
@@ -49,5 +49,5 @@ sceset_reads <- newSCESet(countData = as.matrix(reads), phenoData = pd)
 ercc <- featureNames(sceset_reads)[grepl("ERCC-", featureNames(sceset_reads))]
 sceset_reads <- calculateQCMetrics(sceset_reads, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
-sceset_reads@featureData@data$feature_symbol <- featureNames(sceset_reads)
+fData(sceset_reads)$feature_symbol <- featureNames(sceset_reads)
 saveRDS(sceset_reads, "tasic-reads.rds")

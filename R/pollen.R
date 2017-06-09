@@ -31,6 +31,6 @@ pd <- new("AnnotatedDataFrame", data = ann)
 pollen <- newSCESet(tpmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 pollen <- calculateQCMetrics(pollen)
 # use gene names as feature symbols
-pollen@featureData@data$feature_symbol <- featureNames(pollen)
+fData(pollen)$feature_symbol <- featureNames(pollen)
 saveRDS(pollen, "pollen.rds")
 

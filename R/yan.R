@@ -29,5 +29,5 @@ pd <- new("AnnotatedDataFrame", data = ann)
 sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
 sceset <- calculateQCMetrics(sceset)
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 saveRDS(sceset, "yan.rds")

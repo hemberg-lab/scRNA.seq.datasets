@@ -24,7 +24,7 @@ sceset <- newSCESet(exprsData = d, phenoData = pd, logExprsOffset = 1)
 # QC was not calculated since the data is heavily normalised
 
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # save the data
 saveRDS(sceset, file = "patel.rds")

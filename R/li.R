@@ -19,6 +19,6 @@ sceset <- newSCESet(countData = d, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 saveRDS(sceset, "li.rds")

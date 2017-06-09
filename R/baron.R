@@ -63,7 +63,7 @@ h_sceset <- newSCESet(countData = h, phenoData = pd)
 h_sceset <- calculateQCMetrics(h_sceset)
 
 # use gene names as feature symbols
-h_sceset@featureData@data$feature_symbol <- featureNames(h_sceset)
+fData(h_sceset)$feature_symbol <- featureNames(h_sceset)
 
 # mouse
 ann <- data.frame(
@@ -78,7 +78,7 @@ m_sceset <- newSCESet(countData = m, phenoData = pd)
 m_sceset <- calculateQCMetrics(m_sceset)
 
 # use gene names as feature symbols
-m_sceset@featureData@data$feature_symbol <- featureNames(m_sceset)
+fData(m_sceset)$feature_symbol <- featureNames(m_sceset)
 
 # save data
 saveRDS(h_sceset, "baron-human.rds")

@@ -22,7 +22,7 @@ treutlein <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1
 treutlein <- calculateQCMetrics(treutlein)
 
 # use gene names as feature symbols
-treutlein@featureData@data$feature_symbol <- featureNames(treutlein)
+fData(treutlein)$feature_symbol <- featureNames(treutlein)
 
 # save the data
 saveRDS(treutlein, file = "treutlein.rds")

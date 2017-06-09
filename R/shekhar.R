@@ -56,7 +56,7 @@ pd <- new("AnnotatedDataFrame", data = d)
 # create scater object
 sceset <- newSCESet(countData = bipolar_dge, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # save data
 saveRDS(sceset, file = "shekhar.rds")
