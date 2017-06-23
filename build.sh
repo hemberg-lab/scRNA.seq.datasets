@@ -21,8 +21,6 @@ for f in `ls scater-objects`; do
     name=(${f//./ })
     echo "general work on $name..."
     Rscript general.R $f
-    mv report.html $name.html
-    mv $name.html scater-reports/
 done
 
 # generate a report for each scater object
