@@ -27,13 +27,16 @@ exprs_data <- exprs_data[,filt]
 pd <- new("AnnotatedDataFrame", data = as.data.frame(ann))
 
 # create scater object
-usoskin <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
-usoskin <- calculateQCMetrics(usoskin)
+sceset <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
+sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-fData(usoskin)$feature_symbol <- featureNames(usoskin)
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
 
 # save data
-saveRDS(usoskin, file = "usoskin.rds")
+saveRDS(sceset, file = "usoskin.rds")
 
 

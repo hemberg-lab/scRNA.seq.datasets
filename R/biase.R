@@ -11,14 +11,17 @@ ann <- read.table("biase_cell_types.txt", stringsAsFactors = F)
 pd <- new("AnnotatedDataFrame", data = ann)
 
 # create scater object
-biase <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
-biase <- calculateQCMetrics(biase)
+sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
+sceset <- calculateQCMetrics(sceset)
 
 # convert ensembl ids into gene names
 # gene symbols will be stored in the feature_symbol column of fData
-biase <- getBMFeatureAnnos(
-    biase, filters="ensembl_gene_id",
+sceset <- getBMFeatureAnnos(
+    sceset, filters="ensembl_gene_id",
     biomart="ensembl", dataset="mmusculus_gene_ensembl")
 
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 # save data
-saveRDS(biase, "biase.rds")
+saveRDS(sceset, "biase.rds")

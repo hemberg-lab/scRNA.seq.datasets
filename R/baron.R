@@ -65,9 +65,12 @@ h_sceset <- calculateQCMetrics(h_sceset)
 # use gene names as feature symbols
 fData(h_sceset)$feature_symbol <- featureNames(h_sceset)
 
+# remove features with duplicated names
+h_sceset <- h_sceset[!duplicated(fData(h_sceset)$feature_symbol), ]
+
 # mouse
 ann <- data.frame(
-    human = c(
+    mouse = c(
         rep(1, length(labels_m1)), 
         rep(2, length(labels_m2))
     ),
@@ -79,6 +82,9 @@ m_sceset <- calculateQCMetrics(m_sceset)
 
 # use gene names as feature symbols
 fData(m_sceset)$feature_symbol <- featureNames(m_sceset)
+
+# remove features with duplicated names
+m_sceset <- m_sceset[!duplicated(fData(m_sceset)$feature_symbol), ]
 
 # save data
 saveRDS(h_sceset, "baron-human.rds")

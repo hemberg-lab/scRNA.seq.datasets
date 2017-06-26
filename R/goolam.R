@@ -16,15 +16,18 @@ colnames(d) <- rownames(ann)
 pd <- new("AnnotatedDataFrame", data = ann)
 
 # create scater object
-goolam <- newSCESet(countData = as.matrix(d), phenoData = pd)
+sceset <- newSCESet(countData = as.matrix(d), phenoData = pd)
 # don't include ERCCs in QC
-goolam <- calculateQCMetrics(goolam, feature_controls = grep("ERCC-", rownames(d)))
+sceset <- calculateQCMetrics(sceset, feature_controls = grep("ERCC-", rownames(d)))
 
 # convert ensembl ids into gene names
 # gene symbols will be stored in the feature_symbol column of fData
-goolam <- getBMFeatureAnnos(
-    goolam, filters="ensembl_gene_id",
+sceset <- getBMFeatureAnnos(
+    sceset, filters="ensembl_gene_id",
     biomart="ensembl", dataset="mmusculus_gene_ensembl")
 
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 # save data
-saveRDS(goolam, "goolam.rds")
+saveRDS(sceset, "goolam.rds")

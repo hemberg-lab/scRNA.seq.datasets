@@ -36,6 +36,10 @@ deng_reads <- calculateQCMetrics(deng_reads)
 fData(deng_rpkms)$feature_symbol <- featureNames(deng_rpkms)
 fData(deng_reads)$feature_symbol <- featureNames(deng_reads)
 
+# remove features with duplicated names
+deng_rpkms <- deng_rpkms[!duplicated(fData(deng_rpkms)$feature_symbol), ]
+deng_reads <- deng_reads[!duplicated(fData(deng_reads)$feature_symbol), ]
+
 # save files
 saveRDS(deng_rpkms, "deng-rpkms.rds")
 saveRDS(deng_reads, "deng-reads.rds")

@@ -50,4 +50,8 @@ ercc <- featureNames(sceset_reads)[grepl("ERCC-", featureNames(sceset_reads))]
 sceset_reads <- calculateQCMetrics(sceset_reads, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
 fData(sceset_reads)$feature_symbol <- featureNames(sceset_reads)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 saveRDS(sceset_reads, "tasic-reads.rds")

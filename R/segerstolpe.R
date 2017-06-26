@@ -29,4 +29,8 @@ ercc <- featureNames(sceset)[grepl("ERCC_", featureNames(sceset))]
 sceset <- calculateQCMetrics(sceset, feature_controls = list(ERCC = ercc))
 # use gene names as feature symbols
 fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 saveRDS(sceset, "segerstolpe.rds")
