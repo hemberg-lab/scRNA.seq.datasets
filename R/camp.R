@@ -84,7 +84,10 @@ rownames(ANN) <- colnames(MAT)
 
 require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
-camp <- newSCESet(exprsData=as.matrix(MAT), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0 )
-fData(camp)$feature_symbol <- featureNames(camp)
+sceset <- newSCESet(exprsData=as.matrix(MAT), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0 )
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
-saveRDS(camp, "camp.rds")
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
+saveRDS(sceset, "camp.rds")
