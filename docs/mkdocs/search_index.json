@@ -31,6 +31,16 @@
             "title": "Contacts"
         },
         {
+            "location": "/human/brain/",
+            "text": "Darmanis\n\n\n\n\nDarmanis, S. et al. A survey of human brain transcriptome diversity at the single cell level. Proc. Natl. Acad. Sci. U. S. A. 112, 7285\u20137290 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE67835\n\n\nSMARTer\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Brain"
+        },
+        {
+            "location": "/human/brain/#darmanis",
+            "text": "Darmanis, S. et al. A survey of human brain transcriptome diversity at the single cell level. Proc. Natl. Acad. Sci. U. S. A. 112, 7285\u20137290 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE67835  SMARTer  20214 features 90 samples  bash R  SCESet  html",
+            "title": "Darmanis"
+        },
+        {
             "location": "/human/edev/",
             "text": "Yan\n\n\n\n\nYan, L. et al. Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells. Nat. Struct. Mol. Biol. 20, 1131\u20131139 (2013)\n\n\n\n\n\n\nNote\n\n\nRPKMs values were downloaded from \nSupplementary Table S2\n and exported to the \ncsv\n format on 24/05/2017 and are stored \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE36552\n\n\nTang\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Embryo Devel"
@@ -39,6 +49,16 @@
             "location": "/human/edev/#yan",
             "text": "Yan, L. et al. Single-cell RNA-Seq profiling of human preimplantation embryos and embryonic stem cells. Nat. Struct. Mol. Biol. 20, 1131\u20131139 (2013)    Note  RPKMs values were downloaded from  Supplementary Table S2  and exported to the  csv  format on 24/05/2017 and are stored  here .      Accession  Protocol  Size  Scripts  scater  Report      GSE36552  Tang  20214 features 90 samples  bash R  SCESet  html",
             "title": "Yan"
+        },
+        {
+            "location": "/human/liver/",
+            "text": "Camp\n\n\n\n\nCamp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81252\n\n\nSMARTer\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "title": "Liver"
+        },
+        {
+            "location": "/human/liver/#camp",
+            "text": "Camp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)      Accession  Protocol  Size  Scripts  scater  Report      GSE81252  SMARTer  20214 features 90 samples  bash R  SCESet  html",
+            "title": "Camp"
         },
         {
             "location": "/human/pancreas/",
@@ -172,8 +192,13 @@
         },
         {
             "location": "/mouse/hsc/",
-            "text": "Nestorowa\n\n\n\n\nNestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)\n\n\n\n\n\n\nNote\n\n\nGene counts and cell type annotations were obtained from the \nsupporting website\n on 08/06/17 and are stored \nhere\n and \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81682\n\n\nSmart-Seq2\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Grun\n\n\n\n\nGr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE76983\n\n\nCEL-seq\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nNestorowa\n\n\n\n\nNestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)\n\n\n\n\n\n\nNote\n\n\nGene counts and cell type annotations were obtained from the \nsupporting website\n on 08/06/17 and are stored \nhere\n and \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81682\n\n\nSmart-Seq2\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Hematopoietic Stem Cells"
+        },
+        {
+            "location": "/mouse/hsc/#grun",
+            "text": "Gr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE76983  CEL-seq  4773 features 1656 samples  bash R  SCESet  html",
+            "title": "Grun"
         },
         {
             "location": "/mouse/hsc/#nestorowa",

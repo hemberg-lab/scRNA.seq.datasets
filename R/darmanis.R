@@ -1,8 +1,3 @@
-# GSE67835 - PMID:26060301
-# Darmanis et al. (2015). A survey of human brain transcriptome diversity at the single cell level. 
-# Human Neurons
-# PNAS. 9;112(23):7285-90
-
 library(scater)
 
 # load data
@@ -20,7 +15,8 @@ colnames(ANN) <- c("Source", "Species", "Tissue", "cell_type1", "age", "plate", 
 
 # create scater object
 pd <- new("AnnotatedDataFrame", data = as.data.frame(ANN))
-sceset <- newSCESet(countData = DATA, phenoData = pd)
+sceset <- newSCESet(countData = DATA, phenoData = pd, logExprsOffset=1)
+sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
 sceset@featureData@data$feature_symbol <- featureNames(sceset)

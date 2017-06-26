@@ -1,5 +1,4 @@
-# Camp et al. (2017) Multilineage communication regulates human liver bud develo
-pment from pluripotency. Nature 
+library(scater)
 
 # iPS = induced pluripotent stem cells (day 0)
 # HE = hepatic endoderm (day 8)
@@ -82,9 +81,9 @@ Batch[grepl("huvec", Batch)] = "11"
 ANN <- data.frame(Species = rep("Homo sapiens", times=length(Stage)), cell_type1 = Type, Source = Source, age = Age, batch=Batch)
 rownames(ANN) <- colnames(MAT)
 
-require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 sceset <- newSCESet(exprsData=as.matrix(MAT), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0 )
+sceset <- calculateQCMetrics(sceset)
 fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # remove features with duplicated names

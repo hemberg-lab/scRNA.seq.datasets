@@ -1,7 +1,4 @@
-# Liver Organoids - published
-# Multilineage Communivation regulates human liver bud development from pluripotency - Camp et al. 2017
-#GSE81252
-#GSE40823
+#!/bin/bash
 
 # scRNASeq
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE81nnn/GSE81252/suppl/GSE81252_data.cast.log2.lineage.csv.gz

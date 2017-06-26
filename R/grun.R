@@ -1,10 +1,6 @@
-#E-GEOD-76983
-#Publication: Grun et atl. (2016) De novo prediction of stem cell identity using single-cell transcriptome data. Cell Stem Cell. 19 (2) 266-277. http://dx.doi.org/10.1016/j.stem.2016.05.010
-#http://www.sciencedirect.com/science/article/pii/S1934590916300947
-#Download Link: https://www.ebi.ac.uk/arrayexpress/experiments/E-GEOD-76983/
-#Other: Mouse, bone marrow, transcript counts, CEL-Seq, bwa (align to transcriptome), short reads, 4bp UMIs (no error correction).
+library(scater)
 
-DATA = read.table("GSE76983_expdata_BMJhscC.csv", header=T)
+DATA = read.table("data.txt", header=T)
 
 expr_mat = as.matrix(DATA[,2:length(DATA[1,])]);
 keep = colSums(expr_mat> 0) > 100; # Some cell QC (avoid all zero cells)
@@ -26,8 +22,12 @@ plate = unlist(lapply(thing, function(x){x[1]}));
 Annotation = data.frame(batch=plate, plate=plate, Source = rep("MmusBoneMarrow", times=ncells), cell_type1 = type, sorting=sorting, genotype=rep("WildType", times=ncells));
 rownames(Annotation) <- colnames(expr_mat)
 
-require("scater")
 pd <- new("AnnotatedDataFrame", data=Annotation)
 sceset <- newSCESet(countData=expr_mat, phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0)
+sceset <- calculateQCMetrics(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
 
 saveRDS(sceset, file="Outenarden.rds")

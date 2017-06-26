@@ -1,7 +1,4 @@
-# GSE67835 - PMID:26060301
-# Darmanis et al. (2015). A survey of human brain transcriptome diversity at the single cell level.
-# Human Neurons
-# PNAS. 9;112(23):7285-90
+#!/bin/bash
 
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67835/matrix/GSE67835-GPL15520_series_matrix.txt.gz
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE67nnn/GSE67835/matrix/GSE67835-GPL18573_series_matrix.txt.gz

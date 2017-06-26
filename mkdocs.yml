@@ -2,7 +2,9 @@ site_name: scRNA-Seq Datasets
 pages:
     - About: index.md
     - Human:
+      - Brain: human/brain.md
       - Embryo Devel: human/edev.md
+      - Liver: human/liver.md
       - Pancreas: human/pancreas.md
       - Tissues: human/tissues.md
     - Mouse:
