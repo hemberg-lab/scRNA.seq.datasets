@@ -57,5 +57,8 @@ sceset <- newSCESet(countData = d, phenoData = pd)
 sceset <- calculateQCMetrics(sceset)
 fData(sceset)$feature_symbol <- featureNames(sceset)
 
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 # save data
 saveRDS(sceset, file = "macosko.rds")

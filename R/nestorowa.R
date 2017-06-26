@@ -54,6 +54,9 @@ sceset <- getBMFeatureAnnos(
     sceset, filters="ensembl_gene_id",
     biomart="ensembl", dataset="mmusculus_gene_ensembl")
 
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
 saveRDS(sceset, file="nestorowa.rds")
 
 

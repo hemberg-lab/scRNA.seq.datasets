@@ -28,9 +28,13 @@ ann <- data.frame(cell_type1 = cell_type1, cell_type2 = cell_type2)
 rownames(ann) <- colnames(d)
 
 pd <- new("AnnotatedDataFrame", data = ann)
-pollen <- newSCESet(tpmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
-pollen <- calculateQCMetrics(pollen)
+sceset <- newSCESet(tpmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
+sceset <- calculateQCMetrics(sceset)
 # use gene names as feature symbols
-fData(pollen)$feature_symbol <- featureNames(pollen)
-saveRDS(pollen, "pollen.rds")
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
+saveRDS(sceset, "pollen.rds")
 

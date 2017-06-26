@@ -16,12 +16,16 @@ ann$batch <- tmp[,2]
 
 # create a scater object
 pd <- new("AnnotatedDataFrame", data = ann)
-muraro <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
-muraro <- calculateQCMetrics(muraro)
+sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
+sceset <- calculateQCMetrics(sceset)
 # use gene names as feature symbols
-gene_names <- unlist(lapply(strsplit(featureNames(muraro), "__"), "[[", 1))
-fData(muraro)$feature_symbol <- gene_names
+gene_names <- unlist(lapply(strsplit(featureNames(sceset), "__"), "[[", 1))
+fData(sceset)$feature_symbol <- gene_names
 # format cell type names
-muraro@phenoData@data$cell_type1[muraro@phenoData@data$cell_type1 == "duct"] <- "ductal"
-muraro@phenoData@data$cell_type1[muraro@phenoData@data$cell_type1 == "pp"] <- "gamma"
-saveRDS(muraro, "muraro.rds")
+sceset@phenoData@data$cell_type1[sceset@phenoData@data$cell_type1 == "duct"] <- "ductal"
+sceset@phenoData@data$cell_type1[sceset@phenoData@data$cell_type1 == "pp"] <- "gamma"
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
+saveRDS(sceset, "muraro.rds")

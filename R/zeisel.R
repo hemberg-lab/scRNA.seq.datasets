@@ -25,11 +25,14 @@ rownames(ann) <- colnames(zeisel)
 pd <- new("AnnotatedDataFrame", data = ann)
 
 # create scater object
-zeisel <- newSCESet(countData = zeisel, phenoData = pd)
-zeisel <- calculateQCMetrics(zeisel)
+sceset <- newSCESet(countData = zeisel, phenoData = pd)
+sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-fData(zeisel)$feature_symbol <- featureNames(zeisel)
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
 
 # save data
-saveRDS(zeisel, file = "zeisel.rds")
+saveRDS(sceset, file = "zeisel.rds")

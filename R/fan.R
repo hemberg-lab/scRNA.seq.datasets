@@ -47,8 +47,12 @@ ann <- data.frame(cell_type1 = ct1, cell_type2 = ct2)
 rownames(ann) <- colnames(d)
 
 pd <- new("AnnotatedDataFrame", data = ann)
-fan <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
-fan <- calculateQCMetrics(fan)
+sceset <- newSCESet(fpkmData = as.matrix(d), phenoData = pd, logExprsOffset = 1)
+sceset <- calculateQCMetrics(sceset)
 # use gene names as feature symbols
-fData(fan)$feature_symbol <- featureNames(fan)
-saveRDS(fan, "fan.rds")
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+
+saveRDS(sceset, "fan.rds")

@@ -16,13 +16,16 @@ ann <- data.frame(cell_type1 = d[4,])
 rownames(ann) <- d[1,]
 pd <- new("AnnotatedDataFrame", data = ann)
 
-treutlein <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
+sceset <- newSCESet(fpkmData = exprs_data, phenoData = pd, logExprsOffset = 1)
 
 # run quality controls
-treutlein <- calculateQCMetrics(treutlein)
+sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-fData(treutlein)$feature_symbol <- featureNames(treutlein)
+fData(sceset)$feature_symbol <- featureNames(sceset)
+
+# remove features with duplicated names
+sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
 
 # save the data
-saveRDS(treutlein, file = "treutlein.rds")
+saveRDS(sceset, file = "treutlein.rds")
