@@ -19,7 +19,7 @@ sceset <- newSCESet(countData = DATA, phenoData = pd, logExprsOffset=1)
 sceset <- calculateQCMetrics(sceset)
 
 # use gene names as feature symbols
-sceset@featureData@data$feature_symbol <- featureNames(sceset)
+fData(sceset)$feature_symbol <- featureNames(sceset)
 
 # remove features with duplicated names
 sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]

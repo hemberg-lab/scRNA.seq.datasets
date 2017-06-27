@@ -14,8 +14,10 @@ rownames(expr_mat) <- gene_names[,1];
 
 labels = colnames(expr_mat);
 ncells = length(labels)
-sorting = rep("NA", times=ncells); type[grepl("HSC",labels)] <- "Lin-Kit+Sca1+CD48-CD150+"; #HSC
-type = rep("Unknown", times=ncells); type[grepl("HSC",labels)] <- "HSC"; #HSC
+sorting = rep("NA", times=ncells)
+sorting[grepl("HSC",labels)] <- "Lin-Kit+Sca1+CD48-CD150+"; #HSC
+type = rep("Unknown", times=ncells)
+type[grepl("HSC",labels)] <- "HSC"; #HSC
 thing = strsplit(labels,"_")
 plate = unlist(lapply(thing, function(x){x[1]}));
 
