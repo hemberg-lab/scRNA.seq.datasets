@@ -32,4 +32,4 @@ fData(sceset)$feature_symbol <- featureNames(sceset)
 # remove features with duplicated names
 sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
 
-saveRDS(sceset, file="Outenarden.rds")
+saveRDS(sceset, file="grun.rds")
