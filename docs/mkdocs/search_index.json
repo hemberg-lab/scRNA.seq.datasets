@@ -52,12 +52,12 @@
         },
         {
             "location": "/human/liver/",
-            "text": "Camp\n\n\n\n\nCamp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81252\n\n\nSMARTer\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Camp\n\n\n\n\nCamp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81252\n\n\nSMARTer\n\n\n19020 features\n777 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Liver"
         },
         {
             "location": "/human/liver/#camp",
-            "text": "Camp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)      Accession  Protocol  Size  Scripts  scater  Report      GSE81252  SMARTer  20214 features 90 samples  bash R  SCESet  html",
+            "text": "Camp, J. G. et al. Multilineage communication regulates human liver bud development from pluripotency. Nature 546, 533\u2013538 (2017)      Accession  Protocol  Size  Scripts  scater  Report      GSE81252  SMARTer  19020 features 777 samples  bash R  SCESet  html",
             "title": "Camp"
         },
         {
@@ -192,12 +192,12 @@
         },
         {
             "location": "/mouse/hsc/",
-            "text": "Grun\n\n\n\n\nGr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE76983\n\n\nCEL-seq\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nNestorowa\n\n\n\n\nNestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)\n\n\n\n\n\n\nNote\n\n\nGene counts and cell type annotations were obtained from the \nsupporting website\n on 08/06/17 and are stored \nhere\n and \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81682\n\n\nSmart-Seq2\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Grun\n\n\n\n\nGr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE76983\n\n\nCEL-seq\n\n\n23536 features\n1502 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nNestorowa\n\n\n\n\nNestorowa, S. et al. A single-cell resolution map of mouse hematopoietic stem and progenitor cell differentiation. Blood 128, e20\u201331 (2016)\n\n\n\n\n\n\nNote\n\n\nGene counts and cell type annotations were obtained from the \nsupporting website\n on 08/06/17 and are stored \nhere\n and \nhere\n.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE81682\n\n\nSmart-Seq2\n\n\n4773 features\n1656 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Hematopoietic Stem Cells"
         },
         {
             "location": "/mouse/hsc/#grun",
-            "text": "Gr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE76983  CEL-seq  4773 features 1656 samples  bash R  SCESet  html",
+            "text": "Gr\u00fcn, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266\u2013277 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE76983  CEL-seq  23536 features 1502 samples  bash R  SCESet  html",
             "title": "Grun"
         },
         {
