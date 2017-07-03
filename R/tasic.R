@@ -42,6 +42,10 @@ sceset_rpkms <- newSCESet(fpkmData = as.matrix(rpkms), phenoData = pd, logExprsO
 sceset_rpkms <- calculateQCMetrics(sceset_rpkms)
 # use gene names as feature symbols
 fData(sceset_rpkms)$feature_symbol <- featureNames(sceset_rpkms)
+
+# remove features with duplicated names
+sceset_rpkms <- sceset_rpkms[!duplicated(fData(sceset_rpkms)$feature_symbol), ]
+
 saveRDS(sceset_rpkms, "tasic-rpkms.rds")
 
 # reads
@@ -52,6 +56,6 @@ sceset_reads <- calculateQCMetrics(sceset_reads, feature_controls = list(ERCC = 
 fData(sceset_reads)$feature_symbol <- featureNames(sceset_reads)
 
 # remove features with duplicated names
-sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
+sceset_reads <- sceset_reads[!duplicated(fData(sceset_reads)$feature_symbol), ]
 
 saveRDS(sceset_reads, "tasic-reads.rds")
