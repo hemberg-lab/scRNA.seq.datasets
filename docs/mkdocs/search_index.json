@@ -32,13 +32,28 @@
         },
         {
             "location": "/human/brain/",
-            "text": "Darmanis\n\n\n\n\nDarmanis, S. et al. A survey of human brain transcriptome diversity at the single cell level. Proc. Natl. Acad. Sci. U. S. A. 112, 7285\u20137290 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE67835\n\n\nSMARTer\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Camp\n\n\n\n\nCamp, J. G. et al. Human cerebral organoids recapitulate gene expression programs of fetal neocortex development. Proc. Natl. Acad. Sci. U. S. A. 112, 15672\u201315677 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE75140\n\n\nSMARTer\n\n\nXXXXXXXXX\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nDarmanis\n\n\n\n\nDarmanis, S. et al. A survey of human brain transcriptome diversity at the single cell level. Proc. Natl. Acad. Sci. U. S. A. 112, 7285\u20137290 (2015)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE67835\n\n\nSMARTer\n\n\n20214 features\n90 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nLake\n\n\n\n\nLake, B. B. et al. Neuronal subtypes and diversity revealed by single-nucleus RNA sequencing of the human brain. Science 352, 1586\u20131590 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nphs000833.v3.p1\n\n\nXXXXXXXXX\n\n\nXXXXXXXXX\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nManno\n\n\n\n\nLa Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566\u2013580.e19 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE76381\n\n\nSTRT-Seq UMI\n\n\nXXXXXXXXX\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Brain"
+        },
+        {
+            "location": "/human/brain/#camp",
+            "text": "Camp, J. G. et al. Human cerebral organoids recapitulate gene expression programs of fetal neocortex development. Proc. Natl. Acad. Sci. U. S. A. 112, 15672\u201315677 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE75140  SMARTer  XXXXXXXXX  bash R  SCESet  html",
+            "title": "Camp"
         },
         {
             "location": "/human/brain/#darmanis",
             "text": "Darmanis, S. et al. A survey of human brain transcriptome diversity at the single cell level. Proc. Natl. Acad. Sci. U. S. A. 112, 7285\u20137290 (2015)      Accession  Protocol  Size  Scripts  scater  Report      GSE67835  SMARTer  20214 features 90 samples  bash R  SCESet  html",
             "title": "Darmanis"
+        },
+        {
+            "location": "/human/brain/#lake",
+            "text": "Lake, B. B. et al. Neuronal subtypes and diversity revealed by single-nucleus RNA sequencing of the human brain. Science 352, 1586\u20131590 (2016)      Accession  Protocol  Size  Scripts  scater  Report      phs000833.v3.p1  XXXXXXXXX  XXXXXXXXX  bash R  SCESet  html",
+            "title": "Lake"
+        },
+        {
+            "location": "/human/brain/#manno",
+            "text": "La Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566\u2013580.e19 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE76381  STRT-Seq UMI  XXXXXXXXX  bash R  SCESet  html",
+            "title": "Manno"
         },
         {
             "location": "/human/edev/",
@@ -112,8 +127,18 @@
         },
         {
             "location": "/mouse/brain/",
-            "text": "Tasic\n\n\n\n\n\n\nTasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335\u2013346 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nAll processed files were downloaded from \nbrain map website\n on 22/02/2017. These files are stored \nhere\n and are used to generate the \nscater\n object and the report.\n\n\n\n\nRead counts\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nRPKMs\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nUsoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nSTRT-Seq\n\n\n25334 features\n622 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nTxt file\n was downloaded from the \nSupporting data\n and on 22/02/2017. This file is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocl\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nSTRT-Seq UMI\n\n\n19972 features\n3005 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
+            "text": "Manno\n\n\n\n\nLa Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566\u2013580.e19 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE76381\n\n\nSTRT-Seq UMI\n\n\nXXXXXXXXX\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nMarques\n\n\n\n\nMarques, S. et al. Oligodendrocyte heterogeneity in the mouse juvenile and adult central nervous system. Science 352, 1326\u20131329 (2016)\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE75330\n\n\nXXXXXXXXX\n\n\nXXXXXXXXX\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nTasic\n\n\n\n\n\n\nTasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335\u2013346 (2016)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nAll processed files were downloaded from \nbrain map website\n on 22/02/2017. These files are stored \nhere\n and are used to generate the \nscater\n object and the report.\n\n\n\n\nRead counts\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\nRPKMs\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE71585\n\n\nSMARTer\n\n\n24150 features\n1679 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nUsoskin\n\n\n\n\n\n\nUsoskin, D. et al. Unbiased classification of sensory neuron types by large-scale single-cell RNA sequencing. Nat. Neurosci. 18, 145\u2013153 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nExcel file\n was downloaded from the \nSupporting data\n and converted to \ncsv\n format on 07/02/2017. The resulting \ncsv\n file is stored \nhere\n and is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocol\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE59739\n\n\nSTRT-Seq\n\n\n25334 features\n622 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml\n\n\n\n\n\n\n\n\n\n\n\nZeisel\n\n\n\n\n\n\nZeisel, A. et al. Brain structure. Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq. Science 347, 1138\u20131142 (2015)\n\n\n\n\n\n\nSupporting data\n\n\n\n\nManual data\n\n\n\n\n\n\nNote\n\n\nTxt file\n was downloaded from the \nSupporting data\n and on 22/02/2017. This file is used to generate the \nscater\n object and the report.\n\n\n\n\n\n\n\n\n\n\nAccession\n\n\nProtocl\n\n\nSize\n\n\nScripts\n\n\nscater\n\n\nReport\n\n\n\n\n\n\n\n\n\n\nGSE60361\n\n\nSTRT-Seq UMI\n\n\n19972 features\n3005 samples\n\n\nbash\nR\n\n\nSCESet\n\n\nhtml",
             "title": "Brain"
+        },
+        {
+            "location": "/mouse/brain/#manno",
+            "text": "La Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566\u2013580.e19 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE76381  STRT-Seq UMI  XXXXXXXXX  bash R  SCESet  html",
+            "title": "Manno"
+        },
+        {
+            "location": "/mouse/brain/#marques",
+            "text": "Marques, S. et al. Oligodendrocyte heterogeneity in the mouse juvenile and adult central nervous system. Science 352, 1326\u20131329 (2016)      Accession  Protocol  Size  Scripts  scater  Report      GSE75330  XXXXXXXXX  XXXXXXXXX  bash R  SCESet  html",
+            "title": "Marques"
         },
         {
             "location": "/mouse/brain/#tasic",

@@ -1,3 +1,17 @@
+## Manno
+* [La Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566–580.e19 (2016)](http://dx.doi.org/10.1016/j.cell.2016.09.027)
+
+|Accession|Protocol|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|XXXXXXXXX|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno.html)|
+
+## Marques
+* [Marques, S. et al. Oligodendrocyte heterogeneity in the mouse juvenile and adult central nervous system. Science 352, 1326–1329 (2016)](http://dx.doi.org/10.1126/science.aaf6463)
+
+|Accession|Protocol|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE75330](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75330)|XXXXXXXXX|XXXXXXXXX|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/marques.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/marques.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/marques.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/marques.html)|
+
 ## Tasic
 * [Tasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335–346 (2016)](http://dx.doi.org/10.1038/nn.4216)
 
