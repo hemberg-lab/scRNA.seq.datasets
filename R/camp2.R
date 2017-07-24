@@ -63,4 +63,5 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 camp_neuro <- newSCESet(exprsData=as.matrix(data), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0);
 fData(camp_neuro)$feature_symbol <- featureNames(camp_neuro)
+camp_neuro <- camp_neuro[!duplicated(fData(camp_neuro)$feature_symbol), ]
 saveRDS(camp_neuro, file="camp_neurons.rds")

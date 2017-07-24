@@ -34,4 +34,5 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 marques <- newSCESet(countData=DATA, phenoData=pd, logExprsOffset=1, lowerDetectionLimit=1);
 fData(marques)$feature_symbol <- rownames(DATA)
+marques <- marques[!duplicated(fData(marques)$feature_symbol), ]
 saveRDS(marques, file="marques.rds")

@@ -74,6 +74,7 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 manno <- newSCESet(countData=DATA, phenoData=pd);
 fData(manno)$feature_symbol <- all_symbol
+manno <- manno[!duplicated(fData(manno)$feature_symbol), ]
 saveRDS(manno, file="manno_human.rds")
 
 # Mouse
@@ -127,4 +128,5 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 manno <- newSCESet(countData=DATA, phenoData=pd);
 fData(manno)$feature_symbol <- all_symbol
+manno <- manno[!duplicated(fData(manno)$feature_symbol), ]
 saveRDS(manno, file="manno_mouse.rds")

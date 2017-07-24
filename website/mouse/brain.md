@@ -12,6 +12,16 @@
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE75330](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75330)|XXXXXXXXX|XXXXXXXXX|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/marques.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/marques.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/marques.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/marques.html)|
 
+## Romanov
+* [Romanov, R. A. et al. Molecular interrogation of hypothalamic organization reveals distinct dopamine neuronal subtypes. Nat. Neurosci. 20, 176–188 (2017)](http://dx.doi.org/10.1038/nn.4462)
+
+!!! note
+    The expression data in Excel format were downloaded from [GEO Omnibus](ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE74nnn/GSE74672/suppl/GSE74672_expressed_mols_with_classes.xlsx.gz) on 24/07/2017 and was converted to `csv` format. The `csv` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/romanov/GSE74672_expressed_mols_with_classes.csv) and is used to generate the `scater` object and the report.
+
+|Accession|Protocol|Size|Scripts|scater|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE74672](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672)|XXXXXXXXX|XXXXXXXXX|[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/romanov.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/romanov.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/romanov.html)|
+
 ## Tasic
 * [Tasic, B. et al. Adult mouse cortical cell taxonomy revealed by single cell transcriptomics. Nat. Neurosci. 19, 335–346 (2016)](http://dx.doi.org/10.1038/nn.4216)
 
