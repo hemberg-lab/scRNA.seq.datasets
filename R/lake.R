@@ -1,4 +1,4 @@
- http://genome-tech.ucsd.edu/ZhangLab/index.php/data/epigenomics-and-transcriptomics/sns/
+ # http://genome-tech.ucsd.edu/ZhangLab/index.php/data/epigenomics-and-transcriptomics/sns/
 # Lake et al. (2016) Neuronal subtypes and diversity revealed by single-nucleus RNA sequencing of the human brain. Science. 352 (6293): 1586-1590
 # Own website
 
@@ -59,9 +59,6 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 lake <- newSCESet(fpkmData=DATA, phenoData=pd, logExprsOffset=1, lowerDetectionLimit=1);
 fData(lake)$feature_symbol <- rownames(DATA)
+lake <- lake[!duplicated(fData(lake)$feature_symbol), ]
 saveRDS(lake, file="lake.rds")
 
-
-x1 <- x1[!exclude,]
-gene_names<-gene_names[!exclude]
-rownames(x1) <- gene_names

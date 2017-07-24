@@ -9,4 +9,4 @@ wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75140/matrix/GSE75140_ser
 gunzip GSE75140_hOrg.fetal.master.data.frame.txt.gz
 gunzip GSE75140_series_matrix.txt.gz
 
-perl ~/Data_Processing_Scripts/parse_series_matrix.pl GSE75140_series_matrix.txt > Camp_Neurons_Series_Matrix.txt
+perl ../utils/parse_series_matrix.pl GSE75140_series_matrix.txt > Camp_Neurons_Series_Matrix.txt

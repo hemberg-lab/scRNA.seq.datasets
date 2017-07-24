@@ -4,7 +4,7 @@
 # xlsx file - why would you do that?
 # Mouse
 
-x1 = read.delim("Romanov_hypoth_moldata.csv", ",", header=T, stringsAsFactors=FALSE)
+x1 = read.delim("GSE74672_expressed_mols_with_classes.csv", ",", header=T, stringsAsFactors=FALSE)
 ann <-x1[1:11,]
 x1 <- x1[-1*(1:11),]
 rownames(x1) <- x1[,1];
@@ -43,4 +43,5 @@ require("scater")
 pd <- new("AnnotatedDataFrame", data=ANN)
 romanov<- newSCESet(countData=DATA, phenoData=pd, logExprsOffset=1, lowerDetectionLimit=1);
 fData(romanov)$feature_symbol <- rownames(DATA)
+romanov <- romanov[!duplicated(fData(romanov)$feature_symbol), ]
 saveRDS(romanov, file="romanov.rds")

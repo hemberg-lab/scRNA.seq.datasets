@@ -6,4 +6,4 @@ gunzip GSE75330_Marques_et_al_mol_counts2.tab.gz
 
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE75nnn/GSE75330/matrix/GSE75330_series_matrix.txt.gz
 gunzip GSE75330_series_matrix.txt.gz
-perl ~/Data_Processing_Scripts/parse_series_matrix.pl GSE75330_series_matrix.txt > Marq_Ann.txt
+perl ../utils/parse_series_matrix.pl GSE75330_series_matrix.txt > Marq_Ann.txt
