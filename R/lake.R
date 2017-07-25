@@ -22,7 +22,8 @@ cell_names <- cell_names[-1]
 gene_names <- gene_names[-1]
 x1 <- x1[-1,-1]
 # not log-transformed tpms
-exclude = duplicated(gene_names)keep_cells = cell_names %in% ann[,2]
+exclude = duplicated(gene_names)
+keep_cells = cell_names %in% ann[,2]
 x1 <- x1[,keep_cells]
 cell_names <- cell_names[keep_cells]
 colnames(x1) <- cell_names;
