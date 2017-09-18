@@ -1,3 +1,4 @@
+### DATA
 # Human cerebral organoids + fetal neocortex
 # SMARTer
 # Camp JG, Badsha F, Florio M, Kanton S et al. Human cerebral organoids recapitulate gene expression programs of fetal neocortex development. Proc Natl Acad Sci U S A 2015 Dec 22;112(51):15672-7. PMID: 26644564
@@ -15,6 +16,7 @@ rownames(data) <- dnames;
 data <- data[,-1]
 data <- data[,-1*length(data[1,])]
 
+### ANNOTATIONS
 anames <- colnames(ann);
 anames <- strsplit(anames, "_")
 anames <- lapply(anames, function(x) { paste(sort(x[2:length(x)]), collapse="_")})
@@ -58,10 +60,7 @@ Type[is.vp] <- "ventral progenitor"
 ANN <- data.frame(Species=ann[,2], cell_type1=Type, Source=ann[,4], age=ann[,3], batch=ann[,1])
 rownames(ANN) <- rownames(ann)
 
-
-require("scater")
-pd <- new("AnnotatedDataFrame", data=ANN)
-camp_neuro <- newSCESet(exprsData=as.matrix(data), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0);
-fData(camp_neuro)$feature_symbol <- featureNames(camp_neuro)
-camp_neuro <- camp_neuro[!duplicated(fData(camp_neuro)$feature_symbol), ]
-saveRDS(camp_neuro, file="camp2.rds")
+### SINGLECELLEXPERIMENT
+source("utils/create_sce.R")
+sceset <- create_sce_from_logcounts(data, ANN)
+saveRDS(sceset, file="camp2.rds")

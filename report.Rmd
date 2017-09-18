@@ -13,8 +13,9 @@ date: '`r strftime(Sys.time(), format = "%B %d, %Y")`'
 library(knitr)
 opts_chunk$set(fig.height = 6, fig.width = 8, fig.align = 'center', echo = FALSE)
 library(scater)
+library(SingleCellExperiment)
 d <- readRDS(paste0("scater-objects/", params$file))
-cell_types <- sort(colnames(pData(d))[grepl("cell_type", colnames(pData(d)))])
+cell_types <- sort(colnames(colData(d))[grepl("cell_type", colnames(colData(d)))])
 ```
 
 ## QC of library size and detected genes
@@ -38,13 +39,13 @@ if(!is.null(d$total_counts) & !is.null(d$total_features)) {
 ## QC of expression
 
 ```{r, message=FALSE, warning=FALSE}
-if(!is.null(d$col_by_variable)) {
+if(!is.null(d$total_features)) {
     plotQC(d, type = "highest-expression")
 }
 ```
 
 ```{r}
-if(!is.null(fData(d)$mean_exprs) & !is.null(fData(d)$n_cells_exprs)) {
+if(!is.null(rowData(d)$mean_counts) & !is.null(rowData(d)$n_cells_counts)) {
     plotQC(d, type = "exprs-freq-vs-mean")
 }
 ```

@@ -1,4 +1,4 @@
-FROM rocker/r-base
+FROM rocker/r-devel
 
 RUN apt-get update \
         && apt-get install -y --no-install-recommends \
@@ -15,6 +15,7 @@ RUN apt-get update \
 # install R packages
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')" \
         && Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')" \
+        && Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('SingleCellExperiment')" \
         && Rscript -e "install.packages('rmarkdown')" \
         && Rscript -e "install.packages('knitr')"
 

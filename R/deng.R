@@ -1,18 +1,14 @@
-library(scater)
-
-# load data
+### DATA
 deng_rpkms <- read.table("deng-rpkms.txt", check.names = F, header = T)
 deng_reads <- read.table("deng-reads.txt", check.names = F, header = T)
-
 genes <- deng_rpkms[ , 1]
 deng_rpkms <- as.matrix(deng_rpkms[ , 2:ncol(deng_rpkms)])
 rownames(deng_rpkms) <- genes
 deng_reads <- as.matrix(deng_reads[ , 2:ncol(deng_reads)])
 rownames(deng_reads) <- genes
-
 cell_ids <- colnames(deng_rpkms)
 
-# create cell annotations
+### ANNOTATIONS
 labs <- unlist(lapply(strsplit(cell_ids, "\\."), "[[", 1))
 ann <- data.frame(cell_type2 = labs)
 labs[labs == "zy" | labs == "early2cell"] = "zygote"
@@ -20,26 +16,10 @@ labs[labs == "mid2cell" | labs == "late2cell"] = "2cell"
 labs[labs == "earlyblast" | labs == "midblast" | labs == "lateblast"] = "blast"
 ann$cell_type1 <- labs
 rownames(ann) <- cell_ids
-pd <- new("AnnotatedDataFrame", data = ann)
 
-# create scater object
-deng_rpkms <- deng_rpkms[!duplicated(rownames(deng_rpkms)), ]
-deng_reads <- deng_reads[!duplicated(rownames(deng_reads)), ]
-deng_rpkms <- newSCESet(fpkmData = deng_rpkms, phenoData = pd, logExprsOffset = 1)
-deng_reads <- newSCESet(countData = deng_reads, phenoData = pd)
-
-# run quality controls
-deng_rpkms <- calculateQCMetrics(deng_rpkms)
-deng_reads <- calculateQCMetrics(deng_reads)
-
-# use gene names as feature symbols
-fData(deng_rpkms)$feature_symbol <- featureNames(deng_rpkms)
-fData(deng_reads)$feature_symbol <- featureNames(deng_reads)
-
-# remove features with duplicated names
-deng_rpkms <- deng_rpkms[!duplicated(fData(deng_rpkms)$feature_symbol), ]
-deng_reads <- deng_reads[!duplicated(fData(deng_reads)$feature_symbol), ]
-
-# save files
+### SINGLECELLEXPERIMENT
+source("utils/create_sce.R")
+deng_reads <- create_sce_from_counts(deng_reads, ann)
+deng_rpkms <- create_sce_from_normcounts(deng_rpkms, ann)
 saveRDS(deng_rpkms, "deng-rpkms.rds")
 saveRDS(deng_reads, "deng-reads.rds")

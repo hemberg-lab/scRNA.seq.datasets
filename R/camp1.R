@@ -1,5 +1,4 @@
-library(scater)
-
+### DATA
 # iPS = induced pluripotent stem cells (day 0)
 # HE = hepatic endoderm (day 8)
 # LB = liver bud = hepatic endoderm + supportive mesenchymal and endothelial cells
@@ -24,6 +23,7 @@ assignment2 <- x2[,3]
 x2 <- x2[,-c(1,2,3)]
 x2 <- t(x2)
 
+### ANNOTATIONS
 ann = read.table("GSE81252_Ann.txt", header=T, stringsAsFactors=FALSE)
 tmp <- colnames(ann)
 tmp <- matrix(unlist(strsplit(tmp, "_")), ncol=2, byrow=T)
@@ -41,7 +41,6 @@ for (i in colnames(x1)[dups]) {
 x1 <- x1[,-dups]
 experiment1 <- experiment1[-dups];
 MAT <- cbind(x1,x2);
-
 
 Stage <- c(experiment1, experiment2)
 Type <- c(experiment1, assignment2);
@@ -81,12 +80,7 @@ Batch[grepl("huvec", Batch)] = "11"
 ANN <- data.frame(Species = rep("Homo sapiens", times=length(Stage)), cell_type1 = Type, Source = Source, age = Age, batch=Batch)
 rownames(ANN) <- colnames(MAT)
 
-pd <- new("AnnotatedDataFrame", data=ANN)
-sceset <- newSCESet(exprsData=as.matrix(MAT), phenoData=pd, logExprsOffset=1, lowerDetectionLimit=0 )
-sceset <- calculateQCMetrics(sceset)
-fData(sceset)$feature_symbol <- featureNames(sceset)
-
-# remove features with duplicated names
-sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
-
+### SINGLECELLEXPERIMENT
+source("utils/create_sce.R")
+sceset <- create_sce_from_logcounts(MAT, ANN)
 saveRDS(sceset, "camp1.rds")

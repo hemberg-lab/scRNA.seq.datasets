@@ -1,9 +1,8 @@
-library(scater)
-
+### DATA
 d <- read.table("counttable_es.csv")
 d <- d[1:(nrow(d) - 5), ]
 
-# cell annotations
+### ANNOTATIONS
 ann <- data.frame(
     cell_type1 = unlist(lapply(strsplit(colnames(d), "_"), "[[", 3)),
     batch = paste(
@@ -14,21 +13,15 @@ ann <- data.frame(
 )
 rownames(ann) <- colnames(d)
 colnames(d) <- rownames(ann)
-pd <- new("AnnotatedDataFrame", data = ann)
 
-# create scater object
-sceset <- newSCESet(countData = as.matrix(d), phenoData = pd)
-# don't include ERCCs in QC
-sceset <- calculateQCMetrics(sceset, feature_controls = grep("ERCC-", rownames(d)))
-
+### SINGLECELLEXPERIMENT
+source("utils/create_sce.R")
+sceset <- create_sce_from_counts(d, ann)
 # convert ensembl ids into gene names
 # gene symbols will be stored in the feature_symbol column of fData
 sceset <- getBMFeatureAnnos(
     sceset, filters="ensembl_gene_id",
     biomart="ensembl", dataset="mmusculus_gene_ensembl")
-
 # remove features with duplicated names
-sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
-
-# save data
+sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
 saveRDS(sceset, "kolodziejczyk.rds")

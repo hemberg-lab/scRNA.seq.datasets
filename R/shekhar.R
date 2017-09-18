@@ -1,13 +1,9 @@
-library(scater)
-
-# load data
+### DATA
 load("bipolar_data_Cell2016.Rdata")
-
 # Remove libraries that contain more than 10% mitochondrially derived transcripts
 mt.genes = grep("mt-", rownames(bipolar_dge), value = TRUE)
 cells.use = colnames(bipolar_dge)[colSums(bipolar_dge[mt.genes, ])/colSums(bipolar_dge) < 0.1]
 bipolar_dge = bipolar_dge[, cells.use]
-
 # Initialize single cell data as an S4 class object. Only cells where > 500 
 # genes are detected are considered.
 # Among the selected cells, only genes that are present in > 30 cells and 
@@ -16,13 +12,12 @@ bipolar_dge = bipolar_dge[, cells.use]
 bipolar_dge <- bipolar_dge[ , colSums(bipolar_dge > 0) > 500]
 bipolar_dge <- bipolar_dge[rowSums(bipolar_dge > 0) > 30 & rowSums(bipolar_dge) > 60, ]
 
-# create cell annotations
+### ANNOTATIONS
 # use cluster file from https://portals.broadinstitute.org/single_cell/study/retinal-bipolar-neuron-drop-seq
 d <- read.table("clust_retinal_bipolar.txt", sep = "\t", header = T)
 cell_ids <- d[,1]
 d <- data.frame(cell_type2 = d[,2])
 rownames(d) <- cell_ids
-
 # annotation louvain clusters (using Fig.1,F from the paper)
 d$clust_id <- NA
 d$clust_id[d$cell_type2 == "BC1A"] <- 7
@@ -43,7 +38,6 @@ d$clust_id[d$cell_type2 == "MG (Mueller Glia)"] <- 2
 d$clust_id[d$cell_type2 == "AC (Amacrine cell)"] <- 16
 d$clust_id[d$cell_type2 == "Rod Photoreceptors"] <- 20
 d$clust_id[d$cell_type2 == "Cone Photoreceptors"] <- 22
-
 # our manual annotation
 d$cell_type1 <- "unknown"
 d$cell_type1[grepl("BC", d$cell_type2)] <- "bipolar"
@@ -51,15 +45,8 @@ d$cell_type1[grepl("MG", d$cell_type2)] <- "muller"
 d$cell_type1[grepl("AC", d$cell_type2)] <- "amacrine"
 d$cell_type1[grepl("Rod Photoreceptors", d$cell_type2)] <- "rods"
 d$cell_type1[grepl("Cone Photoreceptors", d$cell_type2)] <- "cones"
-pd <- new("AnnotatedDataFrame", data = d)
 
-# create scater object
-sceset <- newSCESet(countData = bipolar_dge, phenoData = pd)
-sceset <- calculateQCMetrics(sceset)
-fData(sceset)$feature_symbol <- featureNames(sceset)
-
-# remove features with duplicated names
-sceset <- sceset[!duplicated(fData(sceset)$feature_symbol), ]
-
-# save data
+### SINGLECELLEXPERIMENT
+source("utils/create_sce.R")
+sceset <- create_sce_from_counts(bipolar_dge, d)
 saveRDS(sceset, file = "shekhar.rds")

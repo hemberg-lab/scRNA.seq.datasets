@@ -1,14 +1,14 @@
 ## Manno
 * [La Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566–580.e19 (2016)](http://dx.doi.org/10.1016/j.cell.2016.09.027)
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|23530 features<br>2150 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno.html)|
 
 ## Marques
 * [Marques, S. et al. Oligodendrocyte heterogeneity in the mouse juvenile and adult central nervous system. Science 352, 1326–1329 (2016)](http://dx.doi.org/10.1126/science.aaf6463)
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE75330](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75330)|XXXXXXXXX|23556 features<br>5053 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/marques.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/marques.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/marques.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/marques.html)|
 
@@ -18,7 +18,7 @@
 !!! note
     The expression data in Excel format were downloaded from [GEO Omnibus](ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE74nnn/GSE74672/suppl/GSE74672_expressed_mols_with_classes.xlsx.gz) on 24/07/2017 and was converted to `csv` format. The `csv` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/romanov/GSE74672_expressed_mols_with_classes.csv) and is used to generate the `scater` object and the report.
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE74672](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE74672)|XXXXXXXXX|24341 features<br>2881 samples |[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/romanov.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/romanov.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/romanov.html)|
 
@@ -33,13 +33,13 @@
 
 ### Read counts
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE71585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585)|[SMARTer](http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed)|24150 features<br>1679 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-reads.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-reads.html)|
 
 ### RPKMs
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE71585](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE71585)|[SMARTer](http://www.clontech.com/US/Products/cDNA_Synthesis_and_Library_Construction/Next_Gen_Sequencing_Kits/Total_RNA-Seq/Universal_RNA_Seq_Random_Primed)|24150 features<br>1679 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/tasic.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/tasic.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/tasic-rpkms.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/tasic-rpkms.html)|
 
@@ -53,7 +53,7 @@
 !!! note
     [Excel file](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.xlsx) was downloaded from the [Supporting data](http://linnarssonlab.org/drg/) and converted to `csv` format on 07/02/2017. The resulting `csv` file is stored [here](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/usoskin/Usoskin+et+al.+External+resources+Table+1.csv) and is used to generate the `scater` object and the report.
 
-|Accession|Protocol|Size|Scripts|scater|Report|
+|Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE59739](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE59739)|[STRT-Seq](http://dx.doi.org/10.1038/nprot.2012.022)|25334 features<br>622 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/usoskin.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/usoskin.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/usoskin.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/usoskin.html)|
 
@@ -67,6 +67,6 @@
 !!! note
     [Txt file](https://s3.amazonaws.com/scrnaseq-public-datasets/manual-data/zeisel/expression_mRNA_17-Aug-2014.txt) was downloaded from the [Supporting data](http://linnarssonlab.org/cortex/) and on 22/02/2017. This file is used to generate the `scater` object and the report.
 
-|Accession|Protocl|Size|Scripts|scater|Report|
+|Accession|Protocl|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE60361](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE60361)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|19972 features<br>3005 samples|[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/zeisel.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/zeisel.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/zeisel.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/zeisel.html)|

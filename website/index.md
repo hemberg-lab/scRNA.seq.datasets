@@ -2,19 +2,19 @@
 
 This website contains a collection of publicly available datasets used by the [Hemberg Group](http://www.sanger.ac.uk/science/groups/hemberg-group) at the [Sanger Institute](http://www.sanger.ac.uk/).
 
-## scater
+## `SingleCellExperiment` and `scater`
 
-We use [scater toolkit](http://bioconductor.org/packages/scater/) for quality control of scRNA-Seq data. For each dataset you can find both a scater object and a scater report.
+We use [SingleCellExperiment](http://bioconductor.org/packages/SingleCellExperiment/) Bioconductor S4 class to store our data and [scater]() for quality control and plotting purposes. For each dataset you can find both a `SingleCellExperiment` object and a `scater` report.
 
 ## Contributions
 
 We welcome contributions to our collection. Please create a pull request to our [GitHub repository](https://github.com/hemberg-lab/public-scrnaseq-datasets) providing the following information:
 
-* `bash` script with downloading and processing instructions named as the first author's surname.
-* `R` script file with the instruction on how to create a scater object named as the first author's surname.
+* `bash` script with downloading and processing instructions named as the dataset first author's surname.
+* `R` script file with the instruction on how to create a `SingleCellExperiment` object named as the dataset first author's surname.
 
 !!! note
-    The cell type information must be located in the `cell_type1` column of the `phenoData` slot of the `scater` object. If there are more than one cell type hierarchies please use `cell_type2`, `cell_type3` etc.
+    The cell type information must be located in the `cell_type1` column of the `colData` slot of the `SingleCellExperiment` object. If there are more than one cell type hierarchies please use `cell_type2`, `cell_type3` etc.
 
 * Metadata information about the dataset: publication reference, accession, protocol and size of the dataset. These should be added in `markdown` format to the existing files in the `website` folder or by creating a new `markdown` file.
 
