@@ -16,6 +16,8 @@ RUN apt-get update \
 RUN Rscript -e "source('https://bioconductor.org/biocLite.R');biocLite('BiocInstaller')" \
         && Rscript -e "install.packages('devtools')" \
         && Rscript -e "devtools::install_github('drisso/SingleCellExperiment')" \
+        && Rscript -e "devtools::install_github('grimbough/Rhdf5lib')" \
+        && Rscript -e "devtools::install_github('LTLA/beachmat')" \
         && Rscript -e "devtools::install_github('davismcc/scater')" \
         && Rscript -e "install.packages('rmarkdown')" \
         && Rscript -e "install.packages('knitr')"
