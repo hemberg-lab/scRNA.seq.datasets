@@ -13,7 +13,8 @@ RUN apt-get update \
             bzip2
 
 # install R packages
-RUN Rscript -e "install.packages('devtools')" \
+RUN Rscript -e "source('https://bioconductor.org/biocLite.R');biocLite('BiocInstaller')" \
+        && Rscript -e "install.packages('devtools')" \
         && Rscript -e "devtools::install_github('drisso/SingleCellExperiment')" \
         && Rscript -e "devtools::install_github('davismcc/scater')" \
         && Rscript -e "install.packages('rmarkdown')" \
