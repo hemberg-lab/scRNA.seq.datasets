@@ -10,7 +10,7 @@ for f in `ls bash`; do
     cd $name
     # download and process a dataset; create scater object
     bash ../bash/$name.sh
-    RDscript ../R/$name.R
+    Rscript ../R/$name.R
     cp *.rds ../scater-objects
     cd ..
     rm -rf $name
@@ -23,7 +23,7 @@ for f in `ls scater-objects`; do
     echo "making report for $name..."
     f1="'$f'"
     name1="'$name'"
-    RDscript -e "rmarkdown::render('report.Rmd', params = list(file = $f1, set_title = $name1))"
+    Rscript -e "rmarkdown::render('report.Rmd', params = list(file = $f1, set_title = $name1))"
     mv report.html $name.html
     mv $name.html scater-reports/
 done

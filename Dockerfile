@@ -1,4 +1,4 @@
-FROM rocker/r-devel
+FROM rocker/r-base
 
 RUN apt-get update \
         && apt-get install -y --no-install-recommends \
@@ -13,11 +13,11 @@ RUN apt-get update \
             bzip2
 
 # install R packages
-RUN RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')" \
-        && RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')" \
-        && RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('SingleCellExperiment')" \
-        && RDscript -e "install.packages('rmarkdown')" \
-        && RDscript -e "install.packages('knitr')"
+RUN Rscript -e "install.packages('devtools')" \
+        && Rscript -e "devtools::install_github('drisso/SingleCellExperiment')" \
+        && Rscript -e "devtools::install_github('davismcc/scater')" \
+        && Rscript -e "install.packages('rmarkdown')" \
+        && Rscript -e "install.packages('knitr')"
 
 # add our scripts
 ADD . /
