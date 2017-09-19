@@ -13,11 +13,11 @@ RUN apt-get update \
             bzip2
 
 # install R packages
-RUN Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')" \
-        && Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')" \
-        && Rscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('SingleCellExperiment')" \
-        && Rscript -e "install.packages('rmarkdown')" \
-        && Rscript -e "install.packages('knitr')"
+RUN RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('BiocInstaller')" \
+        && RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('scater')" \
+        && RDscript -e "source('https://bioconductor.org/biocLite.R'); biocLite('SingleCellExperiment')" \
+        && RDscript -e "install.packages('rmarkdown')" \
+        && RDscript -e "install.packages('knitr')"
 
 # add our scripts
 ADD . /
