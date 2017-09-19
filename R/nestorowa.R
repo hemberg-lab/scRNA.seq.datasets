@@ -41,7 +41,7 @@ Annotation = data.frame(batch=batch[expr_order],plate=plate[expr_order], WellID=
 rownames(Annotation) = rownames(Anno)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_logcounts(expr_mat[,expr_order], Annotation)
 # convert ensembl ids into gene names
 # gene symbols will be stored in the feature_symbol column of fData

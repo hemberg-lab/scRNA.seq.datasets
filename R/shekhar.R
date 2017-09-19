@@ -47,6 +47,6 @@ d$cell_type1[grepl("Rod Photoreceptors", d$cell_type2)] <- "rods"
 d$cell_type1[grepl("Cone Photoreceptors", d$cell_type2)] <- "cones"
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(bipolar_dge, d)
 saveRDS(sceset, file = "shekhar.rds")

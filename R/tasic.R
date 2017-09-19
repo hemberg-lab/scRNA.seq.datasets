@@ -27,7 +27,7 @@ colnames(ann_col)[grep("group", colnames(ann_col))] <- "cell_type1"
 colnames(ann_col)[grep("Tasic_et_al_2016_label", colnames(ann_col))] <- "cell_type2"
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(rpkms, ann_col)
 saveRDS(sceset, "tasic-rpkms.rds")
 sceset <- create_sce_from_counts(reads, ann_col)

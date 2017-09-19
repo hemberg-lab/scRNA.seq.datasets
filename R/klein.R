@@ -17,6 +17,6 @@ ann <- data.frame(
 rownames(ann) <- colnames(d)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(d, ann)
 saveRDS(sceset, "klein.rds")

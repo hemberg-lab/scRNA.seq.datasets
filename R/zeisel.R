@@ -21,6 +21,6 @@ ann$cell_type1 <- labs
 rownames(ann) <- colnames(zeisel)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(zeisel, ann)
 saveRDS(sceset, file = "zeisel.rds")

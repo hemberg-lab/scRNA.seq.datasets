@@ -26,6 +26,6 @@ ann <- data.frame(cell_type1 = cell_type1, cell_type2 = cell_type2)
 rownames(ann) <- colnames(d)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(d, ann)
 saveRDS(sceset, "pollen.rds")

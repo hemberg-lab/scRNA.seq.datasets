@@ -21,6 +21,6 @@ ann <- as.data.frame(ann[filt,])
 exprs_data <- exprs_data[,filt]
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(exprs_data, ann)
 saveRDS(sceset, file = "usoskin.rds")

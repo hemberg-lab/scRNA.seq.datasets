@@ -23,6 +23,6 @@ ANN <- data.frame(Species=rep("Mus musculus", times=length(TYPE)), cell_type1=TY
 rownames(ANN) <- colnames(x1)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(DATA, ANN)
 saveRDS(sceset, file="marques.rds")

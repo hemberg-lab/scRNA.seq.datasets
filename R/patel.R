@@ -15,6 +15,6 @@ ann <- data.frame(cell_type1 = patients)
 rownames(ann) <- colnames(d)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_logcounts(d, ann)
 saveRDS(sceset, file = "patel.rds")

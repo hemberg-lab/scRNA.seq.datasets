@@ -60,7 +60,7 @@ m_ann <- data.frame(
 rownames(m_ann) <- colnames(m)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 h_sceset <- create_sce_from_counts(h, h_ann)
 m_sceset <- create_sce_from_counts(m, m_ann)
 saveRDS(h_sceset, "baron-human.rds")

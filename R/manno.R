@@ -64,7 +64,7 @@ ANN <- data.frame(Species=rep("Homo sapiens", times=length(DATA[1,])), cell_type
 rownames(ANN) = colnames(DATA)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(DATA, ANN)
 saveRDS(sceset, file="manno_human.rds")
 
@@ -113,6 +113,5 @@ ANN <- data.frame(Species=rep("Mus musclus", times=length(DATA[1,])), cell_type1
 rownames(ANN) = colnames(DATA)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
 sceset <- create_sce_from_counts(DATA, ANN)
 saveRDS(sceset, file="manno_mouse.rds")

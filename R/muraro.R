@@ -16,7 +16,7 @@ ann$donor <- tmp[,1]
 ann$batch <- tmp[,2]
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(d, ann)
 # use gene names as feature symbols
 gene_names <- unlist(lapply(strsplit(rownames(sceset), "__"), "[[", 1))

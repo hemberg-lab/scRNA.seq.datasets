@@ -61,6 +61,6 @@ ANN <- data.frame(Species=ann[,2], cell_type1=Type, Source=ann[,4], age=ann[,3],
 rownames(ANN) <- rownames(ann)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_logcounts(data, ANN)
 saveRDS(sceset, file="camp2.rds")

@@ -8,7 +8,7 @@ We use [SingleCellExperiment](http://bioconductor.org/packages/SingleCellExperim
 
 ## Contributions
 
-We welcome contributions to our collection. Please create a pull request to our [GitHub repository](https://github.com/hemberg-lab/public-scrnaseq-datasets) providing the following information:
+We welcome contributions to our collection. Please create a pull request to our [GitHub repository](https://github.com/hemberg-lab/scRNA.seq.datasets) providing the following information:
 
 * `bash` script with downloading and processing instructions named as the dataset first author's surname.
 * `R` script file with the instruction on how to create a `SingleCellExperiment` object named as the dataset first author's surname.

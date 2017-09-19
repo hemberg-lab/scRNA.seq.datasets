@@ -22,6 +22,6 @@ Annotation = data.frame(batch=plate, plate=plate, Source = rep("MmusBoneMarrow",
 rownames(Annotation) <- colnames(expr_mat)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(expr_mat, Annotation)
 saveRDS(sceset, file="grun.rds")

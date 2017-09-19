@@ -11,6 +11,6 @@ rownames(ANN) = ANN[,8]
 colnames(ANN) <- c("Source", "Species", "Tissue", "cell_type1", "age", "plate", "individual", "File")
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(DATA, ANN)
 saveRDS(sceset, file = "darmanis.rds")

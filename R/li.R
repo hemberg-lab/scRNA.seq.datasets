@@ -11,6 +11,6 @@ ann <- data.frame(cell_type1 = unlist(lapply(strsplit(colnames(d), "__"), "[[", 
 rownames(ann) <- colnames(d)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(d, ann)
 saveRDS(sceset, "li.rds")

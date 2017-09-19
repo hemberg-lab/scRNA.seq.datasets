@@ -15,6 +15,6 @@ ann$cell_type1[ann$cell_type1 == "PP"] <- "gamma"
 ann$cell_type1[ann$cell_type1 == "PP.contaminated"] <- "gamma.contaminated"
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(d, ann)
 saveRDS(sceset, "xin.rds")

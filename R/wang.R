@@ -35,6 +35,6 @@ pDat$cell_type1[pDat$cell_type1 == "duct"] <- "ductal"
 
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(x, pDat, fDat)
 saveRDS(sceset, "wang.rds")

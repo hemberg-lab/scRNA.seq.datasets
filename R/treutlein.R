@@ -13,6 +13,6 @@ ann <- data.frame(cell_type1 = d[4,])
 rownames(ann) <- d[1,]
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(exprs_data, ann)
 saveRDS(sceset, file = "treutlein.rds")

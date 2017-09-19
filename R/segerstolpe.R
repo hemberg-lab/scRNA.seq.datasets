@@ -21,6 +21,6 @@ colnames(ann) <- c("cell_quality", "cell_type1", "disease", "sex", "age")
 ann$cell_type1 <- unlist(lapply(strsplit(ann$cell_type1, " cell"), "[[", 1))
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(d, ann)
 saveRDS(sceset, "segerstolpe.rds")

@@ -18,7 +18,7 @@ ann$cell_type1 <- labs
 rownames(ann) <- cell_ids
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 deng_reads <- create_sce_from_counts(deng_reads, ann)
 deng_rpkms <- create_sce_from_normcounts(deng_rpkms, ann)
 saveRDS(deng_rpkms, "deng-rpkms.rds")

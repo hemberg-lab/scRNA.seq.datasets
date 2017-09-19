@@ -81,6 +81,6 @@ ANN <- data.frame(Species = rep("Homo sapiens", times=length(Stage)), cell_type1
 rownames(ANN) <- colnames(MAT)
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_logcounts(MAT, ANN)
 saveRDS(sceset, "camp1.rds")

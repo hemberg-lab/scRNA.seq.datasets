@@ -41,6 +41,6 @@ colnames(cells)[1] <- "clust_id"
 gc()
 
 ### SINGLECELLEXPERIMENT
-source("utils/create_sce.R")
+source("../utils/create_sce.R")
 sceset <- create_sce_from_counts(d, cells)
 saveRDS(sceset, file = "macosko.rds")
