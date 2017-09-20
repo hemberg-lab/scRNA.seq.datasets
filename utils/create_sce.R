@@ -15,7 +15,9 @@ create_sce_from_counts <- function(counts, colData, rowData = NULL) {
     # use gene names as feature symbols
     rowData(sceset)$feature_symbol <- rownames(sceset)
     # remove features with duplicated names
-    sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    if(is.null(rowData)) {
+        sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    }
     # QC
     isSpike(sceset, "ERCC") <- grepl("^ERCC-", rownames(sceset))
     sceset <- calculateQCMetrics(sceset, feature_controls = list("ERCC" = isSpike(sceset, "ERCC")))
@@ -35,7 +37,9 @@ create_sce_from_normcounts <- function(normcounts, colData, rowData = NULL) {
     # use gene names as feature symbols
     rowData(sceset)$feature_symbol <- rownames(sceset)
     # remove features with duplicated names
-    sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    if(is.null(rowData)) {
+        sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    }
     return(sceset)
 }
 
@@ -51,6 +55,8 @@ create_sce_from_logcounts <- function(logcounts, colData, rowData = NULL) {
     # use gene names as feature symbols
     rowData(sceset)$feature_symbol <- rownames(sceset)
     # remove features with duplicated names
-    sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    if(is.null(rowData)) {
+        sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
+    }
     return(sceset)
 }

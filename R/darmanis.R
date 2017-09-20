@@ -7,7 +7,7 @@ DATA <- cbind(data1, data2)
 ANN <- rbind(t(ann1), t(ann2))
 
 ### ANNOTATIONS
-rownames(ANN) = ANN[,8]
+rownames(ANN) <- NULL
 colnames(ANN) <- c("Source", "Species", "Tissue", "cell_type1", "age", "plate", "individual", "File")
 
 ### SINGLECELLEXPERIMENT

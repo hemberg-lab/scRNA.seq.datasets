@@ -4,7 +4,7 @@ d <- t(d)
 genes <- d[,1][5:nrow(d)]
 # remove genes and bulk samples
 d <- d[,2:(ncol(d) - 2)]
-exprs_data <- matrix(as.numeric(d[5:nrow(d),]), ncol = ncol(d))
+exprs_data <- as.data.frame(matrix(as.numeric(d[5:nrow(d),]), ncol = ncol(d)))
 rownames(exprs_data) <- genes
 colnames(exprs_data) <- d[1,]
 
