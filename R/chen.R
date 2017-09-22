@@ -1,5 +1,5 @@
 ### DATA
-d <- read.table("GSE87544_Merged_17samples_14437cells_count.txt")
+d <- read.table("GSE87544_Merged_17samples_14437cells_count.txt", header = TRUE)
 rownames(d) <- d[,1]
 d <- d[,2:ncol(d)]
 d <- d[,order(colnames(d))]
