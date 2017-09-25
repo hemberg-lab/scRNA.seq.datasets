@@ -1,16 +1,16 @@
 ## Campbell
-* [Chen, R., Wu, X., Jiang, L. & Zhang, Y. Single-Cell RNA-Seq Reveals Hypothalamic Cell Diversity. Cell Rep. 18, 3227–3241 (2017)](http://dx.doi.org/10.1016/j.celrep.2017.03.004)
-
-|Accession|Protocol|Size|Scripts|Download|Report|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE87544](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87544)|[Drop-seq](http://dx.doi.org/10.1016/j.cell.2015.05.002)|23284 features<br>14437 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/chen.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/chen.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/chen.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/chen.html)|
-
-## Chen
 * [Campbell, J. N. et al. A molecular census of arcuate hypothalamus and median eminence cell types. Nat. Neurosci. 20, 484–496 (2017)](http://dx.doi.org/10.1038/nn.4495)
 
 |Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 |[GSE93374](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE93374)|[Drop-seq](http://dx.doi.org/10.1016/j.cell.2015.05.002)|26774 features<br>21086 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/campbell.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/campbell.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/campbell.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/campbell.html)|
+
+## Chen
+* [Chen, R., Wu, X., Jiang, L. & Zhang, Y. Single-Cell RNA-Seq Reveals Hypothalamic Cell Diversity. Cell Rep. 18, 3227–3241 (2017)](http://dx.doi.org/10.1016/j.celrep.2017.03.004)
+
+|Accession|Protocol|Size|Scripts|Download|Report|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|[GSE87544](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE87544)|[Drop-seq](http://dx.doi.org/10.1016/j.cell.2015.05.002)|23284 features<br>14437 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/chen.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/chen.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/chen.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/chen.html)|
 
 ## Manno
 * [La Manno, G. et al. Molecular Diversity of Midbrain Development in Mouse, Human, and Stem Cells. Cell 167, 566–580.e19 (2016)](http://dx.doi.org/10.1016/j.cell.2016.09.027)
