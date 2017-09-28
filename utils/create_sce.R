@@ -40,6 +40,8 @@ create_sce_from_normcounts <- function(normcounts, colData, rowData = NULL) {
     if(is.null(rowData)) {
         sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
     }
+    # QC
+    isSpike(sceset, "ERCC") <- grepl("^ERCC-", rownames(sceset))
     return(sceset)
 }
 
@@ -58,5 +60,7 @@ create_sce_from_logcounts <- function(logcounts, colData, rowData = NULL) {
     if(is.null(rowData)) {
         sceset <- sceset[!duplicated(rowData(sceset)$feature_symbol), ]
     }
+    # QC
+    isSpike(sceset, "ERCC") <- grepl("^ERCC-", rownames(sceset))
     return(sceset)
 }
