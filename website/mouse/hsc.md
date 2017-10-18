@@ -1,5 +1,5 @@
 ## Grun
-* [Grün, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266–277 (2016)](http://10.1016/j.stem.2016.05.010)
+* [Grün, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266–277 (2016)](http://dx.doi.org/10.1016/j.stem.2016.05.010)
 
 |Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
