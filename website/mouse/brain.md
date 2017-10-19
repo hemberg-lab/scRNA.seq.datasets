@@ -24,7 +24,7 @@
 
 |Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE75330](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75330)|XXXXXXXXX|23556 features<br>5053 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/marques.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/marques.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/marques.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/marques.html)|
+|[GSE75330](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75330)|[C1](https://www.fluidigm.com/products/c1-system#workflow)|23556 features<br>5053 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/marques.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/marques.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/marques.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/marques.html)|
 
 ## Romanov
 * [Romanov, R. A. et al. Molecular interrogation of hypothalamic organization reveals distinct dopamine neuronal subtypes. Nat. Neurosci. 20, 176–188 (2017)](http://dx.doi.org/10.1038/nn.4462)
