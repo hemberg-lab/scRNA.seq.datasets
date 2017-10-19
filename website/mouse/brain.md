@@ -17,7 +17,7 @@
 
 |Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|23530 features<br>2150 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno.html)|
+|[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|23530 features<br>2150 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno_mouse.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno_mouse.html)|
 
 ## Marques
 * [Marques, S. et al. Oligodendrocyte heterogeneity in the mouse juvenile and adult central nervous system. Science 352, 1326–1329 (2016)](http://dx.doi.org/10.1126/science.aaf6463)

@@ -26,4 +26,4 @@
 
 |Accession|Protocol|Size|Scripts|Download|Report|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|20058 features<br>4029 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno.html)|
+|[GSE76381](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE76381)|[STRT-Seq UMI](http://dx.doi.org/10.1038/nmeth.2772)|20058 features<br>4029 samples |[bash](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/bash/manno.sh)<br>[R](https://github.com/hemberg-lab/scRNA.seq.datasets/blob/master/R/manno.R)|[SCESet](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-objects/manno_human.rds)|[html](https://scrnaseq-public-datasets.s3.amazonaws.com/scater-reports/manno_human.html)|
