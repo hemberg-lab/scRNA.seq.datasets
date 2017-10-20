@@ -47,11 +47,12 @@ PLATE <- stuff[,1]
 DATA <- apply(x1, 1, as.numeric)
 DATA<- t(DATA)
 colnames(DATA) <- colnames(x1)
-rownames(DATA) <- rownames(x1)
+DATA <- DATA[!exclude, ]
+rownames(DATA) <- gene_names[!exclude]
 ANN <- data.frame(Species=rep("Homo sapiens", times=length(TYPE)), cell_type1=TYPE, Source=SOURCE, age=AGE, WellID=WELL, batch=BATCH, Plate=PLATE)
 rownames(ANN) <- colnames(x1)
 
 ### SINGLECELLEXPERIMENT
 source("../utils/create_sce.R")
 sceset <- create_sce_from_normcounts(DATA, ANN)
-saveRDS(sceset, file="lake.rds")
+saveRDS(sceset, file = "lake.rds")
