@@ -36,7 +36,7 @@ sudo apt-get install s3cmd
 
 ### OpenStack Cloud (Sanger)
 
-1. Launch Ubuntu Trusty instance (`m1.medium` flavour)
+1. Launch Ubuntu Trusty instance (`j1.large` flavour)
 2. Add the instance to the `default`, `cloudforms_icmp_in`, `cloudforms_ssh_in` `cloudforms_web_in` security groups.
 3. Create additional security group: `TCP` with port 8080 (this is needed for Jenkins) and add your instance to this group.
 4. Associate a floating IP (FLOATING_IP) number with your instance.
@@ -44,20 +44,16 @@ sudo apt-get install s3cmd
 ```
 ssh -i ~/.ssh/your_key.pem ubuntu@FLOATING_IP
 ```
-Then become root using this command:
-```
-sudo su -
-```
-6. In the instance install openjdk-7-jdk:
-```
-sudo apt-get update
-sudo apt-get install openjdk-7-jdk
-```
-7. In the instance [install Jenkins](https://wiki.jenkins-ci.org/display/JENKINS/Installing+Jenkins+on+Ubuntu).
+6. In the instance [install Jenkins](https://jenkins.io/doc/book/installing/#debian-ubuntu).
 
-To setup Jenkins after installation go to http://FLOATING_IP:8080 (this is only accessible via Sanger wired network).
+To setup Jenkins after installation go to http://FLOATING_IP:8080
 
-8. In the instance [install docker](https://docs.docker.com/engine/installation/linux/ubuntu/). 
+7. In the instance [install docker](https://docs.docker.com/engine/installation/linux/ubuntu/). 
+
+8. Resolve docker network issues (Sanger OpenStack problem only):
+```{bash}
+sudo bash -c "echo '{ \"bip\": \"10.10.0.1/16\", \"mtu\": 1400 }' > /etc/docker/daemon.json"
+```
 
 9. Add permission for Jenkins to run Docker:
 ```
